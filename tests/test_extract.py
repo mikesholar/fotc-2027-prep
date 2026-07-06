@@ -53,3 +53,25 @@ def test_main_lift_loads_match_sheet_for_default_maxes():
                     assert round5(st["pct"] * mx) == st["expectedLoad"], (d["date"], st)
                     checked += 1
     assert checked > 50  # sanity: we verified a meaningful number of sets
+
+
+def find_day(plan, iso):
+    return next(d for d in plan["days"] if d["date"] == iso)
+
+
+def test_lower_a_day_has_prep_main_accessory_boxes():
+    plan = load_plan()
+    d = find_day(plan, "2026-07-20")  # Mon Jul 20, Lower A
+    types = [s["type"] for s in d["sections"]]
+    assert types[0] == "prep"
+    assert "mainLift" in types
+    assert types.index("prep") < types.index("mainLift")
+    assert any(t == "text" for t in types)  # accessory work
+    assert d["sessionTitle"].lower().startswith("lower")
+
+
+def test_conditioning_day_has_only_text_sections():
+    plan = load_plan()
+    d = find_day(plan, "2026-07-22")  # Wed, engine test day, no barbell %
+    assert all(s["type"] == "text" for s in d["sections"])
+    assert len(d["sections"]) >= 1

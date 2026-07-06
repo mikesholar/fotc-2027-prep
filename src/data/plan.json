@@ -57,6 +57,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossack squats (loaded heel flat) · 10 back ext off GHD · 8 reverse Nordics"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -83,6 +88,16 @@
               "expectedLoad": 180
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 Bulgarian split squats (DBs, add load weekly)\n3x12 stiff-leg deadlift @ ~40–50% of DL 1RM (deep hamstring stretch)\n3x20 kip swings (stiff midline — quality over shape size)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Week 1 mindset: this week sets every trend line for the next 6 months. RPE honesty > heroics."
         }
       ]
     },
@@ -96,6 +111,11 @@
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 banded straight-arm pull-downs · 10 table tops (:02 pause) · 1:00 banded lat stretch/side"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -123,6 +143,21 @@
               "expectedLoad": 125
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PULL THREAD — TEST: 1 max set strict pull-ups (log on Benchmarks) · then E2MOM x4: 60% of that number\nHS THREAD — TEST: 1 max set strict HSPU + 1 max set kipping HSPU + 4:00 max wall walks (rest 3:00 between tests — log on Benchmarks)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PRESS THREAD — EMOM 8: 8 Z press (hard-but-repeatable DB)\n4 x (1 RIR) deficit pike push-ups, hands on DBs — record set sizes\n4x12 straight-arm pull-downs"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Midline: EMOM 6: 6 light GHD sit-ups (plate behind head)"
         }
       ]
     },
@@ -135,7 +170,13 @@
       "weekDates": "Jul 20–Jul 26",
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "2k ROW TEST (log on Benchmarks — this sets your qualifier row paces: 5k pace ≈ 2k split + :07–:08)\nThen 15:00 easy spin/walk flush.\nShoulder durability: 3 rounds — 20 band face pulls · 15 banded external rotations/side · :30 dead hang"
+        }
+      ]
     },
     {
       "date": "2026-07-24",
@@ -147,6 +188,11 @@
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Upper B",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press (same DB) · 20 band face pulls (elbows wide)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -174,6 +220,11 @@
               "expectedLoad": 90
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8–12 DB incline bench (neutral grip, simulating rings)\n3 rounds: 15 reverse flys · 10–15 ring skull crushers · 10–15 supinated ring rows (bully yourself)\n2 rounds: 12 table tops (:02 pause) · :20 supinated dead hang"
         }
       ]
     },
@@ -187,6 +238,11 @@
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Lower B + Engine",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 15 banded ham curls · 8 ATG split squats (hold rig) · 5 pause front squats (warm-up loads)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -214,6 +270,11 @@
               "expectedLoad": 145
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "RUN TEST: 8:00 jog warm-up + 4 x 400m @ strong-but-repeatable / 2:00 walk. Record every split (Benchmarks)."
         }
       ]
     },
@@ -227,6 +288,11 @@
       "weekFocus": "Build",
       "sessionTitle": "Lower A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossack squats (loaded heel flat) · 10 back ext off GHD · 8 reverse Nordics"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -259,6 +325,16 @@
               "expectedLoad": 185
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 Bulgarian split squats (DBs, add load weekly)\n3x12 stiff-leg deadlift @ ~40–50% of DL 1RM (deep hamstring stretch)\n3x20 kip swings (stiff midline — quality over shape size)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "REGISTER for the Coastal Qualifier this week — Novice Team (opens Aug 1). Make sure your partner registers too.."
         }
       ]
     },
@@ -272,6 +348,11 @@
       "weekFocus": "Build",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 banded straight-arm pull-downs · 10 table tops (:02 pause) · 1:00 banded lat stretch/side"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -304,6 +385,21 @@
               "expectedLoad": 130
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PULL THREAD — E2MOM x5: strict pull-ups — pick a number you can hold all 5 sets\nHS THREAD — Headstand practice 5 x challenging duration (pressure in palms vs fingers = your balance dial)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PRESS THREAD — EMOM 8: 8 Z press (hard-but-repeatable DB)\n4 x (1 RIR) deficit pike push-ups, hands on DBs — record set sizes\n4x12 straight-arm pull-downs"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Midline: EMOM 6: 6 light GHD sit-ups (plate behind head)"
         }
       ]
     },
@@ -316,7 +412,13 @@
       "weekDates": "Jul 27–Aug 02",
       "weekFocus": "Build",
       "sessionTitle": "Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "EMOM 30: odd = 15/12 cal machine (alternate bike/row) · even = rest\nHold the SAME pace all 15 work minutes — nasal breathing as long as you can. This is base, not a test.\nFinisher: 300' backward sled drag, easy."
+        }
+      ]
     },
     {
       "date": "2026-07-31",
@@ -328,6 +430,11 @@
       "weekFocus": "Build",
       "sessionTitle": "Upper B",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press (same DB) · 20 band face pulls (elbows wide)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -360,6 +467,11 @@
               "expectedLoad": 90
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8–12 DB incline bench (neutral grip, simulating rings)\n3 rounds: 15 reverse flys · 10–15 ring skull crushers · 10–15 supinated ring rows (bully yourself)\n2 rounds: 12 table tops (:02 pause) · :20 supinated dead hang"
         }
       ]
     },
@@ -373,6 +485,11 @@
       "weekFocus": "Build",
       "sessionTitle": "Lower B + Engine",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 15 banded ham curls · 8 ATG split squats (hold rig) · 5 pause front squats (warm-up loads)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -405,6 +522,11 @@
               "expectedLoad": 150
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Run: 10:00 jog + 5 x 400m / 2:00 walk — each rep :03–:05 faster than last week's average."
         }
       ]
     },
@@ -418,6 +540,11 @@
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Lower A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossack squats (loaded heel flat) · 10 back ext off GHD · 8 reverse Nordics"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -450,6 +577,11 @@
               "expectedLoad": 195
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 Bulgarian split squats (DBs, add load weekly)\n3x12 stiff-leg deadlift @ ~40–50% of DL 1RM (deep hamstring stretch)\n3x20 kip swings (stiff midline — quality over shape size)"
         }
       ]
     },
@@ -463,6 +595,11 @@
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 banded straight-arm pull-downs · 10 table tops (:02 pause) · 1:00 banded lat stretch/side"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -495,6 +632,21 @@
               "expectedLoad": 135
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PULL THREAD — E2MOM x6: strict pull-ups — same number as last week, one extra set\nHS THREAD — EMOM 5: :20 wall-facing HS hold — PERFECT line: quads flexed, toes pointed, only toes touch wall"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PRESS THREAD — EMOM 8: 8 Z press (hard-but-repeatable DB)\n4 x (1 RIR) deficit pike push-ups, hands on DBs — record set sizes\n4x12 straight-arm pull-downs"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Midline: EMOM 6: 6 light GHD sit-ups (plate behind head)"
         }
       ]
     },
@@ -507,7 +659,13 @@
       "weekDates": "Aug 03–Aug 09",
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "For time: 3k bike · 100 double-unders · 2k row · 100 double-unders · 1k run\nSteady 80–85% — DUs in 2–3 sets max, relax the shoulders on the rope."
+        }
+      ]
     },
     {
       "date": "2026-08-07",
@@ -519,6 +677,11 @@
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Upper B",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press (same DB) · 20 band face pulls (elbows wide)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -551,6 +714,11 @@
               "expectedLoad": 95
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8–12 DB incline bench (neutral grip, simulating rings)\n3 rounds: 15 reverse flys · 10–15 ring skull crushers · 10–15 supinated ring rows (bully yourself)\n2 rounds: 12 table tops (:02 pause) · :20 supinated dead hang"
         }
       ]
     },
@@ -564,6 +732,11 @@
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Lower B + Engine",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 15 banded ham curls · 8 ATG split squats (hold rig) · 5 pause front squats (warm-up loads)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -596,6 +769,11 @@
               "expectedLoad": 160
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Run: 10:00 jog + 2 x 800m / 3:00 walk — record times, you're beating these in two weeks."
         }
       ]
     },
@@ -609,6 +787,11 @@
       "weekFocus": "DELOAD",
       "sessionTitle": "Lower A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossack squats (loaded heel flat) · 10 back ext off GHD · 8 reverse Nordics"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -626,6 +809,11 @@
               "expectedLoad": 220
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "2x8 Bulgarian split squats · 2x12 stiff-leg deadlift (same load) · 2x15 kip swings"
         }
       ]
     },
@@ -639,6 +827,11 @@
       "weekFocus": "DELOAD",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 banded straight-arm pull-downs · 10 table tops (:02 pause) · 1:00 banded lat stretch/side"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -656,6 +849,21 @@
               "expectedLoad": 155
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PULL THREAD — E2MOM x5: strict pull-ups — one rep UNDER last week, every set (deload means deload)\nHS THREAD — EMOM 4: :20 wall-facing HS hold (one set less)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PRESS THREAD — EMOM 6: 8 Z press (same DB)\n3 x (1 RIR) deficit pike push-ups\n3x15 straight-arm pull-downs"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Midline: EMOM 6: 6 light GHD sit-ups (plate behind head)"
         }
       ]
     },
@@ -668,7 +876,13 @@
       "weekDates": "Aug 10–Aug 16",
       "weekFocus": "DELOAD",
       "sessionTitle": "Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30–40:00 Z2 mix (bike/row/jog), conversational pace.\n10:00 mobility flow: couch stretch · pigeon · banded lat stretch · t-spine over roller."
+        }
+      ]
     },
     {
       "date": "2026-08-14",
@@ -680,6 +894,11 @@
       "weekFocus": "DELOAD",
       "sessionTitle": "Upper B",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press (same DB) · 20 band face pulls (elbows wide)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -697,6 +916,11 @@
               "expectedLoad": 110
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8–12 DB incline bench (same weight)\n2 rounds: 15 reverse flys · 10 ring skull crushers · 10 supinated ring rows\n2 rounds: 10 table tops · :20 dead hang"
         }
       ]
     },
@@ -710,6 +934,11 @@
       "weekFocus": "DELOAD",
       "sessionTitle": "Lower B + Engine",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 15 banded ham curls · 8 ATG split squats (hold rig) · 5 pause front squats (warm-up loads)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -727,6 +956,11 @@
               "expectedLoad": 180
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "DELOAD run: 20:00 easy jog + 4 x :15 strides. That's it. Walk Ora for the rest."
         }
       ]
     },
@@ -740,6 +974,11 @@
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Lower A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossack squats (loaded heel flat) · 10 back ext off GHD · 8 reverse Nordics"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -761,6 +1000,11 @@
               "expectedLoad": 200
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 Bulgarian split squats (DBs, add load weekly)\n3x12 stiff-leg deadlift @ ~40–50% of DL 1RM (deep hamstring stretch)\n3x20 kip swings (stiff midline — quality over shape size)"
         }
       ]
     },
@@ -774,6 +1018,11 @@
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 banded straight-arm pull-downs · 10 table tops (:02 pause) · 1:00 banded lat stretch/side"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -795,6 +1044,21 @@
               "expectedLoad": 140
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PULL THREAD — E2MOM x5: strict pull-ups +5 lb if last week felt clean\nHS THREAD — EMOM 5: :25 wall-facing HS hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "PRESS THREAD — EMOM 8: 8 Z press (hard-but-repeatable DB)\n4 x (1 RIR) deficit pike push-ups, hands on DBs — record set sizes\n4x12 straight-arm pull-downs"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Midline: EMOM 6: 6 light GHD sit-ups (plate behind head)"
         }
       ]
     },
@@ -807,7 +1071,13 @@
       "weekDates": "Aug 17–Aug 23",
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Every 2:30 x 12, alternating: 1) 30/24 cal bike  2) 150' backward sled drag  3) 30/24 cal row  4) 150' plate push\nGrip + legs + lungs — the tank-push pattern starts here."
+        }
+      ]
     },
     {
       "date": "2026-08-21",
@@ -819,6 +1089,11 @@
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Upper B",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press (same DB) · 20 band face pulls (elbows wide)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -840,6 +1115,11 @@
               "expectedLoad": 100
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8–12 DB incline bench (neutral grip, simulating rings)\n3 rounds: 15 reverse flys · 10–15 ring skull crushers · 10–15 supinated ring rows (bully yourself)\n2 rounds: 12 table tops (:02 pause) · :20 supinated dead hang"
         }
       ]
     },
@@ -853,6 +1133,11 @@
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Lower B + Engine",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 15 banded ham curls · 8 ATG split squats (hold rig) · 5 pause front squats (warm-up loads)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -874,6 +1159,11 @@
               "expectedLoad": 165
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Run: 10:00 jog + 3 x 800m / 3:00 walk — beat Week 3's times."
         }
       ]
     },
@@ -887,6 +1177,11 @@
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Lower A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 cossack squats · 5 BB good mornings + 5 BB back squat jumps"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -908,6 +1203,11 @@
               "expectedLoad": 200
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8 box step-ups (start loading) · 4x12 weighted back ext · 4x15 prone banded ham curls"
         }
       ]
     },
@@ -921,6 +1221,11 @@
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 12 Lu raises · 10 hand-release push-ups · 10 table tops (:02 pause)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -942,6 +1247,16 @@
               "expectedLoad": 140
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WALL WALK PROGRESSION — E90s x 6: 2 wall walks + :03 hold at top, perfect line. Optional skill dev after: EMOM 4: 2–3 kipping HSPU (personal goal — not tested at Novice)."
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x 10+12 drop-set lateral raises (10 heavy / rest :20 / 12 light, controlled)\n3x12 weighted GHD sit-ups"
         }
       ]
     },
@@ -955,6 +1270,11 @@
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Engine + Barbell Cycling",
       "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "A) E2MOM x 8: 3 TNG clean & jerks, climbing 95 → 155 across the 8 sets. Smooth cycling, no press-outs — the Novice ladder runs 95→185, and the 2026 championship asked Novice teams for 30 reps @ 165 + a 4:00 AMRAP @ 185. This is the most predictable test at FOTC — treat it like rent.\nB) 4 x 3:00 on / 3:00 off: 15/12 cal ski or bike + max alt DB snatches 50 in remaining time (comp bell is 35 — train heavy, compete light) (Event 4&5 interval pattern). Score = total snatches."
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -984,7 +1304,28 @@
       "weekDates": "Aug 24–Aug 30",
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "PUSH PRESS: E2MOM x5 — 5 reps climbing to a heavy 5"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Ring dip EMOM 8 — pick a set size you can repeat all 8 minutes; record it (baseline)\nE90s x5: 3 wall walks + :03 perfect hold at top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
+        }
+      ]
     },
     {
       "date": "2026-08-29",
@@ -1022,6 +1363,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 cossack squats · 5 BB good mornings + 5 BB back squat jumps"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -1042,6 +1388,11 @@
               "expectedLoad": 200
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 box step-ups (heavier) · 3x12 weighted back ext (+load) · 3x15 prone banded ham curls"
         }
       ]
     },
@@ -1055,6 +1406,11 @@
       "weekFocus": "Build",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 12 Lu raises · 10 hand-release push-ups · 10 table tops (:02 pause)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -1076,6 +1432,16 @@
               "expectedLoad": 140
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WALL WALK PROGRESSION — E90s x 6: 3 wall walks — smooth turnover, no dead time at the top. Optional: EMOM 4: 2 wall walks."
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x 10+12 drop-set lateral raises (10 heavy / rest :20 / 12 light, controlled)\n3x12 weighted GHD sit-ups"
         }
       ]
     },
@@ -1088,7 +1454,13 @@
       "weekDates": "Aug 31–Sep 06",
       "weekFocus": "Build",
       "sessionTitle": "Engine + Hs Walk",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "EMOM 24: 1) 20' HS walk (5' unbroken segments minimum) 2) 15/12 cal bike 3) 10 burpee box get-overs 4) rest.\nHS walk under a working heart rate — exactly what Event 1 asks for."
+        }
+      ]
     },
     {
       "date": "2026-09-04",
@@ -1101,6 +1473,11 @@
       "sessionTitle": "Upper B",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Deadlift",
@@ -1112,6 +1489,16 @@
               "expectedLoad": 235
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 8 — hold 4s across (or +1 from your baseline)\nE90s x5: 3 wall walks + :03 perfect hold at top"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
         }
       ]
     },
@@ -1151,6 +1538,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 cossack squats · 5 BB good mornings + 5 BB back squat jumps"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -1162,6 +1554,16 @@
               "expectedLoad": 205
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 box step-ups · 3x12 weighted back ext · 3x8 goblet cossacks (load the stretch)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "LABOR DAY — if the gym's running Whitten, that replaces Wednesday's engine; squat still happens."
         }
       ]
     },
@@ -1176,6 +1578,11 @@
       "sessionTitle": "Upper A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 12 Lu raises · 10 hand-release push-ups · 10 table tops (:02 pause)"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Bench Press",
@@ -1187,6 +1594,16 @@
               "expectedLoad": 145
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WALL WALK PROGRESSION — E90s x 8: 3 wall walks — 24 total, every rep identical. Optional: EMOM 5: 3–4 kipping HSPU."
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x 10+12 drop-set lateral raises (10 heavy / rest :20 / 12 light, controlled)\n3x12 weighted GHD sit-ups"
         }
       ]
     },
@@ -1199,7 +1616,13 @@
       "weekDates": "Sep 07–Sep 13",
       "weekFocus": "Max set of 4 + Labor Day",
       "sessionTitle": "Whitten",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "5 RFT: 22 KB swings 55 · 22 box jumps 24 · 400m run · 22 burpees · 22 wall balls 20\nPace round 1 like it's round 4. Compare to last year's time if you logged it."
+        }
+      ]
     },
     {
       "date": "2026-09-11",
@@ -1212,6 +1635,11 @@
       "sessionTitle": "Upper B",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Deadlift",
@@ -1223,6 +1651,16 @@
               "expectedLoad": 250
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 8 — +1 rep on at least 4 of the 8 sets\nE90s x5: 4 wall walks, no holds — smooth turnover"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
         }
       ]
     },
@@ -1262,6 +1700,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 cossack squats · 5 BB good mornings + 5 BB back squat jumps"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -1277,6 +1720,11 @@
               "expectedLoad": 220
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x6 double-DB Bulgarian split squats · 3x:30 back ext hold (5–10 lb) · 3x8 reverse Nordics"
         }
       ]
     },
@@ -1290,6 +1738,11 @@
       "weekFocus": "Last hard week",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 12 Lu raises · 10 hand-release push-ups · 10 table tops (:02 pause)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -1306,6 +1759,16 @@
               "expectedLoad": 155
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WALL WALK PROGRESSION — EMOM 8: 2 wall walks FAST, then after full rest: 4:00 max wall walks (compare to W1 baseline — this is Event 6 currency)."
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "2x12 lateral raises · 2x10 GHD sit-ups"
         }
       ]
     },
@@ -1318,7 +1781,13 @@
       "weekDates": "Sep 14–Sep 20",
       "weekFocus": "Last hard week",
       "sessionTitle": "Engine + Grip",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "For max cals: 20:00 on machine (alternate bike/row by feel); E2MOM hop off and do 150' farmers carry (heavy). Grip endurance pays the bills on TTB/pull-up workouts."
+        }
+      ]
     },
     {
       "date": "2026-09-18",
@@ -1331,6 +1800,11 @@
       "sessionTitle": "Upper B",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Deadlift",
@@ -1342,6 +1816,16 @@
               "expectedLoad": 250
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 6 — hold last week's best number\nE90s x5: 4 wall walks, no holds — smooth turnover"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
         }
       ]
     },
@@ -1381,6 +1865,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 cossack squats · 5 BB good mornings + 5 BB back squat jumps"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -1397,6 +1886,11 @@
               "expectedLoad": 195
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "2x8 box step-ups (light) · 2x12 back ext (bodyweight) · mobility: 2:00 couch stretch/side"
         }
       ]
     },
@@ -1410,6 +1904,11 @@
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Upper A",
       "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 12 Lu raises · 10 hand-release push-ups · 10 table tops (:02 pause)"
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -1427,6 +1926,16 @@
               "expectedLoad": 135
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WALL WALK PROGRESSION — TAPER: EMOM 4: 2 crisp wall walks. Touch the skill, don't spend it."
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "2x12 lateral raises · 2x10 GHD sit-ups"
         }
       ]
     },
@@ -1439,7 +1948,13 @@
       "weekDates": "Sep 21–Sep 27",
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Taper Primer",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 x 2:00 @ Open pace / 3:00 easy spin between. Then FULL DRESS REHEARSAL of the qualifier warm-up protocol (see B3 tab header) so Friday Oct 2 is automatic.\nLogistics: confirm judge, camera angle + storage, Competition Corner login, scoresheet printed."
+        }
+      ]
     },
     {
       "date": "2026-09-25",
@@ -1450,7 +1965,28 @@
       "weekDates": "Sep 21–Sep 27",
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "PUSH PRESS: 3x3 @ moderate — bar speed only"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Ring dip EMOM 4 — easy 3s, stay fresh\nE90s x3: 2 wall walks, grease the pattern"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
+        }
+      ]
     },
     {
       "date": "2026-09-26",
@@ -1461,7 +1997,13 @@
       "weekDates": "Sep 21–Sep 27",
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Taper Saturday",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20:00 easy Z2 + 3 short pickups (:30 @ Open pace).\n10:00 mobility. Early night. Qualifier WK1 drops Thursday 7pm — you are ready; the hay is in the barn."
+        }
+      ]
     },
     {
       "date": "2026-09-28",
@@ -1522,7 +2064,13 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Prime",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "15:00 easy spin + 3 x :30 pickups · full mobility flow · equipment check: rope, grips, tape, chalk, camera mount, charged battery."
+        }
+      ]
     },
     {
       "date": "2026-10-01",
@@ -1533,7 +2081,13 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Release Night",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Watch the standards video twice. Write the pacing plan: target splits, planned set breaks, transition setup. Lay out equipment tonight.\nMorning: 20:00 Z2 + mobility only."
+        }
+      ]
     },
     {
       "date": "2026-10-02",
@@ -1544,7 +2098,13 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Qualifier Attempt #1",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Full warm-up protocol (block header). Judge + camera rolling. Execute the plan — the first 20% of the workout should feel insultingly easy; that's correct pacing.\nLog: score, splits, where it broke, RPE."
+        }
+      ]
     },
     {
       "date": "2026-10-03",
@@ -1555,7 +2115,13 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Recovery",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30–40:00 Z2 (bike/row/walk Ora) + 15:00 mobility.\nReview attempt video once, note ONE fix, then put it away."
+        }
+      ]
     },
     {
       "date": "2026-10-05",
@@ -1620,7 +2186,13 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "Rest + Submit",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Score due 9:00pm ET tonight — submit on Competition Corner (make sure you're logged into YOUR profile), verify the video uploaded/saved, screenshot the confirmation.\n10:00 easy mobility only. Eat. Sleep."
+        }
+      ]
     },
     {
       "date": "2026-10-08",
@@ -1631,7 +2203,13 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "Release Night",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Watch the standards video twice. Write the pacing plan: target splits, planned set breaks, transition setup. Lay out equipment tonight.\nMorning: 20:00 Z2 + mobility only."
+        }
+      ]
     },
     {
       "date": "2026-10-09",
@@ -1642,7 +2220,13 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "Qualifier Attempt #1",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Full warm-up protocol (block header). Judge + camera rolling. Execute the plan — the first 20% of the workout should feel insultingly easy; that's correct pacing.\nLog: score, splits, where it broke, RPE."
+        }
+      ]
     },
     {
       "date": "2026-10-10",
@@ -1653,7 +2237,13 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "Recovery",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30–40:00 Z2 (bike/row/walk Ora) + 15:00 mobility.\nReview attempt video once, note ONE fix, then put it away."
+        }
+      ]
     },
     {
       "date": "2026-10-12",
@@ -1718,7 +2308,13 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "Rest + Submit",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Score due 9:00pm ET tonight — submit on Competition Corner (make sure you're logged into YOUR profile), verify the video uploaded/saved, screenshot the confirmation.\n10:00 easy mobility only. Eat. Sleep."
+        }
+      ]
     },
     {
       "date": "2026-10-15",
@@ -1729,7 +2325,13 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "Release Night",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Watch the standards video twice. Write the pacing plan: target splits, planned set breaks, transition setup. Lay out equipment tonight.\nMorning: 20:00 Z2 + mobility only."
+        }
+      ]
     },
     {
       "date": "2026-10-16",
@@ -1740,7 +2342,13 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "Qualifier Attempt #1",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Full warm-up protocol (block header). Judge + camera rolling. Execute the plan — the first 20% of the workout should feel insultingly easy; that's correct pacing.\nLog: score, splits, where it broke, RPE."
+        }
+      ]
     },
     {
       "date": "2026-10-17",
@@ -1751,7 +2359,13 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "Recovery",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30–40:00 Z2 (bike/row/walk Ora) + 15:00 mobility.\nReview attempt video once, note ONE fix, then put it away."
+        }
+      ]
     },
     {
       "date": "2026-10-19",
@@ -1816,7 +2430,13 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "Rest + Submit",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Score due 9:00pm ET tonight — submit on Competition Corner (make sure you're logged into YOUR profile), verify the video uploaded/saved, screenshot the confirmation.\n10:00 easy mobility only. Eat. Sleep."
+        }
+      ]
     },
     {
       "date": "2026-10-22",
@@ -1827,7 +2447,13 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "Release Night",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Watch the standards video twice. Write the pacing plan: target splits, planned set breaks, transition setup. Lay out equipment tonight.\nMorning: 20:00 Z2 + mobility only."
+        }
+      ]
     },
     {
       "date": "2026-10-23",
@@ -1838,7 +2464,13 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "Qualifier Attempt #1",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Full warm-up protocol (block header). Judge + camera rolling. Execute the plan — the first 20% of the workout should feel insultingly easy; that's correct pacing.\nLog: score, splits, where it broke, RPE."
+        }
+      ]
     },
     {
       "date": "2026-10-24",
@@ -1849,7 +2481,13 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "Recovery",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30–40:00 Z2 (bike/row/walk Ora) + 15:00 mobility.\nReview attempt video once, note ONE fix, then put it away."
+        }
+      ]
     },
     {
       "date": "2026-10-26",
@@ -1914,7 +2552,13 @@
       "weekDates": "Oct 26–Nov 01",
       "weekFocus": "Final submission + transition",
       "sessionTitle": "Final Submission",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Save/back up every workout video — FOTC emails video requests to qualifiers. Then: done. Recovery mode."
+        }
+      ]
     },
     {
       "date": "2026-10-29",
@@ -1936,7 +2580,13 @@
       "weekDates": "Oct 26–Nov 01",
       "weekFocus": "Final submission + transition",
       "sessionTitle": "Active Recovery",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "40:00 Z2 + full-body mobility (30:00). Write the weakness list while the qualifier is fresh: which workouts cost you, which movement, which minute."
+        }
+      ]
     },
     {
       "date": "2026-10-31",
@@ -1947,7 +2597,13 @@
       "weekDates": "Oct 26–Nov 01",
       "weekFocus": "Final submission + transition",
       "sessionTitle": "Fun Day",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Class only, or something outside. The rebuild starts Monday — show up hungry."
+        }
+      ]
     },
     {
       "date": "2026-11-02",
@@ -1960,6 +2616,11 @@
       "sessionTitle": "Lower A",
       "sections": [
         {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 16 goblet cossacks · 10 back ext · 8 reverse Nordics"
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -1971,6 +2632,11 @@
               "expectedLoad": 200
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 Bulgarian split squats · 3x12 stiff-leg DL · 3x15 banded ham curls"
         }
       ]
     },
@@ -1996,6 +2662,16 @@
               "expectedLoad": 140
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "AUDIT (full rest between, log on Benchmarks W16 column):\n· 1 max set kipping pull-ups\n· 1 max set CTB\n· max wall walks in 4:00\n· 1 max set ring dips"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x12 band face pulls · 2x:30 dead hang"
         }
       ]
     },
@@ -2008,7 +2684,13 @@
       "weekDates": "Nov 02–Nov 08",
       "weekFocus": "Volume reset + WEAKNESS AUDIT",
       "sessionTitle": "Oly Tech + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E90s x 12: sets 1–4 clean pull + hang clean (pause :02 in catch) · 5–8 power clean singles · 9–12 squat clean. Climb only while positions stay perfect.\nThen 30:00 Z2."
+        }
+      ]
     },
     {
       "date": "2026-11-06",
@@ -2032,6 +2714,11 @@
               "expectedLoad": 100
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 8 (restart the thread at your audit number −1)\nE90s x4: 3 wall walks + :03 hold\n3 rounds: elevated-foot ring rows · 150' double-DB OH carry · 18 pull-aparts"
         }
       ]
     },
@@ -2057,6 +2744,11 @@
               "expectedLoad": 165
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4:00 MAX WALL WALKS retest (Benchmarks) · then 5k row @ steady (compare pace to your W1 2k — should be ~2k split +:10–12)"
         }
       ]
     },
@@ -2087,6 +2779,11 @@
               "expectedLoad": 225
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4x8 box step-ups (loaded) · 4x12 weighted back ext · 4x15 prone banded ham curls"
         }
       ]
     },
@@ -2117,6 +2814,16 @@
               "expectedLoad": 160
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WEAKNESS SLOT #1 — 8–10:00 quality EMOM on the worst thing from the audit (e.g., wall walks: E90s x 8: 3; pull-up cycling: EMOM 8: 8–10)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x 10+12 drop-set lateral raises · 3x12 weighted GHD"
         }
       ]
     },
@@ -2129,7 +2836,13 @@
       "weekDates": "Nov 09–Nov 15",
       "weekFocus": "Build · snatch week · threshold engine",
       "sessionTitle": "Oly Tech + Threshold",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E90s x 12: sets 1–4 snatch pull + hang snatch · 5–8 power snatch singles · 9–12 squat snatch. Then E2MOM x 4: 6 OHS @ 50% of day's heavy.\nEngine: 3 x 8:00 @ threshold (row/bike/ski rotate) / 3:00 easy."
+        }
+      ]
     },
     {
       "date": "2026-11-13",
@@ -2153,6 +2866,11 @@
               "expectedLoad": 250
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 8 (+1 over W16)\nE90s x5: 4 wall walks no holds\n3 rounds: ring rows · 150' DB OH carry · 18 pull-aparts"
         }
       ]
     },
@@ -2178,6 +2896,11 @@
               "expectedLoad": 175
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Metcon — AMRAP 14: 10 alt DB snatch 50 (comp bell is 35) · 10 burpee box jump-overs 24 · 15/12 cal machine. Negative split it: rounds 5+ faster than rounds 1–4."
         }
       ]
     },
@@ -2208,6 +2931,11 @@
               "expectedLoad": 240
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 box step-ups (heaviest yet) · 3x12 weighted back ext · 3x8 reverse Nordics (plate behind head)"
         }
       ]
     },
@@ -2238,6 +2966,16 @@
               "expectedLoad": 170
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "WEAKNESS SLOT #2 (same target as W17, +1 rep or +1 set)"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x12 lateral raises · 3x10 weighted GHD"
         }
       ]
     },
@@ -2250,7 +2988,13 @@
       "weekDates": "Nov 16–Nov 22",
       "weekFocus": "Heaviest rebuild week · clean week",
       "sessionTitle": "Oly Tech + Grip Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E90s x 10: 1 clean + 1 front squat + 1 jerk, climbing to a heavy complex.\nThen Coffland-style: accumulate 4:00 bar hang; every break = 400m run + 20 push-ups."
+        }
+      ]
     },
     {
       "date": "2026-11-20",
@@ -2274,6 +3018,11 @@
               "expectedLoad": 270
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Ring dip EMOM 8 (hold W17's best)\nE90s x5: 4 wall walks\n3 rounds: ring rows · 150' DB OH carry (one size up) · 18 pull-aparts"
         }
       ]
     },
@@ -2299,6 +3048,11 @@
               "expectedLoad": 185
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Metcon — 3 RFT: 400m run · 12 TTB (comp standard is knees-to-chest — train the harder one) · 9 thrusters 95 · 6 pull-ups. Smooth is fast."
         }
       ]
     },
@@ -2311,7 +3065,13 @@
       "weekDates": "Nov 23–Nov 29",
       "weekFocus": "THANKSGIVING DELOAD — travel-friendly",
       "sessionTitle": "FULL-BODY DB (anywhere)",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 rounds easy: 10 DB RDL · 10 DB bench or push-ups · 10 goblet squats · 10 DB rows/arm · :30 plank. 25:00 cap, conversational."
+        }
+      ]
     },
     {
       "date": "2026-11-24",
@@ -2368,6 +3128,11 @@
       "sessionTitle": "Test",
       "sections": [
         {
+          "type": "text",
+          "label": "Notes",
+          "text": "Full warm-up ladder (bar x10, 50%x5, 65%x3, 75%x2, 85%x1, 92%x1, then attempts). 3 attempts max past 92%. Log on Benchmarks + UPDATE MAXES TAB."
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Back Squat",
@@ -2398,6 +3163,11 @@
       "sessionTitle": "Test",
       "sections": [
         {
+          "type": "text",
+          "label": "Notes",
+          "text": "Same ladder structure. Spotter or safeties, no hero grinds — a 5 lb PR counts the same as a 15 lb miss doesn't."
+        },
+        {
           "type": "mainLift",
           "label": "Main Lift",
           "liftName": "Bench Press",
@@ -2426,7 +3196,13 @@
       "weekDates": "Nov 30–Dec 06",
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "These set the championship barbell percentages — update Maxes tab."
+        }
+      ]
     },
     {
       "date": "2026-12-04",
@@ -2438,6 +3214,11 @@
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
       "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Then 3x5 @ 70% of the NEW max to groove it."
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -2463,6 +3244,11 @@
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
       "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Sunday fully off. Champ prep starts Monday on fresh numbers."
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -2500,6 +3286,11 @@
               "expectedLoad": 225
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "6 x 120' HEAVY sled push / 2:00 rest — low and grinding, Event 1 legs.\n3x8 weighted back ext · 3x8 goblet cossacks"
         }
       ]
     },
@@ -2525,6 +3316,16 @@
               "expectedLoad": 160
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E90s x 8, alternating: A) 6 CTB + 8 hanging leg raises  B) 3 wall walks. 2026 went hard on hanging gymnastics (JBC: 30 pull-ups → 15 CTB) but wall work has ruled past years — train both"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x12 face pulls · 2x:30 dead hang"
         }
       ]
     },
@@ -2537,7 +3338,13 @@
       "weekDates": "Dec 07–Dec 13",
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "Ski/Row Intervals",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "4 x 3:00 on / 3:00 off: 200m run buy-in → max cal ski (or row).\nScore = total cals; aim for <2 cal fade across rounds.\nMidline: 3 rounds — :40 hollow hold · 12 KB side bends/side"
+        }
+      ]
     },
     {
       "date": "2026-12-11",
@@ -2549,6 +3356,11 @@
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "EVENT 2 → EVENT 3 FULL SIM (the back-to-back)",
       "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "HUNLEY + MOOSE SIM v2 (2026 format, build loads)\n30 clean & jerks @ 135 (4:00 cap) → rest exactly 1:00 → 4:00 AMRAP clean & jerks @ 155.\nPractice the plate change INSIDE the 1:00 rest — in 2026 you swapped your own plates (+2x25, −2x15). Log both scores + strategy. Full comp loads (165/185) hit in the W24 sim."
+        },
         {
           "type": "mainLift",
           "label": "Main Lift",
@@ -2578,7 +3390,13 @@
       "weekDates": "Dec 07–Dec 13",
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "Fort Sumter Solo + Legacy Carries",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "2 RFT (8:00 cap): 75 single-unders · 10 box jump overs 24 (step down) · 10 hanging leg raises — the 2026 Saturday opener, solo-scaled. SU cadence and BJO rhythm ARE the score.\nThen 4 rounds easy-strong: 120' sled push · 40' double-DB OH carry 2x50 (pushes/carries ruled prior years — don't let them surprise you).\nThen 10:00 Z2 flush."
+        }
+      ]
     },
     {
       "date": "2026-12-14",
@@ -2602,6 +3420,11 @@
               "expectedLoad": 235
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E3MOM x 5: 8 front-rack walking lunges (135) + 6 box jumps (step down).\n3x12 weighted back ext"
         }
       ]
     },
@@ -2627,6 +3450,11 @@
               "expectedLoad": 165
             }
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E90s x 6: 5 pull-ups + 3 CTB + 7 leg raises WITHOUT dropping off the bar (JBC closed with 15 CTB after 30 pull-ups and 40 DB deadlifts — grip complexes are the prep).\nEMOM 6: 3 wall walks — repeatable 3s should feel boring now."
         }
       ]
     },
@@ -2639,7 +3467,13 @@
       "weekDates": "Dec 14–Dec 20",
       "weekFocus": "Heavier sims + capacity",
       "sessionTitle": "D-DAY SOLO (2026 format)",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "4 x 3:00 AMRAP / :30 rest: 12/10 cal bike (alternate rower 16/13 by round) · 5 burpees over the bar · max thrusters 95 in remaining time.\nScore = total thrusters. The 2026 tiebreak was ROUND-4 thrusters — build the pacing so round 4 is your biggest round. (Worm @ 120 split two ways ≈ a light, fast bar.)"
+        }
+      ]
     },
     {
       "date": "2026-12-18",
@@ -2675,7 +3509,13 @@
       "weekDates": "Dec 14–Dec 20",
       "weekFocus": "Heavier sims + capacity",
       "sessionTitle": "JBC SOLO (2026 format)",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "For time (12:00 cap): 200m run · 20 DB snatch 50 · 40 double-DB deadlifts 2x50 · 30 pull-ups → 200m run · 10 DB snatch · 10 single-DB deadlifts (heavy bell) · 8 CTB.\nGrip is the entire event — plan your pull-up sets BEFORE the DB deadlifts trash your forearms. With a partner available: run it as written, you-go-I-go."
+        }
+      ]
     },
     {
       "date": "2026-12-21",
@@ -2711,7 +3551,13 @@
       "weekDates": "Dec 21–Dec 27",
       "weekFocus": "CHRISTMAS — condensed, short and sharp",
       "sessionTitle": "Sprint Touch",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 x 4:00 on / 4:00 off: 15/12 cal machine · 10 thrusters 95 · max DU in remaining time."
+        }
+      ]
     },
     {
       "date": "2026-12-23",
@@ -2733,7 +3579,13 @@
       "weekDates": "Dec 21–Dec 27",
       "weekFocus": "CHRISTMAS — condensed, short and sharp",
       "sessionTitle": "Post-Christmas Flush + Skill",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "30:00 Z2 · then quality only: 5 x 3 wall walks · E90s x 4: 4 CTB + 6 pull-ups.\nEyes on next week: 2-day sim Sat Jan 2 / Sun Jan 3."
+        }
+      ]
     },
     {
       "date": "2026-12-28",
@@ -2816,7 +3668,13 @@
       "weekDates": "Dec 28–Jan 03",
       "weekFocus": "FULL 2-DAY COMPETITION SIMULATION (Sat Jan 2 + Sun Jan 3)",
       "sessionTitle": "Sim Day 1",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E1: FORT SUMTER solo — 2 RFT: 75 single-unders · 10 BJO 24 · 10 leg raises (8:00 cap)\nE2: HUNLEY + MOOSE @ FULL COMP LOADS — 30 C&J @ 165 (4:00 cap) → 1:00 rest, change your own plates → 4:00 AMRAP @ 185\nLog scores AND how warm-ups, food, and the afternoon start felt — that's the real data."
+        }
+      ]
     },
     {
       "date": "2027-01-03",
@@ -2827,7 +3685,13 @@
       "weekDates": "Dec 28–Jan 03",
       "weekFocus": "FULL 2-DAY COMPETITION SIMULATION (Sat Jan 2 + Sun Jan 3)",
       "sessionTitle": "Sim Day 2",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E3: JBC solo — 200m run · 20 DB snatch 50 · 40 dbl-DB deadlifts · 30 pull-ups → 200m run · 10 DB snatch · 10 single-DB DL · 8 CTB (12:00 cap)\nE4: D-DAY solo — 4 x 3:00/:30 — 12/10 cal machine · 5 burpees over bar · max thrusters 95. Round 4 is the tiebreak — finish biggest.\nThen: full recovery week protocol begins — this is the last hard thing before Charleston."
+        }
+      ]
     },
     {
       "date": "2027-01-04",
@@ -2863,7 +3727,13 @@
       "weekDates": "Jan 04–Jan 10",
       "weekFocus": "Sharpen — volume −50%",
       "sessionTitle": "Gymnastics Quality",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "E90s x 6: 3 wall walks, perfect · EMOM 4: 5 crisp CTB · 2 x 75 unbroken single-unders.\nAll of it should feel easy. That's the point."
+        }
+      ]
     },
     {
       "date": "2027-01-06",
@@ -2910,7 +3780,13 @@
       "weekDates": "Jan 04–Jan 10",
       "weekFocus": "Sharpen — volume −50%",
       "sessionTitle": "20:00 easy + 4 x :15 strides + skill drills (DU, HS walk 2 x 20').",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Start the packing list: grips, tape, rope, lifters, metcons, salt, snacks, foam roller, charger, ID."
+        }
+      ]
     },
     {
       "date": "2027-01-11",
@@ -2946,7 +3822,13 @@
       "weekDates": "Jan 11–Jan 17",
       "weekFocus": "COMPETE — FOTC Championship, Jan 15–17",
       "sessionTitle": "Sharpener",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "3 x 1:30 on / 1:30 off @ event pace (machine + one gymnastics movement). Heart rate up, then shut it down. Review event announcements; build warm-up plans per event."
+        }
+      ]
     },
     {
       "date": "2027-01-13",
@@ -2990,7 +3872,13 @@
       "weekDates": "Jan 11–Jan 17",
       "weekFocus": "COMPETE — FOTC Championship, Jan 15–17",
       "sessionTitle": "Compete",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Morning: sleep in, eat normal breakfast, easy 10:00 walk. Warm-up clock starts 35:00 before each heat.\nBetween events: 10:00 easy spin flush · liquid carbs + 30–40g protein · feet up.\nFirst 20% of every event insultingly easy. Trust 26 weeks."
+        }
+      ]
     },
     {
       "date": "2027-01-17",
@@ -3001,7 +3889,13 @@
       "weekDates": "Jan 11–Jan 17",
       "weekFocus": "COMPETE — FOTC Championship, Jan 15–17",
       "sessionTitle": "Compete",
-      "sections": []
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Same protocol on day-2 legs. If D-Day-style intervals close the weekend, remember: the tiebreak lives in the LAST round — finish biggest.\nEmpty the tank on the closer; there's nothing after this. Then: Charleston dinner. You earned it."
+        }
+      ]
     }
   ]
 }

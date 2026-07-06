@@ -163,18 +163,50 @@ def extract_block_days():
     return days
 
 
+def make_sections(session, main_lift):
+    paras = [p.strip() for p in re.split(r"\n\s*\n", session) if p.strip()]
+    sections = []
+    body_started = False
+    for i, para in enumerate(paras):
+        head = para.splitlines()[0]
+        if i == 0:
+            rest = "\n".join(para.splitlines()[1:]).strip()
+            if rest:
+                para, head = rest, rest.splitlines()[0]
+            else:
+                continue
+        if head.lower().startswith("prep"):
+            label, _, text = head.partition("—")
+            sections.append({
+                "type": "prep", "label": label.strip() or "Prep",
+                "text": (text.strip() + "\n" + "\n".join(para.splitlines()[1:])).strip(),
+            })
+            continue
+        if main_lift and LIFT_NAME_RE.search(para.upper()) and "%" in para and not body_started:
+            sections.append(main_lift)
+            body_started = True
+            continue
+        sections.append({
+            "type": "text",
+            "label": "Accessory" if body_started else "Notes",
+            "text": para,
+        })
+    if main_lift and main_lift not in sections:
+        sections.append(main_lift)
+    return sections
+
+
 def build_plan():
     days = extract_block_days()
     for d in days:
-        d["_mainLift"] = parse_main_lift(d["_session"], d["_loadCell"])
+        main_lift = parse_main_lift(d["_session"], d["_loadCell"])
+        d["sections"] = make_sections(d["_session"], main_lift)
     days.sort(key=lambda d: d["date"])
     return {"lifts": LIFTS, "defaultMaxes": DEFAULT_MAXES, "days": days}
 
 
 def strip_scratch(plan):
     for d in plan["days"]:
-        if d.get("_mainLift"):
-            d["sections"].append(d["_mainLift"])
         for k in ("_session", "_loadCell", "_mainLift"):
             d.pop(k, None)
     return plan
