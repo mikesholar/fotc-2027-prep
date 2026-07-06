@@ -1,7 +1,19 @@
-import json, subprocess, pathlib
+import json, math, subprocess, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PLAN = ROOT / "src" / "data" / "plan.json"
+
+LIFT_MAX = {  # mirror DEFAULT_MAXES
+    "backSquat": 275, "frontSquat": 225, "bench": 195, "strictPress": 135,
+    "deadlift": 315, "cleanJerk": 205, "snatch": 145,
+}
+
+
+def round5(x):
+    # Round-half-UP to the nearest 5, matching the spreadsheet (Excel ROUND) and
+    # the app's TS Math.round. Python's built-in round() is banker's rounding,
+    # which diverges from the sheet at .5 boundaries (e.g. 202.5 -> 205, not 200).
+    return int(math.floor(x / 5 + 0.5)) * 5
 
 
 def load_plan():
@@ -26,3 +38,18 @@ def test_days_are_date_sorted():
     plan = load_plan()
     dates = [d["date"] for d in plan["days"]]
     assert dates == sorted(dates)
+
+
+def test_main_lift_loads_match_sheet_for_default_maxes():
+    plan = load_plan()
+    checked = 0
+    for d in plan["days"]:
+        for s in d["sections"]:
+            if s["type"] != "mainLift":
+                continue
+            mx = LIFT_MAX[s["liftKey"]]
+            for st in s["sets"]:
+                if "pct" in st:
+                    assert round5(st["pct"] * mx) == st["expectedLoad"], (d["date"], st)
+                    checked += 1
+    assert checked > 50  # sanity: we verified a meaningful number of sets

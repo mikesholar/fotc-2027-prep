@@ -55,7 +55,36 @@
       "weekDates": "Jul 20–Jul 26",
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.8,
+              "expectedLoad": 220
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.825,
+              "expectedLoad": 225
+            },
+            {
+              "scheme": "2×1",
+              "pct": 0.85,
+              "expectedLoad": 235
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.65,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-21",
@@ -66,7 +95,36 @@
       "weekDates": "Jul 20–Jul 26",
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.8,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.825,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "2×1",
+              "pct": 0.85,
+              "expectedLoad": 165
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.65,
+              "expectedLoad": 125
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-22",
@@ -88,7 +146,36 @@
       "weekDates": "Jul 20–Jul 26",
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.8,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.825,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "2×1",
+              "pct": 0.85,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.65,
+              "expectedLoad": 90
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-25",
@@ -99,7 +186,36 @@
       "weekDates": "Jul 20–Jul 26",
       "weekFocus": "BASELINE WEEK — test everything, log everything",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.8,
+              "expectedLoad": 180
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.825,
+              "expectedLoad": 185
+            },
+            {
+              "scheme": "2×1",
+              "pct": 0.85,
+              "expectedLoad": 190
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.65,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-27",
@@ -110,7 +226,41 @@
       "weekDates": "Jul 27–Aug 02",
       "weekFocus": "Build",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.825,
+              "expectedLoad": 225
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 235
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.875,
+              "expectedLoad": 240
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 250
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.675,
+              "expectedLoad": 185
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-28",
@@ -121,7 +271,41 @@
       "weekDates": "Jul 27–Aug 02",
       "weekFocus": "Build",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.825,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 165
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.875,
+              "expectedLoad": 170
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 175
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.675,
+              "expectedLoad": 130
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-07-29",
@@ -143,7 +327,41 @@
       "weekDates": "Jul 27–Aug 02",
       "weekFocus": "Build",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.825,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.875,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.675,
+              "expectedLoad": 90
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-01",
@@ -154,7 +372,41 @@
       "weekDates": "Jul 27–Aug 02",
       "weekFocus": "Build",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "1×2",
+              "pct": 0.825,
+              "expectedLoad": 185
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 190
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.875,
+              "expectedLoad": 195
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 205
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.675,
+              "expectedLoad": 150
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-03",
@@ -165,7 +417,41 @@
       "weekDates": "Aug 03–Aug 09",
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 235
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 240
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 250
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.925,
+              "expectedLoad": 255
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.7,
+              "expectedLoad": 195
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-04",
@@ -176,7 +462,41 @@
       "weekDates": "Aug 03–Aug 09",
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 165
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 170
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 175
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.925,
+              "expectedLoad": 180
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.7,
+              "expectedLoad": 135
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-05",
@@ -198,7 +518,41 @@
       "weekDates": "Aug 03–Aug 09",
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.925,
+              "expectedLoad": 125
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.7,
+              "expectedLoad": 95
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-08",
@@ -209,7 +563,41 @@
       "weekDates": "Aug 03–Aug 09",
       "weekFocus": "Heaviest base week",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.85,
+              "expectedLoad": 190
+            },
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 195
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.9,
+              "expectedLoad": 205
+            },
+            {
+              "scheme": "1×1",
+              "pct": 0.925,
+              "expectedLoad": 210
+            },
+            {
+              "scheme": "3×4",
+              "pct": 0.7,
+              "expectedLoad": 160
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-10",
@@ -220,7 +608,26 @@
       "weekDates": "Aug 10–Aug 16",
       "weekFocus": "DELOAD",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 240
+            },
+            {
+              "scheme": "4×3",
+              "pct": 0.8,
+              "expectedLoad": 220
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-11",
@@ -231,7 +638,26 @@
       "weekDates": "Aug 10–Aug 16",
       "weekFocus": "DELOAD",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 170
+            },
+            {
+              "scheme": "4×3",
+              "pct": 0.8,
+              "expectedLoad": 155
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-12",
@@ -253,7 +679,26 @@
       "weekDates": "Aug 10–Aug 16",
       "weekFocus": "DELOAD",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "4×3",
+              "pct": 0.8,
+              "expectedLoad": 110
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-15",
@@ -264,7 +709,26 @@
       "weekDates": "Aug 10–Aug 16",
       "weekFocus": "DELOAD",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.875,
+              "expectedLoad": 195
+            },
+            {
+              "scheme": "4×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-17",
@@ -275,7 +739,30 @@
       "weekDates": "Aug 17–Aug 23",
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day (NOT a max — a crisp 9/10)"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 220
+            },
+            {
+              "scheme": "2×6",
+              "pct": 0.725,
+              "expectedLoad": 200
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-18",
@@ -286,7 +773,30 @@
       "weekDates": "Aug 17–Aug 23",
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day (NOT a max — a crisp 9/10)"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "2×6",
+              "pct": 0.725,
+              "expectedLoad": 140
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-19",
@@ -308,7 +818,30 @@
       "weekDates": "Aug 17–Aug 23",
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day (NOT a max — a crisp 9/10)"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "2×6",
+              "pct": 0.725,
+              "expectedLoad": 100
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-22",
@@ -319,7 +852,30 @@
       "weekDates": "Aug 17–Aug 23",
       "weekFocus": "Heavy-for-day singles",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day (NOT a max — a crisp 9/10)"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            },
+            {
+              "scheme": "2×6",
+              "pct": 0.725,
+              "expectedLoad": 165
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-24",
@@ -330,7 +886,30 @@
       "weekDates": "Aug 24–Aug 30",
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.825,
+              "expectedLoad": 225
+            },
+            {
+              "scheme": "2×7",
+              "pct": 0.725,
+              "expectedLoad": 200
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-25",
@@ -341,7 +920,30 @@
       "weekDates": "Aug 24–Aug 30",
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.825,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "2×7",
+              "pct": 0.725,
+              "expectedLoad": 140
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-26",
@@ -352,7 +954,26 @@
       "weekDates": "Aug 24–Aug 30",
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "Engine + Barbell Cycling",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Clean & Jerk",
+          "liftKey": "cleanJerk",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.45,
+              "expectedLoad": 90
+            },
+            {
+              "scheme": "",
+              "pct": 0.75,
+              "expectedLoad": 155
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-28",
@@ -374,7 +995,21 @@
       "weekDates": "Aug 24–Aug 30",
       "weekFocus": "Heavy singles + HSPU progression begins",
       "sessionTitle": "CHAMPIONSHIP BARBELL SIM v1",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-08-31",
@@ -385,7 +1020,30 @@
       "weekDates": "Aug 31–Sep 06",
       "weekFocus": "Build",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.85,
+              "expectedLoad": 235
+            },
+            {
+              "scheme": "2×8",
+              "pct": 0.725,
+              "expectedLoad": 200
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-01",
@@ -396,7 +1054,30 @@
       "weekDates": "Aug 31–Sep 06",
       "weekFocus": "Build",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for the day"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.85,
+              "expectedLoad": 165
+            },
+            {
+              "scheme": "2×8",
+              "pct": 0.725,
+              "expectedLoad": 140
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-02",
@@ -418,7 +1099,21 @@
       "weekDates": "Aug 31–Sep 06",
       "weekFocus": "Build",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.75,
+              "expectedLoad": 235
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-05",
@@ -429,7 +1124,21 @@
       "weekDates": "Aug 31–Sep 06",
       "weekFocus": "Build",
       "sessionTitle": "Qualifier Sim #2",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-07",
@@ -440,7 +1149,21 @@
       "weekDates": "Sep 07–Sep 13",
       "weekFocus": "Max set of 4 + Labor Day",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 205
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-08",
@@ -451,7 +1174,21 @@
       "weekDates": "Sep 07–Sep 13",
       "weekFocus": "Max set of 4 + Labor Day",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-09",
@@ -473,7 +1210,21 @@
       "weekDates": "Sep 07–Sep 13",
       "weekFocus": "Max set of 4 + Labor Day",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 250
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-12",
@@ -484,7 +1235,21 @@
       "weekDates": "Sep 07–Sep 13",
       "weekFocus": "Max set of 4 + Labor Day",
       "sessionTitle": "Lower B + Engine",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.75,
+              "expectedLoad": 170
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-14",
@@ -495,7 +1260,25 @@
       "weekDates": "Sep 14–Sep 20",
       "weekFocus": "Last hard week",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy single"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.8,
+              "expectedLoad": 220
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-15",
@@ -506,7 +1289,25 @@
       "weekDates": "Sep 14–Sep 20",
       "weekFocus": "Last hard week",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy single"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.8,
+              "expectedLoad": 155
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-16",
@@ -528,7 +1329,21 @@
       "weekDates": "Sep 14–Sep 20",
       "weekFocus": "Last hard week",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 250
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-19",
@@ -539,7 +1354,21 @@
       "weekDates": "Sep 14–Sep 20",
       "weekFocus": "Last hard week",
       "sessionTitle": "Qualifier Sim #3",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-21",
@@ -550,7 +1379,26 @@
       "weekDates": "Sep 21–Sep 27",
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.8,
+              "expectedLoad": 220
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.7,
+              "expectedLoad": 195
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-22",
@@ -561,7 +1409,26 @@
       "weekDates": "Sep 21–Sep 27",
       "weekFocus": "QUALIFIER TAPER — volume −40%",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.8,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.7,
+              "expectedLoad": 135
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-23",
@@ -605,7 +1472,21 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Sharpen",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "3×2",
+              "pct": 0.8,
+              "expectedLoad": 220
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-29",
@@ -616,7 +1497,21 @@
       "weekDates": "Sep 28–Oct 04",
       "weekFocus": "QUALIFIER WK1 — releases Thu Oct 1",
       "sessionTitle": "Sharpen",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×2",
+              "pct": 0.8,
+              "expectedLoad": 155
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-09-30",
@@ -671,7 +1566,21 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "LOWER MAINTENANCE + repeat decision",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 205
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-06",
@@ -682,7 +1591,25 @@
       "weekDates": "Oct 05–Oct 11",
       "weekFocus": "QUALIFIER WK2",
       "sessionTitle": "Repeat Window",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×12",
+              "note": "band face pulls"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.75,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-07",
@@ -737,7 +1664,21 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "LOWER MAINTENANCE + repeat decision",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 205
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-13",
@@ -748,7 +1689,25 @@
       "weekDates": "Oct 12–Oct 18",
       "weekFocus": "QUALIFIER WK3",
       "sessionTitle": "Repeat Window",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×12",
+              "note": "band face pulls"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.75,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-14",
@@ -803,7 +1762,21 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "LOWER MAINTENANCE + repeat decision",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 205
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-20",
@@ -814,7 +1787,25 @@
       "weekDates": "Oct 19–Oct 25",
       "weekFocus": "QUALIFIER WK4",
       "sessionTitle": "Repeat Window",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×12",
+              "note": "band face pulls"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.75,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-21",
@@ -869,7 +1860,21 @@
       "weekDates": "Oct 26–Nov 01",
       "weekFocus": "Final submission + transition",
       "sessionTitle": "LOWER MAINTENANCE + repeat decision",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.75,
+              "expectedLoad": 205
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-27",
@@ -880,7 +1885,25 @@
       "weekDates": "Oct 26–Nov 01",
       "weekFocus": "Final submission + transition",
       "sessionTitle": "Repeat Window",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×12",
+              "note": "band face pulls"
+            },
+            {
+              "scheme": "4×4",
+              "pct": 0.75,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-28",
@@ -935,7 +1958,21 @@
       "weekDates": "Nov 02–Nov 08",
       "weekFocus": "Volume reset + WEAKNESS AUDIT",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "5×5",
+              "pct": 0.725,
+              "expectedLoad": 200
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-03",
@@ -946,7 +1983,21 @@
       "weekDates": "Nov 02–Nov 08",
       "weekFocus": "Volume reset + WEAKNESS AUDIT",
       "sessionTitle": "Upper A + Gymnastics Audit",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "5×5",
+              "pct": 0.725,
+              "expectedLoad": 140
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-04",
@@ -968,7 +2019,21 @@
       "weekDates": "Nov 02–Nov 08",
       "weekFocus": "Volume reset + WEAKNESS AUDIT",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "5×5",
+              "pct": 0.725,
+              "expectedLoad": 100
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-07",
@@ -979,7 +2044,21 @@
       "weekDates": "Nov 02–Nov 08",
       "weekFocus": "Volume reset + WEAKNESS AUDIT",
       "sessionTitle": "Lower B + Audit",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "5×5",
+              "pct": 0.725,
+              "expectedLoad": 165
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-09",
@@ -990,7 +2069,26 @@
       "weekDates": "Nov 09–Nov 15",
       "weekFocus": "Build · snatch week · threshold engine",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.775,
+              "expectedLoad": 215
+            },
+            {
+              "scheme": "1×3",
+              "pct": 0.825,
+              "expectedLoad": 225
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-10",
@@ -1001,7 +2099,26 @@
       "weekDates": "Nov 09–Nov 15",
       "weekFocus": "Build · snatch week · threshold engine",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.775,
+              "expectedLoad": 150
+            },
+            {
+              "scheme": "1×3",
+              "pct": 0.825,
+              "expectedLoad": 160
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-11",
@@ -1023,7 +2140,21 @@
       "weekDates": "Nov 09–Nov 15",
       "weekFocus": "Build · snatch week · threshold engine",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 250
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-14",
@@ -1034,7 +2165,21 @@
       "weekDates": "Nov 09–Nov 15",
       "weekFocus": "Build · snatch week · threshold engine",
       "sessionTitle": "Lower B + Capacity",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.775,
+              "expectedLoad": 175
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-16",
@@ -1045,7 +2190,26 @@
       "weekDates": "Nov 16–Nov 22",
       "weekFocus": "Heaviest rebuild week · clean week",
       "sessionTitle": "Lower A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.825,
+              "expectedLoad": 225
+            },
+            {
+              "scheme": "1×2",
+              "pct": 0.875,
+              "expectedLoad": 240
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-17",
@@ -1056,7 +2220,26 @@
       "weekDates": "Nov 16–Nov 22",
       "weekFocus": "Heaviest rebuild week · clean week",
       "sessionTitle": "Upper A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.825,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "1×2",
+              "pct": 0.875,
+              "expectedLoad": 170
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-18",
@@ -1078,7 +2261,21 @@
       "weekDates": "Nov 16–Nov 22",
       "weekFocus": "Heaviest rebuild week · clean week",
       "sessionTitle": "Upper B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.85,
+              "expectedLoad": 270
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-21",
@@ -1089,7 +2286,21 @@
       "weekDates": "Nov 16–Nov 22",
       "weekFocus": "Heaviest rebuild week · clean week",
       "sessionTitle": "Lower B + Capacity",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.825,
+              "expectedLoad": 185
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-23",
@@ -1155,7 +2366,26 @@
       "weekDates": "Nov 30–Dec 06",
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.85,
+              "expectedLoad": 235
+            },
+            {
+              "scheme": "",
+              "pct": 0.925,
+              "expectedLoad": 255
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-01",
@@ -1166,7 +2396,26 @@
       "weekDates": "Nov 30–Dec 06",
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.85,
+              "expectedLoad": 165
+            },
+            {
+              "scheme": "",
+              "pct": 0.925,
+              "expectedLoad": 180
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-02",
@@ -1188,7 +2437,21 @@
       "weekDates": "Nov 30–Dec 06",
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.85,
+              "expectedLoad": 115
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-05",
@@ -1199,7 +2462,21 @@
       "weekDates": "Nov 30–Dec 06",
       "weekFocus": "MAX TESTING WEEK — update the Maxes tab with every new number",
       "sessionTitle": "Test",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.85,
+              "expectedLoad": 190
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-07",
@@ -1210,7 +2487,21 @@
       "weekDates": "Dec 07–Dec 13",
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "Strength Touch + Tank Push Pattern",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.825,
+              "expectedLoad": 225
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-08",
@@ -1221,7 +2512,21 @@
       "weekDates": "Dec 07–Dec 13",
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "Strength Touch + Hspu/Wall-Walk Density",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.825,
+              "expectedLoad": 160
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-09",
@@ -1243,7 +2548,26 @@
       "weekDates": "Dec 07–Dec 13",
       "weekFocus": "Event patterns begin (off new maxes)",
       "sessionTitle": "EVENT 2 → EVENT 3 FULL SIM (the back-to-back)",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Clean & Jerk",
+          "liftKey": "cleanJerk",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.65,
+              "expectedLoad": 135
+            },
+            {
+              "scheme": "",
+              "pct": 0.75,
+              "expectedLoad": 155
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-12",
@@ -1265,7 +2589,21 @@
       "weekDates": "Dec 14–Dec 20",
       "weekFocus": "Heavier sims + capacity",
       "sessionTitle": "Strength Touch + Lunge/Jump",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×3",
+              "pct": 0.85,
+              "expectedLoad": 235
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-15",
@@ -1276,7 +2614,21 @@
       "weekDates": "Dec 14–Dec 20",
       "weekFocus": "Heavier sims + capacity",
       "sessionTitle": "Strength Touch + Gymnastics Complex",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×3",
+              "pct": 0.85,
+              "expectedLoad": 165
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-16",
@@ -1298,7 +2650,21 @@
       "weekDates": "Dec 14–Dec 20",
       "weekFocus": "Heavier sims + capacity",
       "sessionTitle": "DEADLIFT + BOX JUMP CAPACITY (Qualifier WK4 pattern, heavier)",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 250
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-19",
@@ -1320,7 +2686,21 @@
       "weekDates": "Dec 21–Dec 27",
       "weekFocus": "CHRISTMAS — condensed, short and sharp",
       "sessionTitle": "Full Session",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "3×2",
+              "pct": 0.85,
+              "expectedLoad": 235
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-22",
@@ -1364,7 +2744,21 @@
       "weekDates": "Dec 28–Jan 03",
       "weekFocus": "FULL 2-DAY COMPETITION SIMULATION (Sat Jan 2 + Sun Jan 3)",
       "sessionTitle": "Primer",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "3×2",
+              "pct": 0.8,
+              "expectedLoad": 220
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-29",
@@ -1375,7 +2769,21 @@
       "weekDates": "Dec 28–Jan 03",
       "weekFocus": "FULL 2-DAY COMPETITION SIMULATION (Sat Jan 2 + Sun Jan 3)",
       "sessionTitle": "Primer",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Clean & Jerk",
+          "liftKey": "cleanJerk",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.7,
+              "expectedLoad": 145
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-12-30",
@@ -1430,7 +2838,21 @@
       "weekDates": "Jan 04–Jan 10",
       "weekFocus": "Sharpen — volume −50%",
       "sessionTitle": "Primer A",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×2",
+              "pct": 0.8,
+              "expectedLoad": 220
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2027-01-05",
@@ -1463,7 +2885,21 @@
       "weekDates": "Jan 04–Jan 10",
       "weekFocus": "Sharpen — volume −50%",
       "sessionTitle": "Primer B",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Clean & Jerk",
+          "liftKey": "cleanJerk",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 165
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2027-01-09",
@@ -1485,7 +2921,21 @@
       "weekDates": "Jan 11–Jan 17",
       "weekFocus": "COMPETE — FOTC Championship, Jan 15–17",
       "sessionTitle": "Light Primer",
-      "sections": []
+      "sections": [
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.7,
+              "expectedLoad": 195
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2027-01-12",

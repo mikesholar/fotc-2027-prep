@@ -34,6 +34,80 @@ MONTHS = {m: i for i, m in enumerate(
 
 WEEK_HDR = re.compile(r"WEEK\s+(\d+)\s*·\s*([^—]+?)\s*—\s*(.*)", re.UNICODE)
 
+LIFT_NAME_RE = re.compile(
+    r"\b(BACK SQUAT|FRONT SQUAT|BENCH(?: PRESS)?|STRICT PRESS|PUSH PRESS|DEADLIFT|CLEAN & JERK|C&J|SNATCH)\b")
+
+SET_RE = re.compile(r"(\d+)\s*x\s*(\d+)\s*@\s*(\d+(?:\.\d+)?)%", re.IGNORECASE)
+
+NOTE_SET_RE = re.compile(r"(\d+x\d+)\s+([a-z][^·]*?)(?=·|$)", re.IGNORECASE)
+
+
+def round5(x):
+    # Round-half-UP to nearest 5 to match the spreadsheet (Excel ROUND) and the
+    # app's TS Math.round. Python's round() is banker's rounding and diverges at
+    # .5 boundaries (e.g. 0.9*225=202.5 -> sheet prints 205, not 200).
+    return int(math.floor(x / 5 + 0.5)) * 5
+
+
+def parse_load_cell(load_cell):
+    # "80% → 220 lb · 82.5% → 225 lb" -> [(0.80, 220), (0.825, 225), ...]
+    pairs = []
+    for pct_s, load_s in re.findall(r"(\d+(?:\.\d+)?)%\s*→\s*(\d+)", load_cell):
+        pairs.append((float(pct_s) / 100.0, int(load_s)))
+    return pairs
+
+
+def backsolve_lift(pairs):
+    # the one lift whose default max reproduces every printed (pct -> load) pair
+    if not pairs:
+        return None
+    for key, mx in DEFAULT_MAXES.items():
+        if all(round5(p * mx) == load for p, load in pairs):
+            return key
+    return None
+
+
+def scheme_map(session):
+    # pct -> scheme string (e.g. 0.80 -> "1×2") from any "NxN @ pct%" in the session
+    mapping = {}
+    for line in session.splitlines():
+        for count, reps, pct_s in SET_RE.findall(line):
+            mapping.setdefault(round(float(pct_s) / 100.0, 5), f"{count}×{reps}")
+    return mapping
+
+
+def note_sets(session):
+    # non-% cues on a main-lift line, e.g. "1x1 heavy for the day"
+    notes = []
+    for line in session.splitlines():
+        if not (LIFT_NAME_RE.search(line.upper()) and "%" in line):
+            continue
+        for m in NOTE_SET_RE.finditer(line):
+            scheme, note = m.group(1), m.group(2).strip()
+            if "@" not in note:
+                notes.append({"scheme": scheme.replace("x", "×"), "note": note})
+    return notes
+
+
+def parse_main_lift(session, load_cell):
+    pairs = parse_load_cell(load_cell)
+    lift_key = backsolve_lift(pairs)
+    if not lift_key:
+        return None
+    display = next(l["name"] for l in LIFTS if l["key"] == lift_key)
+    smap = scheme_map(session)
+    # Sets are driven by the printed load cell: expectedLoad is the sheet's own
+    # number, so the correctness gate genuinely verifies pct*max reproduces it.
+    sets = note_sets(session)
+    for pct, load in pairs:
+        sets.append({
+            "scheme": smap.get(round(pct, 5), ""),
+            "pct": pct,
+            "expectedLoad": load,
+        })
+    return {"type": "mainLift", "label": "Main Lift",
+            "liftName": display, "liftKey": lift_key, "sets": sets}
+
 
 def plan_year_for_month(month):
     # Plan runs Jul 2026 -> Jan 2027. Jan-Jun => 2027, Jul-Dec => 2026.
@@ -91,12 +165,16 @@ def extract_block_days():
 
 def build_plan():
     days = extract_block_days()
+    for d in days:
+        d["_mainLift"] = parse_main_lift(d["_session"], d["_loadCell"])
     days.sort(key=lambda d: d["date"])
     return {"lifts": LIFTS, "defaultMaxes": DEFAULT_MAXES, "days": days}
 
 
 def strip_scratch(plan):
     for d in plan["days"]:
+        if d.get("_mainLift"):
+            d["sections"].append(d["_mainLift"])
         for k in ("_session", "_loadCell", "_mainLift"):
             d.pop(k, None)
     return plan
