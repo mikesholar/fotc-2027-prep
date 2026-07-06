@@ -1,2 +1,67 @@
 :root { color-scheme: dark; }
+* { box-sizing: border-box; }
 body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #0b0e12; color: #e6e9ee; }
+
+.screen { max-width: 480px; margin: 0 auto; padding: 14px; }
+
+/* ---- Day picker ---- */
+.picker { display: flex; align-items: center; justify-content: space-between; background: #161b22; border: 1px solid #2a2f3a; border-radius: 14px; padding: 10px 12px; margin-bottom: 6px; }
+.picker .arrow { font-size: 22px; color: #7aa2ff; width: 28px; text-align: center; cursor: pointer; user-select: none; }
+.picker .center { text-align: center; line-height: 1.2; }
+.picker .date { font-size: 16px; font-weight: 700; color: #fff; }
+.picker .wk { font-size: 11px; color: #8b93a1; text-transform: uppercase; letter-spacing: .5px; }
+
+.today-chip { display: inline-block; background: #1f6feb; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin: 8px 0 12px; text-transform: uppercase; letter-spacing: .5px; }
+
+.sess-title { font-size: 20px; font-weight: 800; color: #fff; margin: 2px 0 2px; }
+.sess-sub { font-size: 12px; color: #8b93a1; margin-bottom: 14px; }
+
+/* ---- Section boxes ---- */
+.box { background: #161b22; border: 1px solid #262c36; border-radius: 14px; padding: 12px 13px; margin-bottom: 12px; }
+.box.main { border: 1px solid #2f6feb55; background: #12171f; }
+.box-label { font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #7aa2ff; margin-bottom: 8px; }
+.box.prep .box-label,
+.box.text .box-label { color: #8b93a1; }
+.box-text { font-size: 13px; color: #d4d9e0; line-height: 1.5; white-space: pre-line; }
+.liftname { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 10px; }
+
+/* ---- Main-lift table (Layout A) ---- */
+table.sets { width: 100%; border-collapse: collapse; }
+table.sets td { padding: 7px 4px; border-bottom: 1px solid #232a34; font-size: 14px; color: #d4d9e0; }
+table.sets tr:last-child td { border-bottom: none; }
+table.sets .scheme { font-weight: 700; color: #fff; }
+table.sets .pct { color: #8b93a1; font-size: 12px; }
+table.sets .load { text-align: right; font-weight: 800; color: #7aee8f; font-size: 16px; }
+table.sets .note { color: #e3a008; font-size: 12px; }
+
+/* ---- Screen titles (maxes / schedule) ---- */
+.scr-title { font-size: 22px; font-weight: 800; color: #fff; margin: 2px 0 2px; }
+.scr-sub { font-size: 12px; color: #8b93a1; margin-bottom: 16px; line-height: 1.5; }
+
+/* ---- Maxes ---- */
+.maxrow { display: flex; align-items: center; justify-content: space-between; background: #161b22; border: 1px solid #262c36; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+.maxrow .lift { font-size: 15px; font-weight: 600; color: #e6e9ee; }
+.maxrow .est { font-size: 10px; color: #e3a008; text-transform: uppercase; letter-spacing: .5px; display: block; margin-top: 2px; }
+.maxinput { display: flex; align-items: center; gap: 6px; background: #0d1117; border: 1px solid #30363d; border-radius: 9px; padding: 6px 10px; }
+.maxinput input { width: 64px; background: transparent; border: none; color: #7aee8f; font-size: 19px; font-weight: 800; text-align: right; outline: none; font-family: inherit; }
+.maxinput .unit { font-size: 12px; color: #8b93a1; }
+.reset { display: block; width: 100%; text-align: center; margin-top: 16px; background: transparent; border: 1px solid #30363d; color: #8b93a1; border-radius: 10px; padding: 10px; font-size: 12px; cursor: pointer; }
+
+/* ---- Schedule ---- */
+.wk-head { display: flex; align-items: baseline; justify-content: space-between; margin: 16px 0 8px; padding-bottom: 6px; border-bottom: 1px solid #262c36; }
+.wk-head:first-of-type { margin-top: 4px; }
+.wk-head .wkn { font-size: 14px; font-weight: 800; color: #fff; }
+.wk-head .wkdates { font-size: 11px; color: #8b93a1; }
+.wk-head .wkblock { font-size: 10px; color: #7aa2ff; text-transform: uppercase; letter-spacing: .5px; }
+.wk-focus { font-size: 11px; color: #e3a008; margin: -4px 0 8px; }
+.dayrow { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; background: #12161c; margin-bottom: 5px; text-decoration: none; }
+.dayrow.today { background: #12233f; border: 1px solid #1f6feb; }
+.dayrow .dow { font-size: 11px; font-weight: 800; color: #8b93a1; width: 56px; }
+.dayrow.today .dow { color: #7aa2ff; }
+.dayrow .sess { flex: 1; font-size: 13px; color: #e6e9ee; font-weight: 600; }
+.dayrow .lift { font-size: 11px; color: #8b93a1; font-weight: 400; }
+.dayrow .chev { color: #4a515e; font-size: 16px; }
+
+/* ---- Footer navigation ---- */
+.nav-link { display: block; text-align: center; margin-top: 14px; color: #7aa2ff; font-size: 13px; font-weight: 600; text-decoration: none; }
+.nav-link:active { opacity: .7; }

@@ -1,4 +1,5 @@
 import "./styles.css";
+import { startApp } from "./ui/app";
 
-const app = document.querySelector<HTMLDivElement>("#app");
-if (app) app.textContent = "FOTC";
+const mount = document.querySelector<HTMLDivElement>("#app");
+if (mount) startApp(mount);
