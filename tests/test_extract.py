@@ -75,3 +75,15 @@ def test_conditioning_day_has_only_text_sections():
     d = find_day(plan, "2026-07-22")  # Wed, engine test day, no barbell %
     assert all(s["type"] == "text" for s in d["sections"])
     assert len(d["sections"]) >= 1
+
+
+def test_rampin_days_exist_and_are_text_only():
+    plan = load_plan()
+    r = [d for d in plan["days"] if d["block"] == "Ramp-In"]
+    assert len(r) >= 40  # ~6 weeks x 7 days
+    assert any(d["date"] == "2026-07-06" for d in r)  # today falls in ramp-in
+    for d in r:
+        assert all(s["type"] == "text" for s in d["sections"])
+    # ramp-in sorts before block days
+    first_block = min(d["date"] for d in plan["days"] if d["block"] != "Ramp-In")
+    assert min(d["date"] for d in r) < first_block

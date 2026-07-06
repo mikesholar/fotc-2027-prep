@@ -196,11 +196,60 @@ def make_sections(session, main_lift):
     return sections
 
 
+DOW_ORDER = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
+# Ramp-in runs Tue Jun 9 -> Sun Jul 19, 2026. Anchor to the REAL calendar: Jun 9
+# 2026 is a TUESDAY (the block plan's Week 1 starts Mon Jul 20, a real Monday, so
+# the ramp-in weekdays must line up with the real calendar too). R-weeks are the
+# calendar weeks whose Mondays are Jun 8, 15, 22, 29, Jul 6, Jul 13.
+RAMPIN_START = datetime.date(2026, 6, 9)
+RAMPIN_END = datetime.date(2026, 7, 19)
+RAMPIN_WEEK0_MONDAY = datetime.date(2026, 6, 8)
+
+
+def extract_rampin_days():
+    wb = openpyxl.load_workbook(XLSX, data_only=True)
+    ws = wb["Ramp-In Jun9-Jul19"]
+    rows = [[c for c in r] for r in ws.iter_rows(values_only=True)]
+    one_thing = {}   # DOW -> (title, why, loads)
+    week_dial = []   # ordered (Rn, dates, dial, checkpoint)
+    for cells in rows:
+        first = cells[0]
+        if isinstance(first, str) and first.strip().upper() in DOW_ORDER:
+            one_thing[first.strip().upper()] = (cells[1] or "", cells[2] or "", cells[3] or "")
+        if isinstance(first, str) and re.match(r"R\d", first.strip()):
+            week_dial.append((first.strip(), cells[1] or "", cells[2] or "", cells[3] or ""))
+    days = []
+    date = RAMPIN_START
+    while date <= RAMPIN_END:
+        dow = DOW_ORDER[date.weekday()]
+        monday = date - datetime.timedelta(days=date.weekday())
+        wi = (monday - RAMPIN_WEEK0_MONDAY).days // 7
+        rn, wdates, dial, checkpoint = week_dial[wi]
+        title, _why, loads = one_thing.get(dow, ("OFF", "", ""))
+        one = title if not loads else f"{title}\n\nLoads / notes: {loads}"
+        this_week = (dial + ("\nCheckpoint: " + checkpoint
+                             if checkpoint and checkpoint != "—" else "")).strip()
+        days.append({
+            "date": date.isoformat(), "dow": dow,
+            "dateLabel": date.strftime("%a %b %-d"),
+            "block": "Ramp-In", "week": rn, "weekDates": wdates.strip(),
+            "weekFocus": "Pre-plan garnish — one small thing before class",
+            "sessionTitle": (title.split("—")[0].strip() if title else "Off"),
+            "sections": [
+                {"type": "text", "label": "The one thing (pre-class)", "text": one},
+                {"type": "text", "label": f"This week · {rn}", "text": this_week},
+            ],
+        })
+        date += datetime.timedelta(days=1)
+    return days
+
+
 def build_plan():
     days = extract_block_days()
     for d in days:
         main_lift = parse_main_lift(d["_session"], d["_loadCell"])
         d["sections"] = make_sections(d["_session"], main_lift)
+    days = extract_rampin_days() + days
     days.sort(key=lambda d: d["date"])
     return {"lifts": LIFTS, "defaultMaxes": DEFAULT_MAXES, "days": days}
 

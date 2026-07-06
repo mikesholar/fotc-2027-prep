@@ -47,6 +47,908 @@
   },
   "days": [
     {
+      "date": "2026-06-09",
+      "dow": "TUE",
+      "dateLabel": "Tue Jun 9",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "dow": "WED",
+      "dateLabel": "Wed Jun 10",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "dow": "THU",
+      "dateLabel": "Thu Jun 11",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "dow": "FRI",
+      "dateLabel": "Fri Jun 12",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "dow": "SAT",
+      "dateLabel": "Sat Jun 13",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "dow": "SUN",
+      "dateLabel": "Sun Jun 14",
+      "block": "Ramp-In",
+      "week": "R1",
+      "weekDates": "Jun 9–14 (starts today)",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R1",
+          "text": "Establish the habit. Baseline doses above; note where everything sits.\nCheckpoint: Texted/talked to a potential partner?"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "dow": "MON",
+      "dateLabel": "Mon Jun 15",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Shoulder armor",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Shoulder armor — 2 rounds: 15 band face pulls · 10 table tops (:02 pause) · 12 banded external rotations/side · :30 dead hang\n\nLoads / notes: Bands only. If anything pinches, smaller range, not more grit."
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "dow": "TUE",
+      "dateLabel": "Tue Jun 16",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "dow": "WED",
+      "dateLabel": "Wed Jun 17",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "dow": "THU",
+      "dateLabel": "Thu Jun 18",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "dow": "FRI",
+      "dateLabel": "Fri Jun 19",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "dow": "SAT",
+      "dateLabel": "Sat Jun 20",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "dow": "SUN",
+      "dateLabel": "Sun Jun 21",
+      "block": "Ramp-In",
+      "week": "R2",
+      "weekDates": "Jun 15–21",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R2",
+          "text": "Hangs: accumulate 1:30 total Wed. SU: biggest set +10."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "dow": "MON",
+      "dateLabel": "Mon Jun 22",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Shoulder armor",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Shoulder armor — 2 rounds: 15 band face pulls · 10 table tops (:02 pause) · 12 banded external rotations/side · :30 dead hang\n\nLoads / notes: Bands only. If anything pinches, smaller range, not more grit."
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "dow": "TUE",
+      "dateLabel": "Tue Jun 23",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "dow": "WED",
+      "dateLabel": "Wed Jun 24",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "dow": "THU",
+      "dateLabel": "Thu Jun 25",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "dow": "FRI",
+      "dateLabel": "Fri Jun 26",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "dow": "SAT",
+      "dateLabel": "Sat Jun 27",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "dow": "SUN",
+      "dateLabel": "Sun Jun 28",
+      "block": "Ramp-In",
+      "week": "R3",
+      "weekDates": "Jun 22–28",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R3",
+          "text": "+1 round Mon shoulder circuit. Hangs: 2:00 total.\nCheckpoint: Partner decided? Share this file — they enter their maxes."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "dow": "MON",
+      "dateLabel": "Mon Jun 29",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Shoulder armor",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Shoulder armor — 2 rounds: 15 band face pulls · 10 table tops (:02 pause) · 12 banded external rotations/side · :30 dead hang\n\nLoads / notes: Bands only. If anything pinches, smaller range, not more grit."
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "dow": "TUE",
+      "dateLabel": "Tue Jun 30",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "dow": "WED",
+      "dateLabel": "Wed Jul 1",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "dow": "THU",
+      "dateLabel": "Thu Jul 2",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "dow": "FRI",
+      "dateLabel": "Fri Jul 3",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "dow": "SAT",
+      "dateLabel": "Sat Jul 4",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "dow": "SUN",
+      "dateLabel": "Sun Jul 5",
+      "block": "Ramp-In",
+      "week": "R4",
+      "weekDates": "Jun 29–Jul 5",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R4",
+          "text": "C&J Thursday: 2 singles per interval (still ≤70%). Hangs: 2:30.\nCheckpoint: July 4 week — beach counts as Saturday Z2."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "dow": "MON",
+      "dateLabel": "Mon Jul 6",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Shoulder armor",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Shoulder armor — 2 rounds: 15 band face pulls · 10 table tops (:02 pause) · 12 banded external rotations/side · :30 dead hang\n\nLoads / notes: Bands only. If anything pinches, smaller range, not more grit."
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "dow": "TUE",
+      "dateLabel": "Tue Jul 7",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "dow": "WED",
+      "dateLabel": "Wed Jul 8",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "dow": "THU",
+      "dateLabel": "Thu Jul 9",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "dow": "FRI",
+      "dateLabel": "Fri Jul 10",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "dow": "SAT",
+      "dateLabel": "Sat Jul 11",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "dow": "SUN",
+      "dateLabel": "Sun Jul 12",
+      "block": "Ramp-In",
+      "week": "R5",
+      "weekDates": "Jul 6–12",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R5",
+          "text": "Hold everything. Hangs: 3:00 total. DUs: 2 x 35 smooth.\nCheckpoint: Gear check: rope, grips, lifters all in good shape?"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "dow": "MON",
+      "dateLabel": "Mon Jul 13",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Shoulder armor",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Shoulder armor — 2 rounds: 15 band face pulls · 10 table tops (:02 pause) · 12 banded external rotations/side · :30 dead hang\n\nLoads / notes: Bands only. If anything pinches, smaller range, not more grit."
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "dow": "TUE",
+      "dateLabel": "Tue Jul 14",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Jump rope cadence",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Jump rope cadence — 5:00 practice: 3–4 sets of 50–75 unbroken single-unders + 2 x 25 smooth double-unders\n\nLoads / notes: Relaxed shoulders, wrists do the work. Count your biggest unbroken set weekly."
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "dow": "WED",
+      "dateLabel": "Wed Jul 15",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Hang + midline",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Hang + midline — accumulate bar hang (target below) + 2 x 8 hanging leg raises, strict-ish\n\nLoads / notes: Mixed grip OK on hangs. Leg raises smooth, toes high, no swing."
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "dow": "THU",
+      "dateLabel": "Thu Jul 16",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Barbell groove",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Barbell groove — E90s x 5: 1 clean & jerk, climbing to ~65–70% and stopping there\n\nLoads / notes: ~65–70% → 135–145 lb — crisp, never a grind"
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "dow": "FRI",
+      "dateLabel": "Fri Jul 17",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Wall + bar touch",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Wall + bar touch — 3 x 2 wall walks (perfect line) + 3 x 3 CTB (or pull-ups if CTB isn't smooth that day)\n\nLoads / notes: Quality only. If Friday class is shoulder-heavy, cut to 2 rounds."
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "dow": "SAT",
+      "dateLabel": "Sat Jul 18",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "Easy engine",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "Easy engine — 20–30:00 Z2 (bike/row/jog/walk Ora) + 10:00 mobility: couch stretch · banded lat · t-spine over roller\n\nLoads / notes: Conversational pace. This is the easiest thing you'll do all week — keep it that way."
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "dow": "SUN",
+      "dateLabel": "Sun Jul 19",
+      "block": "Ramp-In",
+      "week": "R6",
+      "weekDates": "Jul 13–19",
+      "weekFocus": "Pre-plan garnish — one small thing before class",
+      "sessionTitle": "OFF",
+      "sections": [
+        {
+          "type": "text",
+          "label": "The one thing (pre-class)",
+          "text": "OFF — walk, beach, nothing\n\nLoads / notes: —"
+        },
+        {
+          "type": "text",
+          "label": "This week · R6",
+          "text": "EASE OFF — half doses Mon–Wed, skip Thu barbell, Fri touch only, Sat easy.\nCheckpoint: Arrive at Jul 20 bored and fresh. Week 1 tests everything."
+        }
+      ]
+    },
+    {
       "date": "2026-07-20",
       "dow": "MON",
       "dateLabel": "Mon Jul 20",
