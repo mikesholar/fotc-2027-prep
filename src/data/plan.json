@@ -989,7 +989,30 @@
               "pct": 0.65,
               "expectedLoad": 180
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ],
+            [
+              0.825,
+              225
+            ],
+            [
+              0.85,
+              235
+            ],
+            [
+              0.65,
+              180
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ 4 reactive DB jumps after each work set (recoil off the floor, be a bouncy ball)"
         },
         {
           "type": "text",
@@ -1044,6 +1067,24 @@
               "pct": 0.65,
               "expectedLoad": 125
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              155
+            ],
+            [
+              0.825,
+              160
+            ],
+            [
+              0.85,
+              165
+            ],
+            [
+              0.65,
+              125
+            ]
           ]
         },
         {
@@ -1121,6 +1162,24 @@
               "pct": 0.65,
               "expectedLoad": 90
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              110
+            ],
+            [
+              0.825,
+              110
+            ],
+            [
+              0.85,
+              115
+            ],
+            [
+              0.65,
+              90
+            ]
           ]
         },
         {
@@ -1171,6 +1230,24 @@
               "pct": 0.65,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              180
+            ],
+            [
+              0.825,
+              185
+            ],
+            [
+              0.85,
+              190
+            ],
+            [
+              0.65,
+              145
+            ]
           ]
         },
         {
@@ -1226,7 +1303,34 @@
               "pct": 0.675,
               "expectedLoad": 185
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              225
+            ],
+            [
+              0.85,
+              235
+            ],
+            [
+              0.875,
+              240
+            ],
+            [
+              0.9,
+              250
+            ],
+            [
+              0.675,
+              185
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ 4 reactive DB jumps after each work set (recoil off the floor, be a bouncy ball)"
         },
         {
           "type": "text",
@@ -1286,6 +1390,28 @@
               "pct": 0.675,
               "expectedLoad": 130
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              160
+            ],
+            [
+              0.85,
+              165
+            ],
+            [
+              0.875,
+              170
+            ],
+            [
+              0.9,
+              175
+            ],
+            [
+              0.675,
+              130
+            ]
           ]
         },
         {
@@ -1368,6 +1494,28 @@
               "pct": 0.675,
               "expectedLoad": 90
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              110
+            ],
+            [
+              0.85,
+              115
+            ],
+            [
+              0.875,
+              120
+            ],
+            [
+              0.9,
+              120
+            ],
+            [
+              0.675,
+              90
+            ]
           ]
         },
         {
@@ -1423,6 +1571,28 @@
               "pct": 0.675,
               "expectedLoad": 150
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              185
+            ],
+            [
+              0.85,
+              190
+            ],
+            [
+              0.875,
+              195
+            ],
+            [
+              0.9,
+              205
+            ],
+            [
+              0.675,
+              150
+            ]
           ]
         },
         {
@@ -1478,7 +1648,34 @@
               "pct": 0.7,
               "expectedLoad": 195
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              235
+            ],
+            [
+              0.875,
+              240
+            ],
+            [
+              0.9,
+              250
+            ],
+            [
+              0.925,
+              255
+            ],
+            [
+              0.7,
+              195
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ 4 reactive DB jumps after each work set (recoil off the floor, be a bouncy ball)"
         },
         {
           "type": "text",
@@ -1533,6 +1730,28 @@
               "pct": 0.7,
               "expectedLoad": 135
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              165
+            ],
+            [
+              0.875,
+              170
+            ],
+            [
+              0.9,
+              175
+            ],
+            [
+              0.925,
+              180
+            ],
+            [
+              0.7,
+              135
+            ]
           ]
         },
         {
@@ -1615,6 +1834,28 @@
               "pct": 0.7,
               "expectedLoad": 95
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              115
+            ],
+            [
+              0.875,
+              120
+            ],
+            [
+              0.9,
+              120
+            ],
+            [
+              0.925,
+              125
+            ],
+            [
+              0.7,
+              95
+            ]
           ]
         },
         {
@@ -1670,6 +1911,28 @@
               "pct": 0.7,
               "expectedLoad": 160
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              190
+            ],
+            [
+              0.875,
+              195
+            ],
+            [
+              0.9,
+              205
+            ],
+            [
+              0.925,
+              210
+            ],
+            [
+              0.7,
+              160
+            ]
           ]
         },
         {
@@ -1710,7 +1973,22 @@
               "pct": 0.8,
               "expectedLoad": 220
             }
+          ],
+          "printedLoads": [
+            [
+              0.875,
+              240
+            ],
+            [
+              0.8,
+              220
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ 4 reactive DB jumps after each work set (recoil off the floor, be a bouncy ball)"
         },
         {
           "type": "text",
@@ -1750,6 +2028,16 @@
               "pct": 0.8,
               "expectedLoad": 155
             }
+          ],
+          "printedLoads": [
+            [
+              0.875,
+              170
+            ],
+            [
+              0.8,
+              155
+            ]
           ]
         },
         {
@@ -1817,6 +2105,16 @@
               "pct": 0.8,
               "expectedLoad": 110
             }
+          ],
+          "printedLoads": [
+            [
+              0.875,
+              120
+            ],
+            [
+              0.8,
+              110
+            ]
           ]
         },
         {
@@ -1857,6 +2155,16 @@
               "pct": 0.8,
               "expectedLoad": 180
             }
+          ],
+          "printedLoads": [
+            [
+              0.875,
+              195
+            ],
+            [
+              0.8,
+              180
+            ]
           ]
         },
         {
@@ -1901,7 +2209,22 @@
               "pct": 0.725,
               "expectedLoad": 200
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ],
+            [
+              0.725,
+              200
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ 4 reactive DB jumps after each work set (recoil off the floor, be a bouncy ball)"
         },
         {
           "type": "text",
@@ -1945,6 +2268,16 @@
               "pct": 0.725,
               "expectedLoad": 140
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              155
+            ],
+            [
+              0.725,
+              140
+            ]
           ]
         },
         {
@@ -2016,6 +2349,16 @@
               "pct": 0.725,
               "expectedLoad": 100
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              110
+            ],
+            [
+              0.725,
+              100
+            ]
           ]
         },
         {
@@ -2060,6 +2403,16 @@
               "pct": 0.725,
               "expectedLoad": 165
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              180
+            ],
+            [
+              0.725,
+              165
+            ]
           ]
         },
         {
@@ -2104,6 +2457,16 @@
               "pct": 0.725,
               "expectedLoad": 200
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              225
+            ],
+            [
+              0.725,
+              200
+            ]
           ]
         },
         {
@@ -2148,7 +2511,22 @@
               "pct": 0.725,
               "expectedLoad": 140
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              160
+            ],
+            [
+              0.725,
+              140
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "After every bench work set: 6 strict pull-ups, chest-high pull"
         },
         {
           "type": "text",
@@ -2176,24 +2554,6 @@
           "type": "text",
           "label": "Notes",
           "text": "A) E2MOM x 8: 3 TNG clean & jerks, climbing 95 → 155 across the 8 sets. Smooth cycling, no press-outs — the Novice ladder runs 95→185, and the 2026 championship asked Novice teams for 30 reps @ 165 + a 4:00 AMRAP @ 185. This is the most predictable test at FOTC — treat it like rent.\nB) 4 x 3:00 on / 3:00 off: 15/12 cal ski or bike + max alt DB snatches 50 in remaining time (comp bell is 35 — train heavy, compete light) (Event 4&5 interval pattern). Score = total snatches."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Clean & Jerk",
-          "liftKey": "cleanJerk",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.45,
-              "expectedLoad": 90
-            },
-            {
-              "scheme": "",
-              "pct": 0.75,
-              "expectedLoad": 155
-            }
-          ]
         }
       ]
     },
@@ -2213,18 +2573,26 @@
           "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
         },
         {
-          "type": "text",
-          "label": "Notes",
-          "text": "PUSH PRESS: E2MOM x5 — 5 reps climbing to a heavy 5"
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "",
+              "note": "E2MOM x5 — 5 reps climbing to a heavy 5"
+            }
+          ],
+          "printedLoads": []
         },
         {
           "type": "text",
-          "label": "Notes",
+          "label": "Accessory",
           "text": "Ring dip EMOM 8 — pick a set size you can repeat all 8 minutes; record it (baseline)\nE90s x5: 3 wall walks + :03 perfect hold at top"
         },
         {
           "type": "text",
-          "label": "Notes",
+          "label": "Accessory",
           "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
         }
       ]
@@ -2240,17 +2608,9 @@
       "sessionTitle": "CHAMPIONSHIP BARBELL SIM v1",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Front Squat",
-          "liftKey": "frontSquat",
-          "sets": [
-            {
-              "scheme": "3×3",
-              "pct": 0.8,
-              "expectedLoad": 180
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "30 clean & jerks @ 115 (4:00 cap) → rest exactly 1:00 → 4:00 AMRAP clean & jerks @ 135.\nRecord both + your cycling strategy (TNG sets vs fast singles). Progresses to 135/155 in W21 and FULL comp loads 165/185 in the W24 sim. FS first: FRONT SQUAT 3x3 @ 80%."
         }
       ]
     },
@@ -2289,6 +2649,16 @@
               "pct": 0.725,
               "expectedLoad": 200
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              235
+            ],
+            [
+              0.725,
+              200
+            ]
           ]
         },
         {
@@ -2333,7 +2703,22 @@
               "pct": 0.725,
               "expectedLoad": 140
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              165
+            ],
+            [
+              0.725,
+              140
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "After every bench work set: 6 strict pull-ups, chest-high pull"
         },
         {
           "type": "text",
@@ -2382,15 +2767,25 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.75,
-              "expectedLoad": 235
+              "scheme": "5/5/3/3/3",
+              "note": "climb to a heavy 3"
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              235
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ E:30 x 12: 1 deadlift @ 75% (crisp singles, perfect spine)"
         },
         {
           "type": "text",
@@ -2415,17 +2810,9 @@
       "sessionTitle": "Qualifier Sim #2",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Front Squat",
-          "liftKey": "frontSquat",
-          "sets": [
-            {
-              "scheme": "3×3",
-              "pct": 0.8,
-              "expectedLoad": 180
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "AMRAP 14: 15 knees-to-chest · 10 box jump overs 24 (step down) · 5 deadlifts 185 — the Novice version.\nDirect comparison to last October's score — log the delta. FS first: FRONT SQUAT 1x1 heavy for day + 3x3 @ 80%."
         }
       ]
     },
@@ -2451,10 +2838,20 @@
           "liftKey": "backSquat",
           "sets": [
             {
+              "scheme": "",
+              "note": "Build to a MAX SET OF 4"
+            },
+            {
               "scheme": "4×3",
               "pct": 0.75,
               "expectedLoad": 205
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              205
+            ]
           ]
         },
         {
@@ -2491,11 +2888,26 @@
           "liftKey": "bench",
           "sets": [
             {
+              "scheme": "",
+              "note": "Build to a MAX SET OF 4"
+            },
+            {
               "scheme": "4×3",
               "pct": 0.75,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "After every bench work set: 4 weighted strict pull-ups (+10 lb)"
         },
         {
           "type": "text",
@@ -2544,15 +2956,25 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.8,
-              "expectedLoad": 250
+              "scheme": "3/3/3/3/3",
+              "note": "heavy triple"
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              250
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ E:30 x 12: 1 deadlift @ 80%"
         },
         {
           "type": "text",
@@ -2583,11 +3005,26 @@
           "liftKey": "frontSquat",
           "sets": [
             {
+              "scheme": "",
+              "note": "build to max set of 4"
+            },
+            {
               "scheme": "3×3",
               "pct": 0.75,
               "expectedLoad": 170
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              170
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Then: 25:00 running clock — 2-4-6-8-10 thruster 75 + gymnastic complex (1 TTB + 1 pull-up) · 200m run after each round; max thrusters with remaining time."
         }
       ]
     },
@@ -2621,6 +3058,12 @@
               "pct": 0.8,
               "expectedLoad": 220
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ]
           ]
         },
         {
@@ -2660,7 +3103,18 @@
               "pct": 0.8,
               "expectedLoad": 155
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              155
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "After every bench work set: 4 weighted strict pull-ups (+10 lb)"
         },
         {
           "type": "text",
@@ -2709,15 +3163,25 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.8,
-              "expectedLoad": 250
+              "scheme": "3/3/1/1/1",
+              "note": "heavy single-ish (9/10, no misses)"
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              250
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "+ E:30 x 10: 1 deadlift @ 80%"
         },
         {
           "type": "text",
@@ -2742,17 +3206,9 @@
       "sessionTitle": "Qualifier Sim #3",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Front Squat",
-          "liftKey": "frontSquat",
-          "sets": [
-            {
-              "scheme": "4×4",
-              "pct": 0.8,
-              "expectedLoad": 180
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "3 rounds: 40 single-unders · 20 jumping pull-ups → 2 rounds: 60 SU · 15 jumping C2B → 1 round: 120 SU · 10 pull-ups. 12:00 cap — the Novice version.\nJumping pull-up CADENCE is a real score-mover at Novice — set bar/box height and rhythm BEFORE 3-2-1-go. FS first: FRONT SQUAT 4x4 @ 80%."
         }
       ]
     },
@@ -2787,6 +3243,16 @@
               "pct": 0.7,
               "expectedLoad": 195
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ],
+            [
+              0.7,
+              195
+            ]
           ]
         },
         {
@@ -2827,7 +3293,22 @@
               "pct": 0.7,
               "expectedLoad": 135
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              155
+            ],
+            [
+              0.7,
+              135
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "After bench: 3x5 strict pull-ups, smooth"
         },
         {
           "type": "text",
@@ -2874,18 +3355,26 @@
           "text": "3 rounds: 8 SA upright rows · 8 SA DB push press · 20 band face pulls"
         },
         {
-          "type": "text",
-          "label": "Notes",
-          "text": "PUSH PRESS: 3x3 @ moderate — bar speed only"
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "note": "@ moderate — bar speed only"
+            }
+          ],
+          "printedLoads": []
         },
         {
           "type": "text",
-          "label": "Notes",
+          "label": "Accessory",
           "text": "Ring dip EMOM 4 — easy 3s, stay fresh\nE90s x3: 2 wall walks, grease the pattern"
         },
         {
           "type": "text",
-          "label": "Notes",
+          "label": "Accessory",
           "text": "3 rounds: elevated-foot ring rows (beat last session) · 150' double-DB OH carry · 18 band pull-aparts"
         }
       ]
@@ -2928,7 +3417,18 @@
               "pct": 0.8,
               "expectedLoad": 220
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: alternating 2 wall walks / 5 pull-ups · 10:00 Z2 flush."
         }
       ]
     },
@@ -2953,7 +3453,18 @@
               "pct": 0.8,
               "expectedLoad": 155
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              155
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "4:00 @ Open pace: 12 cal row + 6 burpees, repeat · done in 40:00 total."
         }
       ]
     },
@@ -3046,7 +3557,18 @@
               "pct": 0.75,
               "expectedLoad": 205
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              205
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 weighted back ext · 3x8 goblet cossacks.\nWatch Friday's video: where did seconds leak? Repeat ONLY if a realistic improvement moves your leaderboard position."
         }
       ]
     },
@@ -3067,15 +3589,22 @@
           "liftKey": "bench",
           "sets": [
             {
-              "scheme": "3×12",
-              "note": "band face pulls"
-            },
-            {
               "scheme": "4×4",
               "pct": 0.75,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: 3 wall walks (smooth) · 3x12 band face pulls · :30 x 2 dead hang.\nIf repeating: full warm-up protocol, execute the fix you identified Monday — don't freelance mid-workout."
         }
       ]
     },
@@ -3168,7 +3697,18 @@
               "pct": 0.75,
               "expectedLoad": 205
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              205
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 weighted back ext · 3x8 goblet cossacks.\nWatch Friday's video: where did seconds leak? Repeat ONLY if a realistic improvement moves your leaderboard position."
         }
       ]
     },
@@ -3189,15 +3729,22 @@
           "liftKey": "bench",
           "sets": [
             {
-              "scheme": "3×12",
-              "note": "band face pulls"
-            },
-            {
               "scheme": "4×4",
               "pct": 0.75,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: 3 wall walks (smooth) · 3x12 band face pulls · :30 x 2 dead hang.\nIf repeating: full warm-up protocol, execute the fix you identified Monday — don't freelance mid-workout."
         }
       ]
     },
@@ -3290,7 +3837,18 @@
               "pct": 0.75,
               "expectedLoad": 205
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              205
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 weighted back ext · 3x8 goblet cossacks.\nWatch Friday's video: where did seconds leak? Repeat ONLY if a realistic improvement moves your leaderboard position."
         }
       ]
     },
@@ -3311,15 +3869,22 @@
           "liftKey": "bench",
           "sets": [
             {
-              "scheme": "3×12",
-              "note": "band face pulls"
-            },
-            {
               "scheme": "4×4",
               "pct": 0.75,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: 3 wall walks (smooth) · 3x12 band face pulls · :30 x 2 dead hang.\nIf repeating: full warm-up protocol, execute the fix you identified Monday — don't freelance mid-workout."
         }
       ]
     },
@@ -3412,7 +3977,18 @@
               "pct": 0.75,
               "expectedLoad": 205
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              205
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "3x8 weighted back ext · 3x8 goblet cossacks.\nWatch Friday's video: where did seconds leak? Repeat ONLY if a realistic improvement moves your leaderboard position."
         }
       ]
     },
@@ -3433,15 +4009,22 @@
           "liftKey": "bench",
           "sets": [
             {
-              "scheme": "3×12",
-              "note": "band face pulls"
-            },
-            {
               "scheme": "4×4",
               "pct": 0.75,
               "expectedLoad": 145
             }
+          ],
+          "printedLoads": [
+            [
+              0.75,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: 3 wall walks (smooth) · 3x12 band face pulls · :30 x 2 dead hang.\nIf repeating: full warm-up protocol, execute the fix you identified Monday — don't freelance mid-workout.\nLast realistic repeat window of the qualifier."
         }
       ]
     },
@@ -3533,6 +4116,12 @@
               "pct": 0.725,
               "expectedLoad": 200
             }
+          ],
+          "printedLoads": [
+            [
+              0.725,
+              200
+            ]
           ]
         },
         {
@@ -3563,6 +4152,12 @@
               "pct": 0.725,
               "expectedLoad": 140
             }
+          ],
+          "printedLoads": [
+            [
+              0.725,
+              140
+            ]
           ]
         },
         {
@@ -3615,6 +4210,12 @@
               "pct": 0.725,
               "expectedLoad": 100
             }
+          ],
+          "printedLoads": [
+            [
+              0.725,
+              100
+            ]
           ]
         },
         {
@@ -3645,6 +4246,12 @@
               "pct": 0.725,
               "expectedLoad": 165
             }
+          ],
+          "printedLoads": [
+            [
+              0.725,
+              165
+            ]
           ]
         },
         {
@@ -3680,6 +4287,16 @@
               "pct": 0.825,
               "expectedLoad": 225
             }
+          ],
+          "printedLoads": [
+            [
+              0.775,
+              215
+            ],
+            [
+              0.825,
+              225
+            ]
           ]
         },
         {
@@ -3714,7 +4331,21 @@
               "scheme": "1×3",
               "pct": 0.825,
               "expectedLoad": 160
+            },
+            {
+              "scheme": "",
+              "note": "after each work set: 4 weighted strict pull-ups (+10)"
             }
+          ],
+          "printedLoads": [
+            [
+              0.775,
+              150
+            ],
+            [
+              0.825,
+              160
+            ]
           ]
         },
         {
@@ -3759,15 +4390,25 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.8,
-              "expectedLoad": 250
+              "scheme": "5/5/3/3/3",
+              "note": "to a heavy 3"
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              250
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E:30 x 12: 1 deadlift @ 80%"
         },
         {
           "type": "text",
@@ -3797,6 +4438,12 @@
               "pct": 0.775,
               "expectedLoad": 175
             }
+          ],
+          "printedLoads": [
+            [
+              0.775,
+              175
+            ]
           ]
         },
         {
@@ -3832,6 +4479,16 @@
               "pct": 0.875,
               "expectedLoad": 240
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              225
+            ],
+            [
+              0.875,
+              240
+            ]
           ]
         },
         {
@@ -3866,7 +4523,21 @@
               "scheme": "1×2",
               "pct": 0.875,
               "expectedLoad": 170
+            },
+            {
+              "scheme": "",
+              "note": "after each work set: 4 weighted strict pull-ups (+15)"
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              160
+            ],
+            [
+              0.875,
+              170
+            ]
           ]
         },
         {
@@ -3911,15 +4582,25 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
+          "liftName": "Strict Press",
+          "liftKey": "strictPress",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.85,
-              "expectedLoad": 270
+              "scheme": "3/3/3/3/3",
+              "note": "heavy triple"
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              270
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E:30 x 12: 1 deadlift @ 85%"
         },
         {
           "type": "text",
@@ -3949,6 +4630,12 @@
               "pct": 0.825,
               "expectedLoad": 185
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              185
+            ]
           ]
         },
         {
@@ -4033,24 +4720,6 @@
           "type": "text",
           "label": "Notes",
           "text": "Full warm-up ladder (bar x10, 50%x5, 65%x3, 75%x2, 85%x1, 92%x1, then attempts). 3 attempts max past 92%. Log on Benchmarks + UPDATE MAXES TAB."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Back Squat",
-          "liftKey": "backSquat",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.85,
-              "expectedLoad": 235
-            },
-            {
-              "scheme": "",
-              "pct": 0.925,
-              "expectedLoad": 255
-            }
-          ]
         }
       ]
     },
@@ -4068,24 +4737,6 @@
           "type": "text",
           "label": "Notes",
           "text": "Same ladder structure. Spotter or safeties, no hero grinds — a 5 lb PR counts the same as a 15 lb miss doesn't."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Bench Press",
-          "liftKey": "bench",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.85,
-              "expectedLoad": 165
-            },
-            {
-              "scheme": "",
-              "pct": 0.925,
-              "expectedLoad": 180
-            }
-          ]
         }
       ]
     },
@@ -4120,19 +4771,6 @@
           "type": "text",
           "label": "Notes",
           "text": "Then 3x5 @ 70% of the NEW max to groove it."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Strict Press",
-          "liftKey": "strictPress",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.85,
-              "expectedLoad": 115
-            }
-          ]
         }
       ]
     },
@@ -4150,19 +4788,6 @@
           "type": "text",
           "label": "Notes",
           "text": "Sunday fully off. Champ prep starts Monday on fresh numbers."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Front Squat",
-          "liftKey": "frontSquat",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.85,
-              "expectedLoad": 190
-            }
-          ]
         }
       ]
     },
@@ -4187,6 +4812,12 @@
               "pct": 0.825,
               "expectedLoad": 225
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              225
+            ]
           ]
         },
         {
@@ -4217,6 +4848,12 @@
               "pct": 0.825,
               "expectedLoad": 160
             }
+          ],
+          "printedLoads": [
+            [
+              0.825,
+              160
+            ]
           ]
         },
         {
@@ -4262,24 +4899,6 @@
           "type": "text",
           "label": "Notes",
           "text": "HUNLEY + MOOSE SIM v2 (2026 format, build loads)\n30 clean & jerks @ 135 (4:00 cap) → rest exactly 1:00 → 4:00 AMRAP clean & jerks @ 155.\nPractice the plate change INSIDE the 1:00 rest — in 2026 you swapped your own plates (+2x25, −2x15). Log both scores + strategy. Full comp loads (165/185) hit in the W24 sim."
-        },
-        {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Clean & Jerk",
-          "liftKey": "cleanJerk",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.65,
-              "expectedLoad": 135
-            },
-            {
-              "scheme": "",
-              "pct": 0.75,
-              "expectedLoad": 155
-            }
-          ]
         }
       ]
     },
@@ -4321,6 +4940,12 @@
               "pct": 0.85,
               "expectedLoad": 235
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              235
+            ]
           ]
         },
         {
@@ -4351,6 +4976,12 @@
               "pct": 0.85,
               "expectedLoad": 165
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              165
+            ]
           ]
         },
         {
@@ -4388,17 +5019,9 @@
       "sessionTitle": "DEADLIFT + BOX JUMP CAPACITY (Qualifier WK4 pattern, heavier)",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Deadlift",
-          "liftKey": "deadlift",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.8,
-              "expectedLoad": 250
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "BACK-OFF BARBELL: E:30 x 10: 1 deadlift @ 80%\nThen AMRAP 12: 12 hanging leg raises · 9 box jump overs 24 · 5 deadlifts 225 (qualifier pattern; 2026 championship moved deadlifts to double-DBs — JBC covers that Saturday).\nCompare engine to W7's version of this."
         }
       ]
     },
@@ -4440,7 +5063,18 @@
               "pct": 0.85,
               "expectedLoad": 235
             }
+          ],
+          "printedLoads": [
+            [
+              0.85,
+              235
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "FRONT SQUAT 2x3 @ 75%\nEMOM 8: 2 wall walks (fast, perfect)\n3 rounds quick: 10 box step-ups · 12 back ext"
         }
       ]
     },
@@ -4510,7 +5144,18 @@
               "pct": 0.8,
               "expectedLoad": 220
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "EMOM 6: alternating 4 kipping HSPU / 4 C2B · 10:00 Z2."
         }
       ]
     },
@@ -4527,15 +5172,26 @@
         {
           "type": "mainLift",
           "label": "Main Lift",
-          "liftName": "Clean & Jerk",
-          "liftKey": "cleanJerk",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
           "sets": [
             {
-              "scheme": "",
-              "pct": 0.7,
-              "expectedLoad": 145
+              "scheme": "3×2",
+              "pct": 0.8,
+              "expectedLoad": 155
             }
+          ],
+          "printedLoads": [
+            [
+              0.7,
+              145
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "E2MOM x 5: 2 TNG C&J @ 70% · 8:00 easy machine."
         }
       ]
     },
@@ -4616,7 +5272,18 @@
               "pct": 0.8,
               "expectedLoad": 220
             }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              220
+            ]
           ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "6:00 @ Open pace: 10 cal machine + 5 burpees, repeat · done."
         }
       ]
     },
@@ -4659,17 +5326,9 @@
       "sessionTitle": "Primer B",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Clean & Jerk",
-          "liftKey": "cleanJerk",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.8,
-              "expectedLoad": 165
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "Full competition warm-up rehearsal → one 4:00 sprint piece: 12 cal row · 9 thrusters 75 · 6 pull-ups, repeat. Then 2 heavy-ish C&J singles @ 80%, crisp."
         }
       ]
     },
@@ -4701,17 +5360,9 @@
       "sessionTitle": "Light Primer",
       "sections": [
         {
-          "type": "mainLift",
-          "label": "Main Lift",
-          "liftName": "Back Squat",
-          "liftKey": "backSquat",
-          "sets": [
-            {
-              "scheme": "",
-              "pct": 0.7,
-              "expectedLoad": 195
-            }
-          ]
+          "type": "text",
+          "label": "Notes",
+          "text": "3x2 back squat @ 70% · EMOM 4: 2 wall walks · 8:00 easy spin."
         }
       ]
     },

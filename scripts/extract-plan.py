@@ -34,12 +34,26 @@ MONTHS = {m: i for i, m in enumerate(
 
 WEEK_HDR = re.compile(r"WEEK\s+(\d+)\s*·\s*([^—]+?)\s*—\s*(.*)", re.UNICODE)
 
-LIFT_NAME_RE = re.compile(
-    r"\b(BACK SQUAT|FRONT SQUAT|BENCH(?: PRESS)?|STRICT PRESS|PUSH PRESS|DEADLIFT|CLEAN & JERK|C&J|SNATCH)\b")
+# Barbell lift names as they lead a main-lift line, mapped to a lift key. Longer
+# names come first so "BENCH PRESS" wins over "BENCH". PUSH PRESS shares the
+# strictPress max; C&J shares cleanJerk.
+LIFT_BY_NAME = [
+    ("BACK SQUAT", "backSquat"), ("FRONT SQUAT", "frontSquat"),
+    ("BENCH PRESS", "bench"), ("BENCH", "bench"),
+    ("STRICT PRESS", "strictPress"), ("PUSH PRESS", "strictPress"),
+    ("DEADLIFT", "deadlift"), ("CLEAN & JERK", "cleanJerk"), ("C&J", "cleanJerk"),
+    ("SNATCH", "snatch"),
+]
+DISPLAY_NAME = {l["key"]: l["name"] for l in LIFTS}
 
 SET_RE = re.compile(r"(\d+)\s*x\s*(\d+)\s*@\s*(\d+(?:\.\d+)?)%", re.IGNORECASE)
 
-NOTE_SET_RE = re.compile(r"(\d+x\d+)\s+([a-z][^·]*?)(?=·|$)", re.IGNORECASE)
+# Boundary markers: a "·"-segment starting with any of these (or a DIFFERENT lift
+# name) is an accessory / different movement, not part of the main lift.
+STOP_RE = re.compile(r"^(\+|E:30|E90s|EMOM|E2MOM|EOM|\d+:\d+)", re.IGNORECASE)
+
+# Leading rep-scheme token for a note set: "5/5/3/3/3", "1x1", "3/3/1/1/1".
+NOTE_SCHEME_RE = re.compile(r"^((?:\d+\s*x\s*\d+)|(?:[\d/]+))\s*[—-]?\s*(.*)$")
 
 
 def round5(x):
@@ -57,56 +71,68 @@ def parse_load_cell(load_cell):
     return pairs
 
 
-def backsolve_lift(pairs):
-    # the one lift whose default max reproduces every printed (pct -> load) pair
-    if not pairs:
-        return None
-    for key, mx in DEFAULT_MAXES.items():
-        if all(round5(p * mx) == load for p, load in pairs):
-            return key
-    return None
+def lift_at_start(text):
+    # (name, key) if text starts with a barbell lift name, else (None, None)
+    stripped = text.strip()
+    for name, key in LIFT_BY_NAME:
+        if re.match(re.escape(name) + r"\b", stripped, re.IGNORECASE):
+            return name, key
+    return None, None
 
 
-def scheme_map(session):
-    # pct -> scheme string (e.g. 0.80 -> "1×2") from any "NxN @ pct%" in the session
-    mapping = {}
-    for line in session.splitlines():
-        for count, reps, pct_s in SET_RE.findall(line):
-            mapping.setdefault(round(float(pct_s) / 100.0, 5), f"{count}×{reps}")
-    return mapping
+def find_lead_line(session):
+    # The main-lift line = first line AFTER the title (line 0) whose stripped start
+    # is a barbell lift name. Prep and accessory lines never start with a lift name.
+    for line in session.splitlines()[1:]:
+        name, key = lift_at_start(line)
+        if key:
+            return line.strip(), name, key
+    return None, None, None
 
 
-def note_sets(session):
-    # non-% cues on a main-lift line, e.g. "1x1 heavy for the day"
-    notes = []
-    for line in session.splitlines():
-        if not (LIFT_NAME_RE.search(line.upper()) and "%" in line):
-            continue
-        for m in NOTE_SET_RE.finditer(line):
-            scheme, note = m.group(1), m.group(2).strip()
-            if "@" not in note:
-                notes.append({"scheme": scheme.replace("x", "×"), "note": note})
-    return notes
+def parse_note_segment(seg):
+    seg = seg.strip(" ·—-")
+    m = NOTE_SCHEME_RE.match(seg)
+    if m and m.group(1):
+        return {"scheme": re.sub(r"\s*x\s*", "×", m.group(1)), "note": m.group(2).strip(" —-·")}
+    return {"scheme": "", "note": seg}
 
 
 def parse_main_lift(session, load_cell):
-    pairs = parse_load_cell(load_cell)
-    lift_key = backsolve_lift(pairs)
-    if not lift_key:
-        return None
-    display = next(l["name"] for l in LIFTS if l["key"] == lift_key)
-    smap = scheme_map(session)
-    # Sets are driven by the printed load cell: expectedLoad is the sheet's own
-    # number, so the correctness gate genuinely verifies pct*max reproduces it.
-    sets = note_sets(session)
-    for pct, load in pairs:
-        sets.append({
-            "scheme": smap.get(round(pct, 5), ""),
-            "pct": pct,
-            "expectedLoad": load,
-        })
-    return {"type": "mainLift", "label": "Main Lift",
-            "liftName": display, "liftKey": lift_key, "sets": sets}
+    # Identify the main lift by its LEAD LINE (the named lift is authoritative);
+    # the load cell only verifies loads later. Returns (section, excluded_text) or
+    # (None, None). Sets come from the lead line's own "·"-segments, up to the
+    # first accessory marker / different-lift boundary.
+    lead_line, name, key = find_lead_line(session)
+    if not key:
+        return None, None
+    mx = DEFAULT_MAXES[key]
+    body = lead_line[len(name):].lstrip(":").strip()
+    sets, excluded = [], []
+    stopped = False
+    for i, seg in enumerate(body.split("·")):
+        seg = seg.strip()
+        if not seg:
+            continue
+        if not stopped and i > 0:
+            _, other_key = lift_at_start(seg)
+            if STOP_RE.match(seg) or (other_key and other_key != key):
+                stopped = True
+        if stopped:
+            excluded.append(seg)
+            continue
+        if SET_RE.search(seg):
+            for count, reps, pct_s in SET_RE.findall(seg):
+                pct = float(pct_s) / 100.0
+                sets.append({"scheme": f"{count}×{reps}", "pct": pct,
+                             "expectedLoad": round5(pct * mx)})
+        else:
+            sets.append(parse_note_segment(seg))
+    printed = [[pct, load] for pct, load in parse_load_cell(load_cell)]
+    section = {"type": "mainLift", "label": "Main Lift",
+               "liftName": DISPLAY_NAME[key], "liftKey": key, "sets": sets,
+               "printedLoads": printed}
+    return section, " · ".join(excluded)
 
 
 def plan_year_for_month(month):
@@ -124,8 +150,10 @@ def parse_date_label(label):
 
 
 def session_title(text):
-    first = text.strip().splitlines()[0].strip()
-    first = re.split(r"\s—\s|\s·\s", first)[0].strip()
+    lines = text.strip().splitlines()
+    if not lines:
+        return ""
+    first = re.split(r"\s—\s|\s·\s", lines[0].strip())[0].strip()
     return first.title() if first.isupper() else first
 
 
@@ -142,10 +170,11 @@ def extract_block_days():
                 continue
             if isinstance(first, str) and first.startswith("WEEK "):
                 m = WEEK_HDR.match(first)
-                if m:
-                    week_num = int(m.group(1))
-                    week_dates = m.group(2).strip()
-                    week_focus = m.group(3).strip()
+                if not m:
+                    raise ValueError(f"Unparseable week header in {sheet!r}: {first!r}")
+                week_num = int(m.group(1))
+                week_dates = m.group(2).strip()
+                week_focus = m.group(3).strip()
                 continue
             if isinstance(first, str) and re.match(r"[A-Za-z]{3}\s+[A-Za-z]{3}\s+\d+", first):
                 iso, dow = parse_date_label(first)
@@ -163,33 +192,49 @@ def extract_block_days():
     return days
 
 
-def make_sections(session, main_lift):
+def _prep_section(para):
+    head = para.splitlines()[0]
+    label, _, text = head.partition("—")
+    return {
+        "type": "prep", "label": label.strip() or "Prep",
+        "text": (text.strip() + "\n" + "\n".join(para.splitlines()[1:])).strip(),
+    }
+
+
+def make_sections(session, main_lift, lead_line, excluded_text):
     paras = [p.strip() for p in re.split(r"\n\s*\n", session) if p.strip()]
     sections = []
     body_started = False
     for i, para in enumerate(paras):
-        head = para.splitlines()[0]
-        if i == 0:
-            rest = "\n".join(para.splitlines()[1:]).strip()
-            if rest:
-                para, head = rest, rest.splitlines()[0]
-            else:
+        lines = para.splitlines()
+        if i == 0:  # first line is the session title; drop it
+            lines = lines[1:]
+            if not lines:
                 continue
-        if head.lower().startswith("prep"):
-            label, _, text = head.partition("—")
-            sections.append({
-                "type": "prep", "label": label.strip() or "Prep",
-                "text": (text.strip() + "\n" + "\n".join(para.splitlines()[1:])).strip(),
-            })
-            continue
-        if main_lift and LIFT_NAME_RE.search(para.upper()) and "%" in para and not body_started:
+        stripped = [ln.strip() for ln in lines]
+        if main_lift and lead_line in stripped:
+            idx = stripped.index(lead_line)
+            pre = "\n".join(lines[:idx]).strip()
+            if pre:
+                sections.append(_prep_section(pre) if pre.lower().startswith("prep")
+                                else {"type": "text",
+                                      "label": "Accessory" if body_started else "Notes",
+                                      "text": pre})
             sections.append(main_lift)
             body_started = True
+            remainder = "\n".join(
+                part for part in (excluded_text, "\n".join(lines[idx + 1:]).strip()) if part
+            ).strip()
+            if remainder:
+                sections.append({"type": "text", "label": "Accessory", "text": remainder})
+            continue
+        if lines[0].lower().startswith("prep"):
+            sections.append(_prep_section("\n".join(lines)))
             continue
         sections.append({
             "type": "text",
             "label": "Accessory" if body_started else "Notes",
-            "text": para,
+            "text": "\n".join(lines),
         })
     if main_lift and main_lift not in sections:
         sections.append(main_lift)
@@ -247,8 +292,12 @@ def extract_rampin_days():
 def build_plan():
     days = extract_block_days()
     for d in days:
-        main_lift = parse_main_lift(d["_session"], d["_loadCell"])
-        d["sections"] = make_sections(d["_session"], main_lift)
+        lead_line, _name, key = find_lead_line(d["_session"])
+        if key:
+            main_lift, excluded = parse_main_lift(d["_session"], d["_loadCell"])
+        else:
+            main_lift, excluded = None, None
+        d["sections"] = make_sections(d["_session"], main_lift, lead_line, excluded)
     days = extract_rampin_days() + days
     days.sort(key=lambda d: d["date"])
     return {"lifts": LIFTS, "defaultMaxes": DEFAULT_MAXES, "days": days}
@@ -256,7 +305,7 @@ def build_plan():
 
 def strip_scratch(plan):
     for d in plan["days"]:
-        for k in ("_session", "_loadCell", "_mainLift"):
+        for k in ("_session", "_loadCell"):
             d.pop(k, None)
     return plan
 

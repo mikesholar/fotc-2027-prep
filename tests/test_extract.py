@@ -40,7 +40,13 @@ def test_days_are_date_sorted():
     assert dates == sorted(dates)
 
 
-def test_main_lift_loads_match_sheet_for_default_maxes():
+def find_day(plan, iso):
+    return next(d for d in plan["days"] if d["date"] == iso)
+
+
+def test_main_lift_loads_match_printed_sheet_values():
+    # Independent gate: liftKey comes from the NAMED lead line, the load from that
+    # lift's max, cross-checked against the SEPARATELY printed sheet load cell.
     plan = load_plan()
     checked = 0
     for d in plan["days"]:
@@ -48,15 +54,49 @@ def test_main_lift_loads_match_sheet_for_default_maxes():
             if s["type"] != "mainLift":
                 continue
             mx = LIFT_MAX[s["liftKey"]]
+            printed = {round(pct, 5): load for pct, load in s["printedLoads"]}
             for st in s["sets"]:
-                if "pct" in st:
-                    assert round5(st["pct"] * mx) == st["expectedLoad"], (d["date"], st)
+                if "pct" not in st:
+                    continue
+                key = round(st["pct"], 5)
+                if key in printed:
+                    assert round5(st["pct"] * mx) == printed[key], (d["date"], st, printed[key])
                     checked += 1
-    assert checked > 50  # sanity: we verified a meaningful number of sets
+    assert checked > 50  # sanity: a meaningful number of sets cross-checked vs the sheet
 
 
-def find_day(plan, iso):
-    return next(d for d in plan["days"] if d["date"] == iso)
+def test_normal_day_main_lift_is_back_squat_with_pinned_loads():
+    plan = load_plan()
+    d = find_day(plan, "2026-07-20")  # Mon Jul 20, Lower A
+    main = next(s for s in d["sections"] if s["type"] == "mainLift")
+    assert main["liftKey"] == "backSquat"
+    loads = [st["expectedLoad"] for st in main["sets"] if "expectedLoad" in st]
+    assert loads == [220, 225, 235, 180]
+
+
+def test_push_press_day_is_strict_press_not_deadlift():
+    plan = load_plan()
+    d = find_day(plan, "2026-09-04")  # lead work PUSH PRESS; load cell is a DL accessory
+    mains = [s for s in d["sections"] if s["type"] == "mainLift"]
+    assert len(mains) == 1
+    assert mains[0]["liftKey"] == "strictPress"
+    assert all("expectedLoad" not in st for st in mains[0]["sets"])  # no % work, all notes
+    assert [s["label"] for s in d["sections"]].count("Main Lift") == 1
+    assert any(s["type"] == "text" and "deadlift @ 75%" in s["text"] for s in d["sections"])
+
+
+def test_dec29_primer_main_lift_is_bench_not_cleanjerk():
+    plan = load_plan()
+    d = find_day(plan, "2026-12-29")  # "BENCH 3x2 @ 80% · E2MOM ... C&J @ 70%"
+    main = next(s for s in d["sections"] if s["type"] == "mainLift")
+    assert main["liftKey"] == "bench"
+
+
+def test_main_lift_day_count_is_pinned():
+    # Guards against a silent lead-line/backsolve regression.
+    plan = load_plan()
+    n = sum(1 for d in plan["days"] for s in d["sections"] if s["type"] == "mainLift")
+    assert n == 66
 
 
 def test_lower_a_day_has_prep_main_accessory_boxes():
