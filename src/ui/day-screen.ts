@@ -54,7 +54,9 @@ export const renderDayScreen = (
   const next = makeArrow("›", "Next day", nav.nextDate);
   const center = el("div", "center");
   center.appendChild(el("div", "date", day.dateLabel));
-  center.appendChild(el("div", "wk", `${day.block} · ${formatWeekLabel(day.week)}`));
+  const weekLabel = formatWeekLabel(day.week);
+  const context = weekLabel.startsWith(day.block) ? weekLabel : `${day.block} · ${weekLabel}`;
+  center.appendChild(el("div", "wk", context));
   picker.append(prev, center, next);
   root.appendChild(picker);
   if (nav.isToday) root.appendChild(el("span", "today-chip", "● Today"));

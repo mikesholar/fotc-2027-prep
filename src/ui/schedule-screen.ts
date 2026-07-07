@@ -12,12 +12,17 @@ const mainLiftLabel = (day: Day): string => {
 const renderWeekHead = (day: Day): HTMLElement => {
   const head = el("div", "wk-head");
   const left = el("div");
+  const weekLabel = formatWeekLabel(day.week);
   left.append(
-    el("span", "wkn", formatWeekLabel(day.week)),
+    el("span", "wkn", weekLabel),
     document.createTextNode(" "),
     el("span", "wkdates", day.weekDates),
   );
-  head.append(left, el("div", "wkblock", day.block));
+  if (!weekLabel.startsWith(day.block)) {
+    head.append(left, el("div", "wkblock", day.block));
+  } else {
+    head.append(left);
+  }
   return head;
 };
 
