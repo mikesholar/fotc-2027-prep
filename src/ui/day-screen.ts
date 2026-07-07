@@ -1,16 +1,20 @@
 import type { ResolvedDay, ResolvedSection } from "../core/loads";
+import { formatWeekLabel } from "../core/format";
+import { el } from "./dom";
 import { navigate } from "./router";
 
-const el = (tag: string, cls?: string, text?: string): HTMLElement => {
-  const n = document.createElement(tag);
-  if (cls) n.className = cls;
-  if (text !== undefined) n.textContent = text;
-  return n;
+const makeArrow = (glyph: string, label: string, date: string | null): HTMLElement => {
+  const arrow = el("div", date ? "arrow" : "arrow disabled", glyph);
+  arrow.setAttribute("role", "button");
+  arrow.setAttribute("tabindex", "0");
+  arrow.setAttribute("aria-label", label);
+  if (date) arrow.onclick = () => navigate({ name: "day", date });
+  return arrow;
 };
 
 const renderMain = (s: Extract<ResolvedSection, { type: "mainLift" }>): HTMLElement => {
   const box = el("div", "box main");
-  box.appendChild(el("div", "box-label", "Main Lift"));
+  box.appendChild(el("div", "box-label", s.label));
   box.appendChild(el("div", "liftname", s.liftName));
   const table = el("table", "sets");
   for (const r of s.rows) {
@@ -46,13 +50,11 @@ export const renderDayScreen = (
 ): HTMLElement => {
   const root = el("div", "screen day-screen");
   const picker = el("div", "picker");
-  const prev = el("div", "arrow", "‹");
-  if (nav.prevDate) prev.onclick = () => navigate({ name: "day", date: nav.prevDate! });
-  const next = el("div", "arrow", "›");
-  if (nav.nextDate) next.onclick = () => navigate({ name: "day", date: nav.nextDate! });
+  const prev = makeArrow("‹", "Previous day", nav.prevDate);
+  const next = makeArrow("›", "Next day", nav.nextDate);
   const center = el("div", "center");
   center.appendChild(el("div", "date", day.dateLabel));
-  center.appendChild(el("div", "wk", `${day.block} · ${typeof day.week === "number" ? "Week " + day.week : day.week}`));
+  center.appendChild(el("div", "wk", `${day.block} · ${formatWeekLabel(day.week)}`));
   picker.append(prev, center, next);
   root.appendChild(picker);
   if (nav.isToday) root.appendChild(el("span", "today-chip", "● Today"));

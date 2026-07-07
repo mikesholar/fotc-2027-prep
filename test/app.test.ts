@@ -1,5 +1,22 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { startApp } from "../src/ui/app";
+import planJson from "../src/data/plan.json";
+import { parsePlan, type Maxes } from "../src/core/schema";
+import { loadMaxes } from "../src/core/maxes-store";
+
+const plan = parsePlan(planJson);
+const defaults = plan.defaultMaxes as Maxes;
+
+const mountApp = (): HTMLDivElement => {
+  const mount = document.querySelector<HTMLDivElement>("#app")!;
+  startApp(mount);
+  return mount;
+};
+
+const setInput = (input: HTMLInputElement, value: string): void => {
+  input.value = value;
+  input.dispatchEvent(new Event("input"));
+};
 
 describe("app bootstrap", () => {
   beforeEach(() => {
@@ -9,23 +26,119 @@ describe("app bootstrap", () => {
   });
 
   it("renders and navigates to a day route on first load", () => {
-    const mount = document.querySelector<HTMLDivElement>("#app")!;
-    startApp(mount);
+    const mount = mountApp();
     expect(window.location.hash).toMatch(/^#\/day\/\d{4}-\d{2}-\d{2}$/);
     expect(mount.querySelector(".picker")).not.toBeNull();
   });
 
   it("renders the maxes screen with 7 lift inputs", () => {
     window.location.hash = "#/maxes";
-    const mount = document.querySelector<HTMLDivElement>("#app")!;
-    startApp(mount);
+    const mount = mountApp();
     expect(mount.querySelectorAll("input").length).toBe(7);
   });
 
   it("renders the schedule with week headers", () => {
     window.location.hash = "#/schedule";
-    const mount = document.querySelector<HTMLDivElement>("#app")!;
-    startApp(mount);
+    const mount = mountApp();
     expect(mount.querySelectorAll(".wk-head").length).toBeGreaterThan(10);
+  });
+});
+
+describe("editing maxes", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    window.location.hash = "#/maxes";
+    document.body.innerHTML = '<div id="app"></div>';
+  });
+
+  it("persists edits to two different maxes without reverting the first", () => {
+    const mount = mountApp();
+    const inputs = mount.querySelectorAll<HTMLInputElement>(".maxrow input");
+
+    setInput(inputs[0], "999");
+    setInput(inputs[1], "888");
+
+    const stored = loadMaxes(defaults);
+    expect(stored.backSquat).toBe(999);
+    expect(stored.frontSquat).toBe(888);
+  });
+
+  it("restores default maxes when reset is clicked", () => {
+    const mount = mountApp();
+    const inputs = mount.querySelectorAll<HTMLInputElement>(".maxrow input");
+    setInput(inputs[0], "999");
+    expect(loadMaxes(defaults).backSquat).toBe(999);
+
+    mount.querySelector<HTMLButtonElement>(".reset")!.click();
+
+    expect(loadMaxes(defaults).backSquat).toBe(defaults.backSquat);
+    const rerendered = mount.querySelectorAll<HTMLInputElement>(".maxrow input");
+    expect(rerendered[0].value).toBe(String(defaults.backSquat));
+  });
+});
+
+describe("day navigation", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    document.body.innerHTML = '<div id="app"></div>';
+  });
+
+  it("moves to the next day when the next arrow is clicked", () => {
+    const dates = plan.days.map((d) => d.date);
+    const idx = 10;
+    window.location.hash = `#/day/${dates[idx]}`;
+    const mount = mountApp();
+
+    mount.querySelectorAll<HTMLElement>(".picker .arrow")[1].click();
+    expect(window.location.hash).toBe(`#/day/${dates[idx + 1]}`);
+  });
+
+  it("moves to the previous day when the prev arrow is clicked", () => {
+    const dates = plan.days.map((d) => d.date);
+    const idx = 10;
+    window.location.hash = `#/day/${dates[idx]}`;
+    const mount = mountApp();
+
+    mount.querySelectorAll<HTMLElement>(".picker .arrow")[0].click();
+    expect(window.location.hash).toBe(`#/day/${dates[idx - 1]}`);
+  });
+
+  it("disables the prev arrow on the first day and next arrow on the last", () => {
+    const dates = plan.days.map((d) => d.date);
+
+    window.location.hash = `#/day/${dates[0]}`;
+    const first = mountApp();
+    const firstArrows = first.querySelectorAll<HTMLElement>(".picker .arrow");
+    expect(firstArrows[0].classList.contains("disabled")).toBe(true);
+    expect(firstArrows[1].classList.contains("disabled")).toBe(false);
+
+    window.location.hash = `#/day/${dates[dates.length - 1]}`;
+    const last = mountApp();
+    const lastArrows = last.querySelectorAll<HTMLElement>(".picker .arrow");
+    expect(lastArrows[0].classList.contains("disabled")).toBe(false);
+    expect(lastArrows[1].classList.contains("disabled")).toBe(true);
+  });
+});
+
+describe("loads reflect the edited max", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    document.body.innerHTML = '<div id="app"></div>';
+  });
+
+  it("recomputes a back-squat load from a changed max", () => {
+    window.location.hash = "#/maxes";
+    const mount = mountApp();
+    const backSquatInput = mount.querySelectorAll<HTMLInputElement>(".maxrow input")[0];
+    setInput(backSquatInput, "300");
+
+    window.location.hash = "#/day/2026-07-20";
+    const dayMount = mountApp();
+
+    const loads = Array.from(dayMount.querySelectorAll(".sets .load")).map(
+      (td) => td.textContent,
+    );
+    const expected = Math.round((0.8 * 300) / 5) * 5;
+    expect(loads).toContain(`${expected} lb`);
   });
 });

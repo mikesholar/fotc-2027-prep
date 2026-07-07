@@ -24,7 +24,7 @@ export const startApp = (mount: HTMLElement): void => {
     mount.innerHTML = "";
     if (route.name === "maxes") {
       mount.appendChild(renderMaxesScreen(plan, maxes,
-        (next) => { maxes = next; saveMaxes(maxes); },
+        (key, value) => { maxes = { ...maxes, [key]: value }; saveMaxes(maxes); },
         () => { maxes = { ...defaultMaxes }; saveMaxes(maxes); render(); }));
     } else if (route.name === "schedule") {
       mount.appendChild(renderScheduleScreen(plan, todayIso()));

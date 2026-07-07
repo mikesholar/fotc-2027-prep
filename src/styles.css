@@ -7,6 +7,7 @@ body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background:
 /* ---- Day picker ---- */
 .picker { display: flex; align-items: center; justify-content: space-between; background: #161b22; border: 1px solid #2a2f3a; border-radius: 14px; padding: 10px 12px; margin-bottom: 6px; }
 .picker .arrow { font-size: 22px; color: #7aa2ff; width: 28px; text-align: center; cursor: pointer; user-select: none; }
+.picker .arrow.disabled { color: #3a4150; cursor: default; }
 .picker .center { text-align: center; line-height: 1.2; }
 .picker .date { font-size: 16px; font-weight: 700; color: #fff; }
 .picker .wk { font-size: 11px; color: #8b93a1; text-transform: uppercase; letter-spacing: .5px; }

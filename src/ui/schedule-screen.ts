@@ -1,35 +1,58 @@
 import type { Plan } from "../core/schema";
+import { formatWeekLabel } from "../core/format";
+import { el } from "./dom";
 
-const mainLiftLabel = (day: Plan["days"][number]): string => {
+type Day = Plan["days"][number];
+
+const mainLiftLabel = (day: Day): string => {
   const m = day.sections.find((s) => s.type === "mainLift");
   return m && m.type === "mainLift" ? m.liftName : day.sessionTitle;
 };
 
+const renderWeekHead = (day: Day): HTMLElement => {
+  const head = el("div", "wk-head");
+  const left = el("div");
+  left.append(
+    el("span", "wkn", formatWeekLabel(day.week)),
+    document.createTextNode(" "),
+    el("span", "wkdates", day.weekDates),
+  );
+  head.append(left, el("div", "wkblock", day.block));
+  return head;
+};
+
+const renderDayRow = (day: Day, isToday: boolean): HTMLElement => {
+  const row = el("a", isToday ? "dayrow today" : "dayrow");
+  (row as HTMLAnchorElement).href = `#/day/${day.date}`;
+
+  const dow = el("div", "dow");
+  dow.append(
+    document.createTextNode(day.dow),
+    el("br"),
+    document.createTextNode(day.dateLabel.replace(/^[A-Za-z]{3}\s/, "")),
+  );
+
+  const sess = el("div", "sess");
+  sess.append(
+    document.createTextNode(day.sessionTitle),
+    el("div", "lift", mainLiftLabel(day)),
+  );
+
+  row.append(dow, sess, el("div", "chev", "›"));
+  return row;
+};
+
 export const renderScheduleScreen = (plan: Plan, todayDate: string): HTMLElement => {
-  const root = document.createElement("div");
-  root.className = "screen schedule-screen";
-  root.innerHTML = `<div class="scr-title">Schedule</div>`;
+  const root = el("div", "screen schedule-screen");
+  root.appendChild(el("div", "scr-title", "Schedule"));
   let currentWeek: string | number | null = null;
   for (const day of plan.days) {
     if (day.week !== currentWeek) {
       currentWeek = day.week;
-      const head = document.createElement("div");
-      head.className = "wk-head";
-      const label = typeof day.week === "number" ? `Week ${day.week}` : `Ramp-In ${day.week}`;
-      head.innerHTML = `<div><span class="wkn">${label}</span> <span class="wkdates">${day.weekDates}</span></div><div class="wkblock">${day.block}</div>`;
-      root.appendChild(head);
-      const focus = document.createElement("div");
-      focus.className = "wk-focus"; focus.textContent = day.weekFocus;
-      root.appendChild(focus);
+      root.appendChild(renderWeekHead(day));
+      root.appendChild(el("div", "wk-focus", day.weekFocus));
     }
-    const rowLink = document.createElement("a");
-    rowLink.className = "dayrow" + (day.date === todayDate ? " today" : "");
-    rowLink.href = `#/day/${day.date}`;
-    rowLink.innerHTML =
-      `<div class="dow">${day.dow}<br>${day.dateLabel.replace(/^[A-Za-z]{3}\s/, "")}</div>` +
-      `<div class="sess">${day.sessionTitle}<div class="lift">${mainLiftLabel(day)}</div></div>` +
-      `<div class="chev">›</div>`;
-    root.appendChild(rowLink);
+    root.appendChild(renderDayRow(day, day.date === todayDate));
   }
   return root;
 };

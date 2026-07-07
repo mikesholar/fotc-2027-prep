@@ -1,8 +1,8 @@
-import type { Plan, Maxes } from "../core/schema";
+import type { Plan, Maxes, LiftKey } from "../core/schema";
 
 export const renderMaxesScreen = (
   plan: Plan, maxes: Maxes,
-  onChange: (next: Maxes) => void, onReset: () => void,
+  onChange: (key: LiftKey, value: number) => void, onReset: () => void,
 ): HTMLElement => {
   const root = document.createElement("div");
   root.className = "screen maxes-screen";
@@ -26,7 +26,7 @@ export const renderMaxesScreen = (
     input.value = String(maxes[lift.key]);
     input.oninput = () => {
       const v = Number(input.value);
-      if (v > 0) onChange({ ...maxes, [lift.key]: v });
+      if (v > 0) onChange(lift.key, v);
     };
     const unit = document.createElement("span");
     unit.className = "unit"; unit.textContent = "lb";
@@ -35,6 +35,7 @@ export const renderMaxesScreen = (
     root.appendChild(row);
   }
   const reset = document.createElement("button");
+  reset.type = "button";
   reset.className = "reset"; reset.textContent = "Reset to example maxes";
   reset.onclick = onReset;
   root.appendChild(reset);
