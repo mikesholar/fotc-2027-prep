@@ -6,7 +6,7 @@ type Day = Plan["days"][number];
 
 const mainLiftLabel = (day: Day): string => {
   const m = day.sections.find((s) => s.type === "mainLift");
-  return m && m.type === "mainLift" ? m.liftName : day.sessionTitle;
+  return m && m.type === "mainLift" ? m.liftName : "";
 };
 
 const renderWeekHead = (day: Day): HTMLElement => {
@@ -38,10 +38,9 @@ const renderDayRow = (day: Day, isToday: boolean): HTMLElement => {
   );
 
   const sess = el("div", "sess");
-  sess.append(
-    document.createTextNode(day.sessionTitle),
-    el("div", "lift", mainLiftLabel(day)),
-  );
+  sess.append(document.createTextNode(day.sessionTitle));
+  const lift = mainLiftLabel(day);
+  if (lift) sess.append(el("div", "lift", lift));
 
   row.append(dow, sess, el("div", "chev", "›"));
   return row;
