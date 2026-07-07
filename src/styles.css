@@ -2,7 +2,11 @@
 * { box-sizing: border-box; }
 body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #0b0e12; color: #e6e9ee; }
 
-.screen { max-width: 480px; margin: 0 auto; padding: 14px; }
+.screen {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: calc(14px + env(safe-area-inset-top)) calc(14px + env(safe-area-inset-right)) calc(14px + env(safe-area-inset-bottom)) calc(14px + env(safe-area-inset-left));
+}
 
 /* ---- Day picker ---- */
 .picker { display: flex; align-items: center; justify-content: space-between; background: #161b22; border: 1px solid #2a2f3a; border-radius: 14px; padding: 10px 12px; margin-bottom: 6px; }
