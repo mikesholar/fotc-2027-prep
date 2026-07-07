@@ -92,11 +92,44 @@ def test_dec29_primer_main_lift_is_bench_not_cleanjerk():
     assert main["liftKey"] == "bench"
 
 
+def _main_pct_loads(day):
+    main = next(s for s in day["sections"] if s["type"] == "mainLift")
+    return main["liftKey"], [st["expectedLoad"] for st in main["sets"] if "expectedLoad" in st]
+
+
+def test_prose_buried_front_squat_sim_is_recovered():
+    plan = load_plan()
+    # "... FS first: FRONT SQUAT 3x3 @ 80%", load cell "80% -> 180"
+    key, loads = _main_pct_loads(find_day(plan, "2026-08-29"))
+    assert key == "frontSquat" and 180 in loads
+
+
+def test_front_squat_sim_with_heavy_single_is_recovered():
+    plan = load_plan()
+    # "FS first: FRONT SQUAT 1x1 heavy for day + 3x3 @ 80%"
+    key, loads = _main_pct_loads(find_day(plan, "2026-09-05"))
+    assert key == "frontSquat" and 180 in loads
+
+
+def test_backoff_deadlift_line_is_recovered():
+    plan = load_plan()
+    # title "DEADLIFT + BOX JUMP...", "BACK-OFF BARBELL: E:30 x 10: 1 deadlift @ 80%"
+    key, loads = _main_pct_loads(find_day(plan, "2026-12-18"))
+    assert key == "deadlift" and 250 in loads
+
+
+def test_scheme_first_lowercase_back_squat_is_recovered():
+    plan = load_plan()
+    # "3x2 back squat @ 70% · EMOM 4: ..."  (lowercase, scheme before the lift name)
+    key, loads = _main_pct_loads(find_day(plan, "2027-01-11"))
+    assert key == "backSquat" and 195 in loads
+
+
 def test_main_lift_day_count_is_pinned():
     # Guards against a silent lead-line/backsolve regression.
     plan = load_plan()
     n = sum(1 for d in plan["days"] for s in d["sections"] if s["type"] == "mainLift")
-    assert n == 66
+    assert n == 72
 
 
 def test_lower_a_day_has_prep_main_accessory_boxes():

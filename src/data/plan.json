@@ -2610,7 +2610,26 @@
         {
           "type": "text",
           "label": "Notes",
-          "text": "30 clean & jerks @ 115 (4:00 cap) → rest exactly 1:00 → 4:00 AMRAP clean & jerks @ 135.\nRecord both + your cycling strategy (TNG sets vs fast singles). Progresses to 135/155 in W21 and FULL comp loads 165/185 in the W24 sim. FS first: FRONT SQUAT 3x3 @ 80%."
+          "text": "30 clean & jerks @ 115 (4:00 cap) → rest exactly 1:00 → 4:00 AMRAP clean & jerks @ 135."
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              180
+            ]
+          ]
         }
       ]
     },
@@ -2812,7 +2831,30 @@
         {
           "type": "text",
           "label": "Notes",
-          "text": "AMRAP 14: 15 knees-to-chest · 10 box jump overs 24 (step down) · 5 deadlifts 185 — the Novice version.\nDirect comparison to last October's score — log the delta. FS first: FRONT SQUAT 1x1 heavy for day + 3x3 @ 80%."
+          "text": "AMRAP 14: 15 knees-to-chest · 10 box jump overs 24 (step down) · 5 deadlifts 185 — the Novice version."
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "1×1",
+              "note": "heavy for day"
+            },
+            {
+              "scheme": "3×3",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              180
+            ]
+          ]
         }
       ]
     },
@@ -3208,7 +3250,26 @@
         {
           "type": "text",
           "label": "Notes",
-          "text": "3 rounds: 40 single-unders · 20 jumping pull-ups → 2 rounds: 60 SU · 15 jumping C2B → 1 round: 120 SU · 10 pull-ups. 12:00 cap — the Novice version.\nJumping pull-up CADENCE is a real score-mover at Novice — set bar/box height and rhythm BEFORE 3-2-1-go. FS first: FRONT SQUAT 4x4 @ 80%."
+          "text": "3 rounds: 40 single-unders · 20 jumping pull-ups → 2 rounds: 60 SU · 15 jumping C2B → 1 round: 120 SU · 10 pull-ups. 12:00 cap — the Novice version."
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.8,
+              "expectedLoad": 180
+            }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              180
+            ]
+          ]
         }
       ]
     },
@@ -4859,6 +4920,11 @@
         {
           "type": "text",
           "label": "Accessory",
+          "text": "4 strict pull-ups after each set"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
           "text": "E90s x 8, alternating: A) 6 CTB + 8 hanging leg raises  B) 3 wall walks. 2026 went hard on hanging gymnastics (JBC: 30 pull-ups → 15 CTB) but wall work has ruled past years — train both"
         },
         {
@@ -5019,9 +5085,28 @@
       "sessionTitle": "DEADLIFT + BOX JUMP CAPACITY (Qualifier WK4 pattern, heavier)",
       "sections": [
         {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 250
+            }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              250
+            ]
+          ]
+        },
+        {
           "type": "text",
-          "label": "Notes",
-          "text": "BACK-OFF BARBELL: E:30 x 10: 1 deadlift @ 80%\nThen AMRAP 12: 12 hanging leg raises · 9 box jump overs 24 · 5 deadlifts 225 (qualifier pattern; 2026 championship moved deadlifts to double-DBs — JBC covers that Saturday).\nCompare engine to W7's version of this."
+          "label": "Accessory",
+          "text": "Then AMRAP 12: 12 hanging leg raises · 9 box jump overs 24 · 5 deadlifts 225 (qualifier pattern; 2026 championship moved deadlifts to double-DBs — JBC covers that Saturday).\nCompare engine to W7's version of this."
         }
       ]
     },
@@ -5326,9 +5411,23 @@
       "sessionTitle": "Primer B",
       "sections": [
         {
-          "type": "text",
-          "label": "Notes",
-          "text": "Full competition warm-up rehearsal → one 4:00 sprint piece: 12 cal row · 9 thrusters 75 · 6 pull-ups, repeat. Then 2 heavy-ish C&J singles @ 80%, crisp."
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Clean & Jerk",
+          "liftKey": "cleanJerk",
+          "sets": [
+            {
+              "scheme": "",
+              "pct": 0.8,
+              "expectedLoad": 165
+            }
+          ],
+          "printedLoads": [
+            [
+              0.8,
+              165
+            ]
+          ]
         }
       ]
     },
@@ -5360,9 +5459,28 @@
       "sessionTitle": "Light Primer",
       "sections": [
         {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "3×2",
+              "pct": 0.7,
+              "expectedLoad": 195
+            }
+          ],
+          "printedLoads": [
+            [
+              0.7,
+              195
+            ]
+          ]
+        },
+        {
           "type": "text",
-          "label": "Notes",
-          "text": "3x2 back squat @ 70% · EMOM 4: 2 wall walks · 8:00 easy spin."
+          "label": "Accessory",
+          "text": "EMOM 4: 2 wall walks · 8:00 easy spin."
         }
       ]
     },

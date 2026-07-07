@@ -47,10 +47,17 @@ LIFT_BY_NAME = [
 DISPLAY_NAME = {l["key"]: l["name"] for l in LIFTS}
 
 SET_RE = re.compile(r"(\d+)\s*x\s*(\d+)\s*@\s*(\d+(?:\.\d+)?)%", re.IGNORECASE)
+PCT_RE = re.compile(r"@\s*(\d+(?:\.\d+)?)%")
 
 # Boundary markers: a "·"-segment starting with any of these (or a DIFFERENT lift
 # name) is an accessory / different movement, not part of the main lift.
-STOP_RE = re.compile(r"^(\+|E:30|E90s|EMOM|E2MOM|EOM|\d+:\d+)", re.IGNORECASE)
+STOP_RE = re.compile(r"^(\+|E:30|E90s|EMOM|E2MOM|EOM|AMRAP|\d+:\d+)", re.IGNORECASE)
+
+# A line's first "·"-segment counts as a strength prescription if it carries any of
+# these signals: a rep scheme (NxM / N/N/N), an "@ P%", or a heavy/climb cue.
+STRENGTH_RE = re.compile(
+    r"\d+\s*[x/]\s*\d+|@\s*\d+(?:\.\d+)?%|\bheavy\b|\bclimb|\bmax\b|\bbuild\b|\bmoderate\b",
+    re.IGNORECASE)
 
 # Leading rep-scheme token for a note set: "5/5/3/3/3", "1x1", "3/3/1/1/1".
 NOTE_SCHEME_RE = re.compile(r"^((?:\d+\s*x\s*\d+)|(?:[\d/]+))\s*[—-]?\s*(.*)$")
@@ -71,45 +78,88 @@ def parse_load_cell(load_cell):
     return pairs
 
 
-def lift_at_start(text):
-    # (name, key) if text starts with a barbell lift name, else (None, None)
-    stripped = text.strip()
-    for name, key in LIFT_BY_NAME:
-        if re.match(re.escape(name) + r"\b", stripped, re.IGNORECASE):
-            return name, key
-    return None, None
+def backsolve_lift(load_cell):
+    # The lift whose default max reproduces every printed (pct -> load) pair under
+    # round-half-up. This tells us which lift the sheet's load cell was auto-computed
+    # for -- but the cell may belong to an accessory, so it is only ONE signal.
+    pairs = parse_load_cell(load_cell)
+    if not pairs:
+        return None
+    for key, mx in DEFAULT_MAXES.items():
+        if all(round5(p * mx) == load for p, load in pairs):
+            return key
+    return None
 
 
-def find_lead_line(session):
-    # The main-lift line = first line AFTER the title (line 0) whose stripped start
-    # is a barbell lift name. Prep and accessory lines never start with a lift name.
+def find_lead_lift(session):
+    # leadLift = the first non-prep line after the title that leads (optionally after
+    # an "NxM " scheme) with a barbell lift name AND whose first "·"-segment is a real
+    # strength prescription. Line-start anchoring keeps mid-line metcon mentions
+    # (e.g. "20 DB snatch 50") from ever counting as a main lift.
     for line in session.splitlines()[1:]:
-        name, key = lift_at_start(line)
-        if key:
-            return line.strip(), name, key
+        s = line.strip()
+        if s.lower().startswith("prep"):
+            continue
+        first_seg = s.split("·")[0]
+        if not STRENGTH_RE.search(first_seg):
+            continue
+        for name, key in LIFT_BY_NAME:
+            if re.match(r"(?:\d+\s*x\s*\d+\s+)?" + re.escape(name) + r"\b", s, re.IGNORECASE):
+                return s, name, key
     return None, None, None
 
 
+def find_pct_line(session, key):
+    # The line that prescribes `key` with an "@ P%" -- used when the load cell resolves
+    # to `key` (backsolve). Metcons use absolute loads, so requiring "@ P%" alongside
+    # the lift name avoids picking up conditioning mentions of the lift.
+    aliases = [name for name, k in LIFT_BY_NAME if k == key]
+    for line in session.splitlines()[1:]:
+        s = line.strip()
+        if s.lower().startswith("prep"):
+            continue
+        if PCT_RE.search(s):
+            for name in aliases:
+                if re.search(re.escape(name) + r"\b", s, re.IGNORECASE):
+                    return s, name
+    return None, None
+
+
 def parse_note_segment(seg):
-    seg = seg.strip(" ·—-")
+    seg = seg.strip(" ·—-.")
     m = NOTE_SCHEME_RE.match(seg)
     if m and m.group(1):
-        return {"scheme": re.sub(r"\s*x\s*", "×", m.group(1)), "note": m.group(2).strip(" —-·")}
+        return {"scheme": re.sub(r"\s*x\s*", "×", m.group(1)), "note": m.group(2).strip(" —-·.")}
     return {"scheme": "", "note": seg}
 
 
-def parse_main_lift(session, load_cell):
-    # Identify the main lift by its LEAD LINE (the named lift is authoritative);
-    # the load cell only verifies loads later. Returns (section, excluded_text) or
-    # (None, None). Sets come from the lead line's own "·"-segments, up to the
-    # first accessory marker / different-lift boundary.
-    lead_line, name, key = find_lead_line(session)
-    if not key:
-        return None, None
-    mx = DEFAULT_MAXES[key]
-    body = lead_line[len(name):].lstrip(":").strip()
-    sets, excluded = [], []
-    stopped = False
+def parse_piece(piece, mx):
+    piece = piece.strip(" ·—.")
+    if not piece:
+        return []
+    contiguous = SET_RE.findall(piece)
+    if contiguous:
+        return [{"scheme": f"{c}×{r}", "pct": float(p) / 100.0,
+                 "expectedLoad": round5(float(p) / 100.0 * mx)} for c, r, p in contiguous]
+    pcts = PCT_RE.findall(piece)
+    if len(pcts) == 1:  # scheme-first / prose-separated, e.g. "3x2 back squat @ 70%"
+        m = re.search(r"(\d+)\s*x\s*(\d+)", piece)
+        pct = float(pcts[0]) / 100.0
+        return [{"scheme": f"{m.group(1)}×{m.group(2)}" if m else "",
+                 "pct": pct, "expectedLoad": round5(pct * mx)}]
+    return [parse_note_segment(piece)]
+
+
+def parse_sets_from_line(line, name, key, mx):
+    # Parse the main lift's own sets, starting at its name (plus an immediately
+    # preceding "NxM" scheme for scheme-first lines). Split on "·" up to the first
+    # accessory / different-lift boundary; within a segment split "·"-joined sets and
+    # "+"-joined sets (a "+" piece only counts as a set if it carries an "@ P%").
+    m = re.search(re.escape(name) + r"\b", line, re.IGNORECASE)
+    preceding = re.search(r"(\d+\s*x\s*\d+)\s*$", line[:m.start()])
+    prefix = (preceding.group(1) + " ") if preceding else ""
+    body = (prefix + line[m.end():].lstrip(":")).strip()
+    sets, excluded, stopped = [], [], False
     for i, seg in enumerate(body.split("·")):
         seg = seg.strip()
         if not seg:
@@ -121,18 +171,51 @@ def parse_main_lift(session, load_cell):
         if stopped:
             excluded.append(seg)
             continue
-        if SET_RE.search(seg):
-            for count, reps, pct_s in SET_RE.findall(seg):
-                pct = float(pct_s) / 100.0
-                sets.append({"scheme": f"{count}×{reps}", "pct": pct,
-                             "expectedLoad": round5(pct * mx)})
-        else:
-            sets.append(parse_note_segment(seg))
-    printed = [[pct, load] for pct, load in parse_load_cell(load_cell)]
+        for j, piece in enumerate(re.split(r"\s\+\s", seg)):
+            piece = piece.strip()
+            if not piece:
+                continue
+            if j > 0 and not PCT_RE.search(piece):  # "+ accessory", not another set
+                excluded.append(piece)
+                continue
+            sets.extend(parse_piece(piece, mx))
+    return sets, " · ".join(excluded)
+
+
+def lift_at_start(text):
+    # (name, key) if text starts with a barbell lift name, else (None, None)
+    stripped = text.strip()
+    for name, key in LIFT_BY_NAME:
+        if re.match(re.escape(name) + r"\b", stripped, re.IGNORECASE):
+            return name, key
+    return None, None
+
+
+def identify_main_lift(session, load_cell):
+    # Unify the two signals. If the headline (leadLift) differs from the load cell's
+    # lift (backsolve), the cell belongs to an accessory -> main = leadLift (parsed
+    # from its own line). Otherwise main = backsolve, parsed from its "@ P%" line.
+    # Returns (section, anchor_line, excluded_text) or (None, None, None).
+    back_key = backsolve_lift(load_cell)
+    lead_line, lead_name, lead_key = find_lead_lift(session)
+    if lead_key and lead_key != back_key:
+        anchor, name, key = lead_line, lead_name, lead_key
+        require_pct = False
+    elif back_key:
+        anchor, name = find_pct_line(session, back_key)
+        if not anchor:
+            return None, None, None
+        key, require_pct = back_key, True
+    else:
+        return None, None, None
+    mx = DEFAULT_MAXES[key]
+    sets, excluded = parse_sets_from_line(anchor, name, key, mx)
+    if require_pct and not any("pct" in st for st in sets):
+        return None, None, None
     section = {"type": "mainLift", "label": "Main Lift",
                "liftName": DISPLAY_NAME[key], "liftKey": key, "sets": sets,
-               "printedLoads": printed}
-    return section, " · ".join(excluded)
+               "printedLoads": [[pct, load] for pct, load in parse_load_cell(load_cell)]}
+    return section, anchor, excluded
 
 
 def plan_year_for_month(month):
@@ -292,12 +375,8 @@ def extract_rampin_days():
 def build_plan():
     days = extract_block_days()
     for d in days:
-        lead_line, _name, key = find_lead_line(d["_session"])
-        if key:
-            main_lift, excluded = parse_main_lift(d["_session"], d["_loadCell"])
-        else:
-            main_lift, excluded = None, None
-        d["sections"] = make_sections(d["_session"], main_lift, lead_line, excluded)
+        main_lift, anchor, excluded = identify_main_lift(d["_session"], d["_loadCell"])
+        d["sections"] = make_sections(d["_session"], main_lift, anchor, excluded)
     days = extract_rampin_days() + days
     days.sort(key=lambda d: d["date"])
     return {"lifts": LIFTS, "defaultMaxes": DEFAULT_MAXES, "days": days}
