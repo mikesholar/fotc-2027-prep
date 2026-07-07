@@ -38,7 +38,7 @@ export const startApp = (mount: HTMLElement): void => {
         isToday: route.date === todayIso(),
       }));
     }
-    window.scrollTo(0, 0);
+    if (typeof window.scrollTo === "function") window.scrollTo(0, 0);
   };
 
   onRouteChange(render);

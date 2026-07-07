@@ -19,11 +19,19 @@ const renderMain = (s: Extract<ResolvedSection, { type: "mainLift" }>): HTMLElem
   const table = el("table", "sets");
   for (const r of s.rows) {
     const tr = el("tr");
-    tr.appendChild(el("td", "scheme", r.scheme));
     if ("load" in r) {
-      tr.appendChild(el("td", "pct", `${+(r.pct * 100).toFixed(1)}%`));
+      const pctLabel = `${+(r.pct * 100).toFixed(1)}%`;
+      if (r.scheme) {
+        tr.appendChild(el("td", "scheme", r.scheme));
+        tr.appendChild(el("td", "pct", pctLabel));
+      } else {
+        const td = el("td", "pct", pctLabel);
+        (td as HTMLTableCellElement).colSpan = 2;
+        tr.appendChild(td);
+      }
       tr.appendChild(el("td", "load", `${r.load} lb`));
     } else {
+      tr.appendChild(el("td", "scheme", r.scheme));
       const td = el("td", "note", r.note);
       (td as HTMLTableCellElement).colSpan = 2;
       tr.appendChild(td);
