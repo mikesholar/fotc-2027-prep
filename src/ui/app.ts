@@ -17,6 +17,7 @@ export const startApp = (mount: HTMLElement): void => {
   const defaultMaxes = plan.defaultMaxes as Maxes;
   const hasSkills = (plan.skills?.length ?? 0) > 0;
   let maxes: Maxes = loadMaxes(defaultMaxes, athlete.storageKey);
+  let lastDayDate = pickCurrentDay(dates, todayIso());
 
   const render = (): void => {
     const route = parseRoute(window.location.hash);
@@ -34,11 +35,12 @@ export const startApp = (mount: HTMLElement): void => {
       mount.appendChild(renderScheduleScreen(plan, todayIso()));
     } else if (route.name === "skills") {
       if (!hasSkills) { navigate({ name: "day", date: pickCurrentDay(dates, todayIso()) }); return; }
-      mount.appendChild(renderSkillsScreen(plan));
+      mount.appendChild(renderSkillsScreen(plan, lastDayDate));
     } else {
       const idx = dates.indexOf(route.date);
       const day = plan.days[idx];
       if (!day) { navigate({ name: "day", date: pickCurrentDay(dates, todayIso()) }); return; }
+      lastDayDate = route.date;
       mount.appendChild(renderDayScreen(resolveDay(day, maxes), {
         prevDate: idx > 0 ? dates[idx - 1] : null,
         nextDate: idx < dates.length - 1 ? dates[idx + 1] : null,

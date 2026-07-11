@@ -4,7 +4,7 @@ import { el } from "./dom";
 const CHIP_TEXT: Record<"No" | "Some", string> = { No: "Not yet", Some: "Building" };
 const CHIP_CLASS: Record<"No" | "Some", string> = { No: "chip no", Some: "chip some" };
 
-export const renderSkillsScreen = (plan: Plan): HTMLElement => {
+export const renderSkillsScreen = (plan: Plan, backDate: string): HTMLElement => {
   const root = el("div", "screen skills-screen");
   root.appendChild(el("div", "scr-title", "Skills"));
   root.appendChild(el("div", "scr-sub",
@@ -40,8 +40,8 @@ export const renderSkillsScreen = (plan: Plan): HTMLElement => {
       `✓ ${plan.solidCount} of ${total} Novice movements already solid`));
   }
 
-  const back = el("a", "nav-link", "← Back to schedule");
-  (back as HTMLAnchorElement).href = "#/schedule";
+  const back = el("a", "nav-link", "← Back to day");
+  (back as HTMLAnchorElement).href = `#/day/${backDate}`;
   root.appendChild(back);
   return root;
 };

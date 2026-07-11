@@ -177,6 +177,16 @@ describe("blair's page", () => {
     expect(skillsMount.querySelectorAll(".skill").length).toBe(3);
   });
 
+  it("sends the skills back link to a day, not the schedule", () => {
+    window.location.hash = "#/skills";
+    const mount = mountApp();
+    const back = Array.from(mount.querySelectorAll<HTMLAnchorElement>("a.nav-link"))
+      .find((a) => a.textContent?.startsWith("←"))!;
+    const href = back.getAttribute("href")!;
+    expect(href).toMatch(/^#\/day\/\d{4}-\d{2}-\d{2}$/);
+    expect(href).not.toBe("#/schedule");
+  });
+
   it("marks the qualifier block on her schedule", () => {
     window.location.hash = "#/schedule";
     const mount = mountApp();
