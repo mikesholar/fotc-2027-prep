@@ -1,0 +1,44 @@
+{
+  "defaultMaxes": {
+    "backSquat": 205,
+    "frontSquat": 150,
+    "bench": 125,
+    "strictPress": 100,
+    "deadlift": 215,
+    "cleanJerk": 135,
+    "snatch": 110
+  },
+  "skills": [
+    {
+      "movement": "Pull-ups",
+      "status": "No",
+      "progression": [
+        "Ring rows · 3–4 × 8–10",
+        "Banded pull-ups",
+        "Negatives · 3–5s lower",
+        "Kip swing → kipping pull-up"
+      ],
+      "cue": "Slot into warm-up on pull days."
+    },
+    {
+      "movement": "Wall walk",
+      "status": "No",
+      "progression": [
+        "Incline shoulder taps",
+        "Partial wall walk (¾)",
+        "Full wall walk · nose to wall"
+      ]
+    },
+    {
+      "movement": "Toes-to-bar",
+      "status": "Some",
+      "progression": [
+        "Hanging knee raise",
+        "Knee-to-elbow",
+        "Toes-to-bar"
+      ]
+    }
+  ],
+  "solidCount": 9,
+  "qualifierBlock": "B3 Qualifier"
+}
