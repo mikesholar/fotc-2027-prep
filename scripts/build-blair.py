@@ -32,13 +32,25 @@ GAP_PROGRESSIONS = {
     "Wall walk": {
         "display": "Wall walk",
         "progression": [
-            "Incline shoulder taps", "Partial wall walk (¾)",
-            "Full wall walk · nose to wall",
+            "Elevated plank · shoulder taps, feet on a box",
+            "Wall plank · feet low, hold 30–60s",
+            "Weight shifts · rock hand to hand",
+            "Half wall walk · to a mid line, hold, walk down",
+            "Full wall walk · chest to wall, controlled down",
         ],
+        "cue": "Add distance with tape lines; feet leave the wall before the hands move. 2–3×/week.",
     },
     "Knee to chest": {
         "display": "Toes-to-bar",
-        "progression": ["Hanging knee raise", "Knee-to-elbow", "Toes-to-bar"],
+        "progression": [
+            "Scapular pull-ups · 3–5s active-shoulder hold",
+            "Hollow hold · 20–30s, tight core",
+            "Beat swings · hollow ↔ arch rhythm",
+            "Knee raises · knees to chest in rhythm",
+            "Knees to elbows · drive higher",
+            "Toes-to-bar · flick both feet to the bar",
+        ],
+        "cue": "Own the hollow-to-arch swing before adding range; keep lats engaged and core tight. 2–3×/week.",
     },
 }
 

@@ -12,7 +12,7 @@ describe("skills screen", () => {
     const chips = Array.from(root.querySelectorAll(".chip")).map((c) => c.textContent);
     expect(chips).toEqual(["Not yet", "Not yet", "Building"]);
 
-    expect(root.querySelectorAll(".step .txt").length).toBe(6 + 3 + 3);
+    expect(root.querySelectorAll(".step .txt").length).toBe(6 + 5 + 6);
     expect(root.querySelector(".solid-note")?.textContent).toContain("9 of 12");
   });
 
