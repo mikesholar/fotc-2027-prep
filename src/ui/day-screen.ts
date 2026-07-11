@@ -54,7 +54,7 @@ const renderSection = (s: ResolvedSection): HTMLElement => {
 
 export const renderDayScreen = (
   day: ResolvedDay,
-  nav: { prevDate: string | null; nextDate: string | null; isToday: boolean },
+  nav: { prevDate: string | null; nextDate: string | null; isToday: boolean; hasSkills?: boolean },
 ): HTMLElement => {
   const root = el("div", "screen day-screen");
   const picker = el("div", "picker");
@@ -71,6 +71,11 @@ export const renderDayScreen = (
   root.appendChild(el("div", "sess-title", day.sessionTitle));
   root.appendChild(el("div", "sess-sub", day.weekFocus));
   for (const s of day.sections) root.appendChild(renderSection(s));
+  if (nav.hasSkills) {
+    const skills = el("a", "nav-link", "Skills →");
+    (skills as HTMLAnchorElement).href = "#/skills";
+    root.appendChild(skills);
+  }
   const link = el("a", "nav-link", "All weeks →");
   (link as HTMLAnchorElement).href = "#/schedule";
   root.appendChild(link);

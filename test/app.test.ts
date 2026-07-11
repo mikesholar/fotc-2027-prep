@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { startApp } from "../src/ui/app";
 import planJson from "../src/data/plan.json";
 import { parsePlan, type Maxes } from "../src/core/schema";
@@ -140,5 +140,72 @@ describe("loads reflect the edited max", () => {
     );
     const expected = Math.round((0.8 * 300) / 5) * 5;
     expect(loads).toContain(`${expected} lb`);
+  });
+});
+
+describe("blair's page", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    document.body.innerHTML = '<div id="app"></div>';
+    window.history.replaceState(null, "", "/?athlete=blair");
+    window.location.hash = "#/maxes";
+  });
+  afterEach(() => window.history.replaceState(null, "", "/"));
+
+  it("mounts blair's plan with her default max and title", () => {
+    const mount = mountApp();
+    const first = mount.querySelector<HTMLInputElement>(".maxrow input")!;
+    expect(first.value).toBe("205");
+    expect(document.title).toBe("FOTC 2027 · Blair");
+  });
+
+  it("stores edits under blair's key, never mike's", () => {
+    const mount = mountApp();
+    setInput(mount.querySelector<HTMLInputElement>(".maxrow input")!, "210");
+    expect(localStorage.getItem("fotc.maxes.blair")).toContain("210");
+    expect(localStorage.getItem("fotc.maxes")).toBeNull();
+  });
+
+  it("offers a Skills link on a day and renders three skill cards", () => {
+    window.location.hash = "#/day/2026-09-28";
+    const dayMount = mountApp();
+    const link = Array.from(dayMount.querySelectorAll("a.nav-link")).find((a) => a.textContent === "Skills →");
+    expect(link).toBeTruthy();
+
+    window.location.hash = "#/skills";
+    const skillsMount = mountApp();
+    expect(skillsMount.querySelectorAll(".skill").length).toBe(3);
+  });
+
+  it("marks the qualifier block on her schedule", () => {
+    window.location.hash = "#/schedule";
+    const mount = mountApp();
+    expect(mount.querySelector(".qtarget")).not.toBeNull();
+    expect(mount.querySelector(".wk-head.q")).not.toBeNull();
+  });
+});
+
+describe("mike's page has no skills affordance", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    document.body.innerHTML = '<div id="app"></div>';
+    window.history.replaceState(null, "", "/");
+  });
+
+  it("shows no Skills link and redirects #/skills to a day", () => {
+    window.location.hash = "#/day/2026-09-28";
+    const mount = mountApp();
+    const link = Array.from(mount.querySelectorAll("a.nav-link")).find((a) => a.textContent === "Skills →");
+    expect(link).toBeUndefined();
+
+    window.location.hash = "#/skills";
+    mountApp();
+    expect(window.location.hash).toMatch(/^#\/day\/\d{4}-\d{2}-\d{2}$/);
+  });
+
+  it("shows no qualifier marker on his schedule", () => {
+    window.location.hash = "#/schedule";
+    const mount = mountApp();
+    expect(mount.querySelector(".qtarget")).toBeNull();
   });
 });
