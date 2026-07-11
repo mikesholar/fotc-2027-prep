@@ -20,10 +20,14 @@ GAP_PROGRESSIONS = {
     "Pull ups": {
         "display": "Pull-ups",
         "progression": [
-            "Ring rows · 3–4 × 8–10", "Banded pull-ups",
-            "Negatives · 3–5s lower", "Kip swing → kipping pull-up",
+            "Active dead hang · build to 60s",
+            "Scapular pull-ups · 3–5s hold",
+            "Tempo ring rows · 1s up · 1s squeeze · 3s down",
+            "Eccentric pull-ups · 5s+ lower",
+            "Band-assisted pull-ups · thin the band over time",
+            "5 strict pull-ups → then kipping",
         ],
-        "cue": "Slot into warm-up on pull days.",
+        "cue": "5 min, 3–4×/week on non-consecutive days. Eccentrics drive the strength; hold kipping until 5 strict.",
     },
     "Wall walk": {
         "display": "Wall walk",
