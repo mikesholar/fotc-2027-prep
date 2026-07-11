@@ -11,12 +11,10 @@ def load_blair():
 
 def test_blair_maxes_are_seven_positive_ints():
     b = load_blair()
-    assert set(b["defaultMaxes"]) == {
-        "backSquat", "frontSquat", "bench", "strictPress",
-        "deadlift", "cleanJerk", "snatch",
+    assert b["defaultMaxes"] == {
+        "backSquat": 205, "frontSquat": 150, "bench": 125, "strictPress": 100,
+        "deadlift": 215, "cleanJerk": 135, "snatch": 110,
     }
-    assert b["defaultMaxes"]["backSquat"] == 205
-    assert b["defaultMaxes"]["snatch"] == 110
     assert all(isinstance(v, int) and v > 0 for v in b["defaultMaxes"].values())
 
 

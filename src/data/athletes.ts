@@ -29,8 +29,8 @@ const ATHLETES: Record<AthleteId, Athlete> = {
 };
 
 export const selectAthlete = (search: string): AthleteId => {
-  const athlete = new URLSearchParams(search).get("athlete");
-  return athlete === "blair" ? "blair" : "mike";
+  const requested = new URLSearchParams(search).get("athlete");
+  return requested !== null && requested in ATHLETES ? (requested as AthleteId) : "mike";
 };
 
 export const getAthlete = (id: AthleteId): Athlete => ATHLETES[id];
