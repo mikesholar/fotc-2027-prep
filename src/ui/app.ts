@@ -28,6 +28,9 @@ export const startApp = (mount: HTMLElement): void => {
         () => { maxes = { ...defaultMaxes }; saveMaxes(maxes); render(); }));
     } else if (route.name === "schedule") {
       mount.appendChild(renderScheduleScreen(plan, todayIso()));
+    } else if (route.name === "skills") {
+      navigate({ name: "day", date: pickCurrentDay(dates, todayIso()) });
+      return;
     } else {
       const idx = dates.indexOf(route.date);
       const day = plan.days[idx];
