@@ -12,4 +12,29 @@ describe("plan schema", () => {
   it("rejects malformed data", () => {
     expect(() => parsePlan({ days: [] })).toThrow();
   });
+
+  it("accepts an optional skills/qualifier/solidCount block", () => {
+    const plan = parsePlan({
+      lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
+      defaultMaxes: { backSquat: 205 },
+      days: [],
+      skills: [{ movement: "Pull-ups", status: "No", progression: ["Ring rows"], cue: "Warm-up" }],
+      solidCount: 9,
+      qualifierBlock: "B3 Qualifier",
+    });
+    expect(plan.skills?.[0].movement).toBe("Pull-ups");
+    expect(plan.qualifierBlock).toBe("B3 Qualifier");
+    expect(plan.solidCount).toBe(9);
+  });
+
+  it("rejects a skill with an unknown status", () => {
+    expect(() =>
+      parsePlan({
+        lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
+        defaultMaxes: { backSquat: 205 },
+        days: [],
+        skills: [{ movement: "Pull-ups", status: "Maybe", progression: ["x"] }],
+      }),
+    ).toThrow();
+  });
 });

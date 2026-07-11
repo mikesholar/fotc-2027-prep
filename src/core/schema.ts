@@ -29,10 +29,21 @@ export const DaySchema = z.object({
 });
 export type Day = z.infer<typeof DaySchema>;
 
+export const SkillSchema = z.object({
+  movement: z.string(),
+  status: z.enum(["No", "Some"]),
+  progression: z.array(z.string()).min(1),
+  cue: z.string().optional(),
+});
+export type Skill = z.infer<typeof SkillSchema>;
+
 export const PlanSchema = z.object({
   lifts: z.array(z.object({ key: LiftKeySchema, name: z.string(), isEstimate: z.boolean() })),
   defaultMaxes: z.record(LiftKeySchema, z.number()),
   days: z.array(DaySchema),
+  skills: z.array(SkillSchema).optional(),
+  solidCount: z.number().optional(),
+  qualifierBlock: z.string().optional(),
 });
 export type Plan = z.infer<typeof PlanSchema>;
 export type Maxes = Record<LiftKey, number>;
