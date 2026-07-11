@@ -187,6 +187,18 @@ describe("blair's page", () => {
     expect(href).not.toBe("#/schedule");
   });
 
+  it("persists a ticked rung under blair's skills key and updates the chip", () => {
+    window.location.hash = "#/skills";
+    const mount = mountApp();
+
+    expect(mount.querySelector(".chip")?.textContent).toBe("Not yet");
+    mount.querySelector<HTMLElement>(".step")!.click();
+
+    expect(mount.querySelector(".chip")?.textContent).toContain("Building");
+    expect(localStorage.getItem("fotc.skills.blair")).toContain("Pull-ups");
+    expect(localStorage.getItem("fotc.skills")).toBeNull();
+  });
+
   it("marks the qualifier block on her schedule", () => {
     window.location.hash = "#/schedule";
     const mount = mountApp();

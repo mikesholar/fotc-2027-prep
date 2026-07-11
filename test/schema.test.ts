@@ -18,11 +18,18 @@ describe("plan schema", () => {
       lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
       defaultMaxes: { backSquat: 205 },
       days: [],
-      skills: [{ movement: "Pull-ups", status: "No", progression: ["Ring rows"], cue: "Warm-up" }],
+      skills: [{
+        movement: "Pull-ups",
+        status: "No",
+        progression: [{ move: "Ring rows", rx: "3 × 8", gate: "3 × 10 clean" }],
+        cue: "Warm-up",
+      }],
       solidCount: 9,
       qualifierBlock: "B3 Qualifier",
     });
     expect(plan.skills?.[0].movement).toBe("Pull-ups");
+    expect(plan.skills?.[0].progression[0].move).toBe("Ring rows");
+    expect(plan.skills?.[0].progression[0].gate).toBe("3 × 10 clean");
     expect(plan.qualifierBlock).toBe("B3 Qualifier");
     expect(plan.solidCount).toBe(9);
   });
@@ -33,7 +40,18 @@ describe("plan schema", () => {
         lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
         defaultMaxes: { backSquat: 205 },
         days: [],
-        skills: [{ movement: "Pull-ups", status: "Maybe", progression: ["x"] }],
+        skills: [{ movement: "Pull-ups", status: "Maybe", progression: [{ move: "x" }] }],
+      }),
+    ).toThrow();
+  });
+
+  it("rejects a progression step with no move", () => {
+    expect(() =>
+      parsePlan({
+        lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
+        defaultMaxes: { backSquat: 205 },
+        days: [],
+        skills: [{ movement: "Pull-ups", status: "No", progression: [{ rx: "3 × 8" }] }],
       }),
     ).toThrow();
   });

@@ -16,9 +16,11 @@ describe("athlete selection", () => {
 });
 
 describe("blair's composed plan", () => {
-  it("has her own storage key and title, distinct from mike's", () => {
+  it("has her own storage + skills keys and title, distinct from mike's", () => {
     expect(getAthlete("blair").storageKey).toBe("fotc.maxes.blair");
+    expect(getAthlete("blair").skillsKey).toBe("fotc.skills.blair");
     expect(getAthlete("mike").storageKey).toBe("fotc.maxes");
+    expect(getAthlete("mike").skillsKey).toBe("fotc.skills");
     expect(getAthlete("blair").title).not.toBe(getAthlete("mike").title);
   });
   it("reuses mike's days but with blair's maxes", () => {

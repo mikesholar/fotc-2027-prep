@@ -29,10 +29,17 @@ export const DaySchema = z.object({
 });
 export type Day = z.infer<typeof DaySchema>;
 
+export const SkillStepSchema = z.object({
+  move: z.string(),
+  rx: z.string().optional(),
+  gate: z.string().optional(),
+});
+export type SkillStep = z.infer<typeof SkillStepSchema>;
+
 export const SkillSchema = z.object({
   movement: z.string(),
   status: z.enum(["No", "Some"]),
-  progression: z.array(z.string()).min(1),
+  progression: z.array(SkillStepSchema).min(1),
   cue: z.string().optional(),
 });
 export type Skill = z.infer<typeof SkillSchema>;

@@ -9,6 +9,7 @@ export type Athlete = {
   name: string;
   title: string;
   storageKey: string;
+  skillsKey: string;
   plan: Plan;
 };
 
@@ -24,8 +25,8 @@ const blairPlan = parsePlan({
 });
 
 const ATHLETES: Record<AthleteId, Athlete> = {
-  mike: { id: "mike", name: "Mike", title: "FOTC 2027 Prep", storageKey: "fotc.maxes", plan: mikePlan },
-  blair: { id: "blair", name: "Blair", title: "FOTC 2027 · Blair", storageKey: "fotc.maxes.blair", plan: blairPlan },
+  mike: { id: "mike", name: "Mike", title: "FOTC 2027 Prep", storageKey: "fotc.maxes", skillsKey: "fotc.skills", plan: mikePlan },
+  blair: { id: "blair", name: "Blair", title: "FOTC 2027 · Blair", storageKey: "fotc.maxes.blair", skillsKey: "fotc.skills.blair", plan: blairPlan },
 };
 
 export const selectAthlete = (search: string): AthleteId => {

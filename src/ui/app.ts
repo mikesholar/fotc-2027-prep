@@ -1,6 +1,7 @@
 import { resolveDay } from "../core/loads";
 import { pickCurrentDay, todayIso } from "../core/currentDay";
 import { loadMaxes, saveMaxes } from "../core/maxes-store";
+import { loadProgress, saveProgress, toggleStep } from "../core/skills-store";
 import { parseRoute, navigate, onRouteChange } from "./router";
 import { renderDayScreen } from "./day-screen";
 import { renderMaxesScreen } from "./maxes-screen";
@@ -17,6 +18,7 @@ export const startApp = (mount: HTMLElement): void => {
   const defaultMaxes = plan.defaultMaxes as Maxes;
   const hasSkills = (plan.skills?.length ?? 0) > 0;
   let maxes: Maxes = loadMaxes(defaultMaxes, athlete.storageKey);
+  let progress = loadProgress(athlete.skillsKey);
   let lastDayDate = pickCurrentDay(dates, todayIso());
 
   const render = (): void => {
@@ -35,7 +37,11 @@ export const startApp = (mount: HTMLElement): void => {
       mount.appendChild(renderScheduleScreen(plan, todayIso()));
     } else if (route.name === "skills") {
       if (!hasSkills) { navigate({ name: "day", date: pickCurrentDay(dates, todayIso()) }); return; }
-      mount.appendChild(renderSkillsScreen(plan, lastDayDate));
+      mount.appendChild(renderSkillsScreen(plan, lastDayDate, progress, (movement, index) => {
+        progress = toggleStep(progress, movement, index);
+        saveProgress(progress, athlete.skillsKey);
+        render();
+      }));
     } else {
       const idx = dates.indexOf(route.date);
       const day = plan.days[idx];

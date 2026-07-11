@@ -75,19 +75,35 @@ table.sets .note { color: #e3a008; font-size: 12px; }
 .skill { background: #161b22; border: 1px solid #262c36; border-radius: 14px; padding: 12px 13px; margin-bottom: 11px; }
 .skill-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
 .skill-name { font-size: 15px; font-weight: 800; color: #fff; }
-.chip { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.chip { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; padding: 3px 9px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s, border-color .2s; }
 .chip.no { color: #ffb3ae; background: #f8514922; border: 1px solid #f8514955; }
 .chip.some { color: #ffd980; background: #e3a00822; border: 1px solid #e3a00855; }
+.chip.got { color: #b6f5c2; background: #7aee8f1f; border: 1px solid #7aee8f66; }
+.bar { height: 4px; border-radius: 999px; background: #222a35; overflow: hidden; margin: 4px 0 12px; }
+.bar > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #7aa2ff, #7aee8f); border-radius: 999px; transition: width .25s ease; }
 .ladder { display: flex; flex-direction: column; }
-.step { display: flex; align-items: flex-start; gap: 9px; padding: 4px 0; }
-.step .rung { display: flex; flex-direction: column; align-items: center; padding-top: 2px; }
-.step .node { width: 9px; height: 9px; border-radius: 50%; border: 2px solid #7aa2ff; background: #0b0e12; }
-.step:first-child .node { background: #7aa2ff; }
-.step .line { width: 2px; flex: 1; min-height: 12px; background: #2a3446; }
+.step { display: flex; align-items: flex-start; gap: 11px; padding: 7px 7px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
+.step:focus-visible { outline: 2px solid #7aa2ff; outline-offset: 1px; }
+.step .rung { display: flex; flex-direction: column; align-items: center; padding-top: 1px; }
+.step .node { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #3a4657; background: #0b0e12; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900; color: #0b0e12; flex: none; transition: background .18s, border-color .18s; }
+.step .line { width: 2px; flex: 1; min-height: 26px; background: #2a3446; margin: 2px 0; }
 .step:last-child .line { display: none; }
-.step .txt { font-size: 12.5px; color: #d4d9e0; padding-bottom: 6px; }
-.step:first-child .txt { color: #fff; font-weight: 600; }
-.skill-cue { font-size: 11px; color: #7aa2ff; margin-top: 6px; }
+.step .body { min-width: 0; padding-bottom: 2px; }
+.step .move { font-size: 13.5px; color: #e6e9ee; font-weight: 700; }
+.step .lvl { font-size: 9px; font-weight: 800; color: #5b6577; margin-right: 6px; }
+.step .now { font-size: 9px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: #7aa2ff; margin-left: 6px; }
+.step .rx { font-size: 11.5px; color: #7aa2ff; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.step .gate { font-size: 11px; color: #8b93a1; margin-top: 3px; }
+.step .gate b { color: #c9cf3f; font-weight: 700; }
+.step.done .node { background: #7aee8f; border-color: #7aee8f; }
+.step.done .node::after { content: "✓"; }
+.step.done .move { color: #8b93a1; text-decoration: line-through; text-decoration-color: #4a515e; }
+.step.done .rx, .step.done .gate { opacity: .5; }
+.step.done .line { background: #7aee8f; opacity: .45; }
+.step.current { background: #12213c; border-color: #1f6feb66; }
+.step.current .node { border-color: #7aa2ff; box-shadow: 0 0 0 3px #7aa2ff26; }
+.step.current .move { color: #fff; }
+.skill-cue { font-size: 11px; color: #7aa2ff; margin-top: 8px; padding-top: 8px; border-top: 1px solid #222a35; }
 .solid-note { font-size: 11px; color: #7aee8f; text-align: center; margin-top: 6px; padding: 8px; background: #7aee8f10; border: 1px solid #7aee8f2b; border-radius: 10px; }
 
 /* ---- Qualifier marker (Blair schedule) ---- */

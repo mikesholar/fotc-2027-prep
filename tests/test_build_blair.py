@@ -31,7 +31,9 @@ def test_skills_are_the_three_novice_gaps_no_first():
 def test_every_skill_has_a_nonempty_progression():
     for s in load_blair()["skills"]:
         assert isinstance(s["progression"], list) and len(s["progression"]) >= 1
-        assert all(isinstance(step, str) and step for step in s["progression"])
+        for step in s["progression"]:
+            assert isinstance(step, dict) and step.get("move")
+            assert step.get("rx") and step.get("gate")
 
 
 def test_qualifier_block_is_b3():
