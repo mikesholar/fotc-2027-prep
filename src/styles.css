@@ -70,3 +70,26 @@ table.sets .note { color: #e3a008; font-size: 12px; }
 /* ---- Footer navigation ---- */
 .nav-link { display: block; text-align: center; margin-top: 14px; color: #7aa2ff; font-size: 13px; font-weight: 600; text-decoration: none; }
 .nav-link:active { opacity: .7; }
+
+/* ---- Skills screen (Blair) ---- */
+.skill { background: #161b22; border: 1px solid #262c36; border-radius: 14px; padding: 12px 13px; margin-bottom: 11px; }
+.skill-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.skill-name { font-size: 15px; font-weight: 800; color: #fff; }
+.chip { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.chip.no { color: #ffb3ae; background: #f8514922; border: 1px solid #f8514955; }
+.chip.some { color: #ffd980; background: #e3a00822; border: 1px solid #e3a00855; }
+.ladder { display: flex; flex-direction: column; }
+.step { display: flex; align-items: flex-start; gap: 9px; padding: 4px 0; }
+.step .rung { display: flex; flex-direction: column; align-items: center; padding-top: 2px; }
+.step .node { width: 9px; height: 9px; border-radius: 50%; border: 2px solid #7aa2ff; background: #0b0e12; }
+.step:first-child .node { background: #7aa2ff; }
+.step .line { width: 2px; flex: 1; min-height: 12px; background: #2a3446; }
+.step:last-child .line { display: none; }
+.step .txt { font-size: 12.5px; color: #d4d9e0; padding-bottom: 6px; }
+.step:first-child .txt { color: #fff; font-weight: 600; }
+.skill-cue { font-size: 11px; color: #7aa2ff; margin-top: 6px; }
+.solid-note { font-size: 11px; color: #7aee8f; text-align: center; margin-top: 6px; padding: 8px; background: #7aee8f10; border: 1px solid #7aee8f2b; border-radius: 10px; }
+
+/* ---- Qualifier marker (Blair schedule) ---- */
+.qtarget { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 800; letter-spacing: .5px; color: #ffca7a; background: #e3a00822; border: 1px solid #e3a00855; padding: 2px 7px; border-radius: 999px; }
+.wk-head.q { border-bottom-color: #e3a00855; }

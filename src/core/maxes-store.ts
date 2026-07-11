@@ -7,8 +7,8 @@ const MaxesSchema = z.object(
     Record<(typeof LIFT_KEYS)[number], z.ZodNumber>,
 );
 
-export const loadMaxes = (defaults: Maxes): Maxes => {
-  const raw = localStorage.getItem(KEY);
+export const loadMaxes = (defaults: Maxes, key: string = KEY): Maxes => {
+  const raw = localStorage.getItem(key);
   if (!raw) return defaults;
   try {
     return MaxesSchema.parse(JSON.parse(raw));
@@ -17,6 +17,6 @@ export const loadMaxes = (defaults: Maxes): Maxes => {
   }
 };
 
-export const saveMaxes = (maxes: Maxes): void => {
-  localStorage.setItem(KEY, JSON.stringify(maxes));
+export const saveMaxes = (maxes: Maxes, key: string = KEY): void => {
+  localStorage.setItem(key, JSON.stringify(maxes));
 };

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "extract": "python3 scripts/extract-plan.py"
+    "extract": "python3 scripts/extract-plan.py",
+    "extract:blair": "python3 scripts/build-blair.py"
   },
   "devDependencies": {
     "typescript": "^5.5.0",

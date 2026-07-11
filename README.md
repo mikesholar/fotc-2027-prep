@@ -54,6 +54,25 @@ sheet's numbers exactly. Re-run `npm run extract` (and the tests) whenever the w
   taps **Reset to example maxes**, enters their own 1RMs, and can "Add to Home Screen" to use
   it offline like an app.
 
+## A second athlete (Blair)
+
+The same page serves more than one athlete, selected by URL:
+
+- **Mike** (default): the site URL as-is.
+- **Blair:** append `?athlete=blair` — her own maxes (stored separately under
+  `fotc.maxes.blair`), Mike's identical sessions resolved to her numbers, and a **Skills**
+  screen for her gap movements ahead of the Qualifier.
+
+Blair's data is generated from `blair.xlsx` into `src/data/blair.json` (committed):
+
+```bash
+npm run extract:blair
+```
+
+Her page reuses Mike's daily sessions verbatim; only her maxes, the Skills screen, and the
+Qualifier marker differ. To add another athlete later, generate their data file and add an
+entry to `src/data/athletes.ts`.
+
 ## Notes
 
 - Clean & Jerk and Snatch maxes are estimates in the example data — retest and update them

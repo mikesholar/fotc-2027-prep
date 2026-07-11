@@ -9,8 +9,9 @@ const mainLiftLabel = (day: Day): string => {
   return m && m.type === "mainLift" ? m.liftName : "";
 };
 
-const renderWeekHead = (day: Day): HTMLElement => {
-  const head = el("div", "wk-head");
+const renderWeekHead = (day: Day, qualifierBlock?: string): HTMLElement => {
+  const isQualifier = !!qualifierBlock && day.block === qualifierBlock;
+  const head = el("div", isQualifier ? "wk-head q" : "wk-head");
   const left = el("div");
   const weekLabel = formatWeekLabel(day.week);
   left.append(
@@ -18,7 +19,9 @@ const renderWeekHead = (day: Day): HTMLElement => {
     document.createTextNode(" "),
     el("span", "wkdates", day.weekDates),
   );
-  if (!weekLabel.startsWith(day.block)) {
+  if (isQualifier) {
+    head.append(left, el("span", "qtarget", "🎯 Qualifier"));
+  } else if (!weekLabel.startsWith(day.block)) {
     head.append(left, el("div", "wkblock", day.block));
   } else {
     head.append(left);
@@ -53,7 +56,7 @@ export const renderScheduleScreen = (plan: Plan, todayDate: string): HTMLElement
   for (const day of plan.days) {
     if (day.week !== currentWeek) {
       currentWeek = day.week;
-      root.appendChild(renderWeekHead(day));
+      root.appendChild(renderWeekHead(day, plan.qualifierBlock));
       root.appendChild(el("div", "wk-focus", day.weekFocus));
     }
     root.appendChild(renderDayRow(day, day.date === todayDate));
