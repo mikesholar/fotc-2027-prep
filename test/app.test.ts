@@ -207,6 +207,46 @@ describe("blair's page", () => {
   });
 });
 
+describe("erik's page", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    document.body.innerHTML = '<div id="app"></div>';
+    window.history.replaceState(null, "", "/?athlete=erik");
+    window.location.hash = "#/maxes";
+  });
+  afterEach(() => window.history.replaceState(null, "", "/"));
+
+  it("mounts erik's plan with his provided max and title", () => {
+    const mount = mountApp();
+    const first = mount.querySelector<HTMLInputElement>(".maxrow input")!;
+    expect(first.value).toBe("350");
+    expect(document.title).toBe("FOTC 2027 · Erik");
+  });
+
+  it("stores edits under erik's key, never mike's or blair's", () => {
+    const mount = mountApp();
+    setInput(mount.querySelector<HTMLInputElement>(".maxrow input")!, "355");
+    expect(localStorage.getItem("fotc.maxes.erik")).toContain("355");
+    expect(localStorage.getItem("fotc.maxes")).toBeNull();
+    expect(localStorage.getItem("fotc.maxes.blair")).toBeNull();
+  });
+
+  it("renders his three focus skill cards led by Conditioning", () => {
+    window.location.hash = "#/skills";
+    const mount = mountApp();
+    expect(mount.querySelectorAll(".skill").length).toBe(3);
+    expect(mount.textContent).toContain("Conditioning");
+  });
+
+  it("persists a ticked rung under erik's skills key", () => {
+    window.location.hash = "#/skills";
+    const mount = mountApp();
+    mount.querySelector<HTMLElement>(".step")!.click();
+    expect(localStorage.getItem("fotc.skills.erik")).toContain("Conditioning");
+    expect(localStorage.getItem("fotc.skills")).toBeNull();
+  });
+});
+
 describe("mike's page has no skills affordance", () => {
   beforeEach(() => {
     localStorage.clear();

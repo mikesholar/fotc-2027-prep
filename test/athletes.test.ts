@@ -44,6 +44,31 @@ describe("blair's composed plan", () => {
   });
 });
 
+describe("erik's composed plan", () => {
+  it("selects erik from ?athlete=erik", () => {
+    expect(selectAthlete("?athlete=erik")).toBe("erik");
+  });
+  it("has his own storage + skills keys and title, distinct from mike's and blair's", () => {
+    expect(getAthlete("erik").storageKey).toBe("fotc.maxes.erik");
+    expect(getAthlete("erik").skillsKey).toBe("fotc.skills.erik");
+    expect(getAthlete("erik").title).toBe("FOTC 2027 · Erik");
+    expect(getAthlete("erik").title).not.toBe(getAthlete("blair").title);
+  });
+  it("reuses mike's days but with erik's provided maxes", () => {
+    expect(getAthlete("erik").plan.days.length).toBe(getAthlete("mike").plan.days.length);
+    expect(getAthlete("erik").plan.defaultMaxes.backSquat).toBe(350);
+    expect(getAthlete("erik").plan.defaultMaxes.deadlift).toBe(385);
+  });
+  it("has no estimate flag on any lift", () => {
+    expect(getAthlete("erik").plan.lifts.every((l) => l.isEstimate === false)).toBe(true);
+  });
+  it("leads with conditioning then the two half-owned skills, plus the qualifier block", () => {
+    const erik = getAthlete("erik");
+    expect(erik.plan.skills?.map((s) => s.movement)).toEqual(["Conditioning", "Wall walk", "Double-unders"]);
+    expect(erik.plan.qualifierBlock).toBe("B3 Qualifier");
+  });
+});
+
 describe("mike's plan is unchanged by the registry", () => {
   it("keeps his default maxes and carries no skills or qualifier block", () => {
     const mike = getAthlete("mike");

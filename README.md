@@ -54,7 +54,7 @@ sheet's numbers exactly. Re-run `npm run extract` (and the tests) whenever the w
   taps **Reset to example maxes**, enters their own 1RMs, and can "Add to Home Screen" to use
   it offline like an app.
 
-## A second athlete (Blair)
+## More athletes (Blair, Erik)
 
 The same page serves more than one athlete, selected by URL:
 
@@ -62,14 +62,20 @@ The same page serves more than one athlete, selected by URL:
 - **Blair:** append `?athlete=blair` — her own maxes (stored separately under
   `fotc.maxes.blair`), Mike's identical sessions resolved to her numbers, and a **Skills**
   screen for her gap movements ahead of the Qualifier.
+- **Erik:** append `?athlete=erik` — his own maxes (stored under `fotc.maxes.erik`), Mike's
+  identical sessions resolved to his numbers, and a **Skills** screen. Erik competes Novice
+  and clears the strength standards, so his skill work centers on his **conditioning engine**
+  plus the two Novice skills he only half-owns: **wall walks** and **double-unders**.
 
-Blair's data is generated from `blair.xlsx` into `src/data/blair.json` (committed):
+Each athlete's data is generated from their `<name>.xlsx` into `src/data/<name>.json`
+(committed):
 
 ```bash
 npm run extract:blair
+npm run extract:erik
 ```
 
-Her page reuses Mike's daily sessions verbatim; only her maxes, the Skills screen, and the
+Their pages reuse Mike's daily sessions verbatim; only the maxes, the Skills screen, and the
 Qualifier marker differ. To add another athlete later, generate their data file and add an
 entry to `src/data/athletes.ts`.
 
