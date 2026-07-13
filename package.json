@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "extract": "python3 scripts/extract-plan.py",
-    "extract:blair": "python3 scripts/build-blair.py"
+    "extract:blair": "python3 scripts/build-blair.py",
+    "extract:erik": "python3 scripts/build-erik.py"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
