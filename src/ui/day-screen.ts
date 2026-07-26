@@ -1,7 +1,10 @@
 import type { ResolvedDay, ResolvedSection } from "../core/loads";
 import { formatWeekLabel } from "../core/format";
+import { parseMovementBody, type MovementGroup } from "../core/movement-list";
 import { el } from "./dom";
 import { navigate } from "./router";
+
+const MOVEMENT_LABELS = new Set(["Prep", "Accessory"]);
 
 const makeArrow = (glyph: string, label: string, date: string | null): HTMLElement => {
   const arrow = el("div", date ? "arrow" : "arrow disabled", glyph);
@@ -42,13 +45,30 @@ const renderMain = (s: Extract<ResolvedSection, { type: "mainLift" }>): HTMLElem
   return box;
 };
 
+const renderMovementGroup = (group: MovementGroup): HTMLElement[] => {
+  const nodes: HTMLElement[] = [];
+  if (group.lead) nodes.push(el("div", "box-lead", group.lead));
+  const list = el("ul", "box-list");
+  for (const item of group.items) list.appendChild(el("li", undefined, item));
+  nodes.push(list);
+  return nodes;
+};
+
+const renderMovementBody = (text: string): HTMLElement[] => {
+  const body = parseMovementBody(text);
+  if (body.kind === "paragraph") return [el("div", "box-text", body.text)];
+  return body.groups.flatMap(renderMovementGroup);
+};
+
 const renderSection = (s: ResolvedSection): HTMLElement => {
   if (s.type === "mainLift") return renderMain(s);
-  const box = el("div", `box ${s.type}`);
+  const isMovement = MOVEMENT_LABELS.has(s.label);
+  const box = el("div", `box ${s.type}${isMovement ? " movement" : ""}`);
   box.appendChild(el("div", "box-label", s.label));
-  const body = el("div", "box-text");
-  body.textContent = s.text;
-  box.appendChild(body);
+  const bodyNodes = isMovement
+    ? renderMovementBody(s.text)
+    : [el("div", "box-text", s.text)];
+  for (const node of bodyNodes) box.appendChild(node);
   return box;
 };
 
