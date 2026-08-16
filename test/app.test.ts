@@ -290,7 +290,7 @@ describe("mike's hypertrophy page", () => {
     const skillBox = Array.from(mount.querySelectorAll<HTMLElement>(".box")).find(
       (b) => b.querySelector(".box-label")?.textContent === "Skill",
     )!;
-    expect(skillBox.querySelector(".box-lead")?.textContent).toContain("Toes-to-bar");
-    expect(skillBox.querySelectorAll(".box-list li").length).toBeGreaterThan(1);
+    expect(skillBox.querySelector(".liftname")?.textContent).toBe("Toes-to-bar");
+    expect(skillBox.querySelectorAll("table.sets tr").length).toBeGreaterThan(1);
   });
 });

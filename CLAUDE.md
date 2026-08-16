@@ -2,18 +2,20 @@
 
 ## Gotchas
 
-#### Gotcha: Prep/Skill/Accessory bullet rendering is scoped by label string
+#### Gotcha: Prep/Accessory bullet rendering is scoped by label string
 
-**Context**: Prep, Skill & Accessory sections render as bulleted movement lists (lead line + `<ul>`), while other sections (Notes, "The one thing (pre-class)", "This week · Rn") stay as plain prose.
+**Context**: Prose sections labelled Prep or Accessory render as bulleted movement lists (lead line + `<ul>`), while other prose sections (Notes, "The one thing (pre-class)", "This week · Rn") stay as plain paragraphs.
 
-**Issue**: The distinction is driven entirely by the section's `label` — Skill, Accessory and the narrative sections all share `type: "text"`, so `type` alone can't tell them apart. The list treatment (and the larger 15px font) is gated on `MOVEMENT_LABELS` in `src/ui/day-screen.ts`.
+**Issue**: The distinction is driven entirely by the section's `label` — the bulleted and the narrative sections all share `type: "text"`, so `type` alone can't tell them apart. The list treatment (and the larger 15px font) is gated on `MOVEMENT_LABELS` in `src/ui/day-screen.ts`.
 
-**Solution**: If the plan data (`src/data/*.json`) ever renames the `"Prep"`, `"Skill"` or `"Accessory"` labels, update the `MOVEMENT_LABELS` set in `src/ui/day-screen.ts` to match — otherwise those sections silently fall back to the old single-text-box rendering.
+**Solution**: If the plan data (`src/data/*.json`) ever renames the `"Prep"` or `"Accessory"` labels, update the `MOVEMENT_LABELS` set in `src/ui/day-screen.ts` to match — otherwise those sections silently fall back to the old single-text-box rendering.
 
 ```ts
 // src/ui/day-screen.ts
-const MOVEMENT_LABELS = new Set(["Prep", "Skill", "Accessory"]);
+const MOVEMENT_LABELS = new Set(["Prep", "Accessory"]);
 ```
+
+Note this only applies to `type: "text"` sections, which on the hypertrophy plan now means Prep and Notes only — its Skill and Accessory sections are `type: "movement"` tables (see below) and never reach this code path. `"Accessory"` stays in the set because Blair's and Erik's workbook-derived accessories are still free-text.
 
 The parsing logic itself lives in `src/core/movement-list.ts` (`parseMovementBody`) and is label-agnostic — it splits on ` · ` and newlines and is covered by `test/movement-list.test.ts`.
 
@@ -26,7 +28,7 @@ const MUTED_ROW_LABELS = new Set(["Cue"]);
 
 #### Decision: `mainLift` vs `movement` sections — same look, different job
 
-**Context**: The hypertrophy plan renders each accessory as its own box laid out like a main lift (movement name + a table of prescribed sets), rather than one bulleted "Accessory" list.
+**Context**: The hypertrophy plan renders each accessory and each skill dose as its own box laid out like a main lift (movement name + a table of prescribed sets), rather than as bulleted lists.
 
 **Issue**: `mainLift` requires a `liftKey`, because its whole job is `pct × max` load math. Accessories are dumbbell and bodyweight work with no 1RM to resolve against. Making `liftKey` optional would have pushed an unreachable "percentage set with no lift key" branch into `resolveDay`.
 
@@ -37,7 +39,7 @@ mainLift  -> has a liftKey, sets may carry pct/expectedLoad, resolveDay computes
 movement  -> no liftKey, rows are always {scheme, note}, resolveDay is a pass-through
 ```
 
-Pick `mainLift` when there's a weight to compute, `movement` when you just want the prescription table. Only Mike's plan emits `movement` sections; Blair's and Erik's accessories are still free-text `text` sections from the workbook, which is why `MOVEMENT_LABELS` still needs `"Accessory"` in it.
+Pick `mainLift` when there's a weight to compute, `movement` when you just want the prescription table. Only Mike's plan emits `movement` sections — both its `Accessory` and its `Skill` boxes — so on his days the only bulleted section left is Prep. Blair's and Erik's accessories are still free-text `text` sections from the workbook.
 
 #### Gotcha: `LIFT_KEYS` cannot grow without invalidating stored maxes
 

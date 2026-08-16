@@ -148,19 +148,44 @@ def test_the_second_mesocycle_starts_heavier_than_the_first():
         assert rows[(6, lift)]["pct"] > rows[(1, lift)]["pct"], lift
 
 
+def skills_in(day):
+    return [s for s in day["sections"] if s["label"] == "Skill"]
+
+
 def test_skill_work_lands_four_times_a_week_and_names_both_movements():
     weeks = by_week(load_plan())
-    skill_days = [d for d in weeks[1] if any(s["label"] == "Skill" for s in d["sections"])]
+    skill_days = [d for d in weeks[1] if skills_in(d)]
     assert len(skill_days) == 5  # four training doses + the optional Wednesday hang
-    text = " ".join(s["text"] for d in weeks[1] for s in d["sections"] if s["label"] == "Skill")
-    assert "Toes-to-bar" in text and "Pull-up" in text
+    names = [s["moveName"] for d in weeks[1] for s in skills_in(d)]
+    assert names.count("Toes-to-bar") == 2
+    assert names.count("Pull-up") == 2
+
+
+def test_skill_sections_are_laid_out_like_lifts():
+    for day in load_plan()["days"]:
+        for section in skills_in(day):
+            assert section["type"] == "movement"
+            assert section["moveName"]
+            assert "text" not in section
+            for row in section["rows"]:
+                assert set(row) == {"scheme", "note"}
 
 
 def test_skill_sections_point_at_the_skills_screen_instead_of_naming_a_rung():
     for day in load_plan()["days"]:
-        for section in day["sections"]:
-            if section["label"] == "Skill":
-                assert "Skills" in section["text"]
+        for section in skills_in(day):
+            assert "Skills" in section["rows"][0]["note"]
+
+
+def test_skill_doses_shrink_on_deload_weeks():
+    weeks = by_week(load_plan())
+
+    def opening_scheme(week, move):
+        return next(s["rows"][0]["scheme"] for d in weeks[week]
+                    for s in skills_in(d) if s["moveName"] == move)
+
+    assert opening_scheme(4, "Toes-to-bar") == "4 sets"
+    assert opening_scheme(5, "Toes-to-bar") == "2 sets"
 
 
 def test_both_ladders_are_present_and_every_rung_is_actionable():

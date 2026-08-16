@@ -21,7 +21,8 @@ It serves two plans:
 - **Day** (`#/day/<date>`) — the day-picker bar moves through the plan; opens to the current
   day on launch. Each part of the session is a labeled box (Prep, Main Lift, Skill,
   Accessory, conditioning/notes). Lifts show a compact table of `sets · % · weight`; on the
-  hypertrophy plan every accessory gets its own box in that same layout, minus the weight.
+  hypertrophy plan every accessory and every skill dose gets its own box in that same
+  layout, minus the weight.
 - **Maxes** (`#/maxes`) — seven lift inputs. Editing recalculates every load instantly.
 - **Schedule** (`#/schedule`) — every week grouped like the workbook; tap a day to open it.
 - **Skills** (`#/skills`) — progression ladders with tickable rungs, for athletes whose

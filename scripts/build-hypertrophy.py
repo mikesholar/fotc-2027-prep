@@ -107,9 +107,11 @@ class Accessory(NamedTuple):
 
 
 class Skill(NamedTuple):
-    lead: str
+    name: str
     sets: int
-    items: tuple
+    per_set: str      # "" -> "N sets"; otherwise "N × <per_set>"
+    lead_note: str
+    rows: tuple       # ((row label, note), ...)
 
 
 class Session(NamedTuple):
@@ -122,41 +124,45 @@ class Session(NamedTuple):
 
 
 TOES_TO_BAR = Skill(
-    lead="Toes-to-bar — your current rung on the Skills screen:",
-    sets=4,
-    items=("stop each set 1–2 reps before the shape breaks",
-           "90s rest — this is practice, not a finisher",
-           "finish with 3 × 20s hollow hold"),
+    name="Toes-to-bar",
+    sets=4, per_set="",
+    lead_note="at your current rung on the Skills screen",
+    rows=(("Rest", "90s — this is practice, not a finisher"),
+          ("Finish", "3 × 20s hollow hold"),
+          ("Cue", "stop each set 1–2 reps before the shape breaks")),
 )
 
 TOES_TO_BAR_TIRED_GRIP = Skill(
-    lead="Toes-to-bar — your current rung on the Skills screen:",
-    sets=3,
-    items=("grip is already tired from pulling — quality over reps",
-           "drop a rung tonight if the shape goes",
-           "finish with 3 × 20s hollow hold"),
+    name="Toes-to-bar",
+    sets=3, per_set="",
+    lead_note="at your current rung on the Skills screen",
+    rows=(("Finish", "3 × 20s hollow hold"),
+          ("Cue", "grip is already tired from pulling — quality over reps, and drop a "
+                  "rung tonight if the shape goes")),
 )
 
 PULL_UP = Skill(
-    lead="Pull-up — your current rung on the Skills screen:",
-    sets=4,
-    items=("fresh, before the pulling work",
-           "full hang at the bottom of every rep",
-           "2–3 min rest — stop the set while it still looks good"),
+    name="Pull-up",
+    sets=4, per_set="",
+    lead_note="at your current rung on the Skills screen",
+    rows=(("Rest", "2–3 min — do this fresh, before the pulling work"),
+          ("Cue", "full hang at the bottom of every rep; stop the set while it still "
+                  "looks good")),
 )
 
 PULL_UP_SECOND_DOSE = Skill(
-    lead="Pull-up — second dose this week, same Skills rung:",
-    sets=2,
-    items=("half the volume of Thursday",
-           "quality only — stop well short"),
+    name="Pull-up",
+    sets=2, per_set="",
+    lead_note="second dose, same rung on the Skills screen",
+    rows=(("Cue", "half of Thursday's volume — quality only, stop well short"),),
 )
 
 HANG = Skill(
-    lead="Optional grip work — 5 min, feeds both ladders on the Skills screen:",
-    sets=3,
-    items=("30–45s active dead hang",
-           "20s hollow hold between hangs"),
+    name="Grip work (optional)",
+    sets=3, per_set="30–45s",
+    lead_note="active dead hang — feeds both Skills ladders",
+    rows=(("Between", "20s hollow hold"),
+          ("Cue", "5 min, free progress toward pull-ups and toes-to-bar")),
 )
 
 
@@ -402,9 +408,12 @@ def accessory_section(accessory, week):
 
 
 def skill_section(skill, week):
+    """Same box and table as a lift — the dose is a prescription like any other."""
     sets = deload_sets(skill.sets) if is_deload(week) else skill.sets
-    items = [f"{sets} sets", *skill.items]
-    return {"type": "text", "label": "Skill", "text": f"{skill.lead} " + " · ".join(items)}
+    scheme = f"{sets} × {skill.per_set}" if skill.per_set else f"{sets} sets"
+    rows = [{"scheme": scheme, "note": skill.lead_note}]
+    rows.extend({"scheme": label, "note": note} for label, note in skill.rows)
+    return {"type": "movement", "label": "Skill", "moveName": skill.name, "rows": rows}
 
 
 def week_focus(week):

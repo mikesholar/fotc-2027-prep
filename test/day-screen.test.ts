@@ -143,31 +143,33 @@ describe("day screen movement sections", () => {
     ]);
   });
 
-  it("renders a Skill box as a lead line above its bulleted dose", () => {
+  it("gives a skill dose the same box and table as a main lift", () => {
     const root = renderDayScreen(
       getMockDay([
         {
-          type: "text",
+          type: "movement",
           label: "Skill",
-          text: "Pull-up — your current rung on the Skills screen: 4 sets · full hang every rep · 2–3 min rest",
+          moveName: "Toes-to-bar",
+          rows: [
+            { scheme: "4 sets", note: "your current rung on the Skills screen" },
+            { scheme: "Rest", note: "90s" },
+          ],
         },
       ]),
       nav,
     );
 
     const box = boxFor(root, "Skill");
-    expect(box.querySelector(".box-lead")?.textContent).toBe(
-      "Pull-up — your current rung on the Skills screen:",
-    );
-    const items = Array.from(box.querySelectorAll(".box-list li")).map((li) => li.textContent);
-    expect(items).toEqual(["4 sets", "full hang every rep", "2–3 min rest"]);
+    expect(box.classList.contains("main")).toBe(true);
+    expect(box.querySelector(".liftname")?.textContent).toBe("Toes-to-bar");
+    expect(box.querySelector(".box-list")).toBeNull();
+    expect(box.querySelectorAll("table.sets tr").length).toBe(2);
   });
 
-  it("marks Prep, Skill and Accessory boxes with a movement class but not narrative boxes", () => {
+  it("marks Prep and Accessory prose boxes with a movement class but not narrative boxes", () => {
     const root = renderDayScreen(
       getMockDay([
         { type: "prep", label: "Prep", text: "3 rounds: a · b" },
-        { type: "text", label: "Skill", text: "Toes-to-bar: 4 sets · slow" },
         { type: "text", label: "Accessory", text: "x\ny" },
         { type: "text", label: "Notes", text: "just prose" },
       ]),
@@ -175,7 +177,6 @@ describe("day screen movement sections", () => {
     );
 
     expect(boxFor(root, "Prep").classList.contains("movement")).toBe(true);
-    expect(boxFor(root, "Skill").classList.contains("movement")).toBe(true);
     expect(boxFor(root, "Accessory").classList.contains("movement")).toBe(true);
     expect(boxFor(root, "Notes").classList.contains("movement")).toBe(false);
   });

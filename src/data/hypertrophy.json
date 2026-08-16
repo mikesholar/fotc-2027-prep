@@ -83,9 +83,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -284,9 +302,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -311,9 +343,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -463,9 +509,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -530,9 +590,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -678,9 +748,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -879,9 +967,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -906,9 +1008,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -1058,9 +1174,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -1125,9 +1255,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -1273,9 +1413,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -1474,9 +1632,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -1501,9 +1673,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -1653,9 +1839,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -1720,9 +1920,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -1868,9 +2078,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -2069,9 +2297,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -2096,9 +2338,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -2248,9 +2504,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -2315,9 +2585,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -2463,9 +2743,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -2696,9 +2994,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 2 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "2 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -2723,9 +3035,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 2 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -2895,9 +3221,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -2974,9 +3314,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -3142,9 +3492,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -3343,9 +3711,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -3370,9 +3752,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -3522,9 +3918,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -3589,9 +3999,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -3737,9 +4157,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -3938,9 +4376,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -3965,9 +4417,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -4117,9 +4583,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -4184,9 +4664,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -4332,9 +4822,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -4533,9 +5041,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -4560,9 +5082,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -4712,9 +5248,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -4779,9 +5329,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -4927,9 +5487,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -5128,9 +5706,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "3 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -5155,9 +5747,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "4 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -5307,9 +5913,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "3 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -5374,9 +5994,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -5522,9 +6152,27 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "90s — this is practice, not a finisher"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "stop each set 1–2 reps before the shape breaks"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -5755,9 +6403,23 @@
       "sessionTitle": "Off — walk & mobility",
       "sections": [
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 2 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+          "moveName": "Grip work (optional)",
+          "rows": [
+            {
+              "scheme": "2 × 30–45s",
+              "note": "active dead hang — feeds both Skills ladders"
+            },
+            {
+              "scheme": "Between",
+              "note": "20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "5 min, free progress toward pull-ups and toes-to-bar"
+            }
+          ]
         },
         {
           "type": "text",
@@ -5782,9 +6444,23 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — your current rung on the Skills screen: 2 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Rest",
+              "note": "2–3 min — do this fresh, before the pulling work"
+            },
+            {
+              "scheme": "Cue",
+              "note": "full hang at the bottom of every rep; stop the set while it still looks good"
+            }
+          ]
         },
         {
           "type": "mainLift",
@@ -5954,9 +6630,23 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+          "moveName": "Toes-to-bar",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "at your current rung on the Skills screen"
+            },
+            {
+              "scheme": "Finish",
+              "note": "3 × 20s hollow hold"
+            },
+            {
+              "scheme": "Cue",
+              "note": "grip is already tired from pulling — quality over reps, and drop a rung tonight if the shape goes"
+            }
+          ]
         },
         {
           "type": "movement",
@@ -6033,9 +6723,19 @@
           "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Skill",
-          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+          "moveName": "Pull-up",
+          "rows": [
+            {
+              "scheme": "2 sets",
+              "note": "second dose, same rung on the Skills screen"
+            },
+            {
+              "scheme": "Cue",
+              "note": "half of Thursday's volume — quality only, stop well short"
+            }
+          ]
         },
         {
           "type": "mainLift",
