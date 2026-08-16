@@ -83,6 +83,42 @@ describe("day screen movement sections", () => {
     expect(box.querySelector(".box-text")?.textContent).toBe("Week 1 mindset: RPE honesty > heroics.");
   });
 
+  it("gives an accessory movement the same box and table as a main lift", () => {
+    const root = renderDayScreen(
+      getMockDay([
+        {
+          type: "mainLift",
+          label: "Main Lift",
+          liftName: "Back Squat",
+          rows: [{ scheme: "4×5", pct: 0.73, load: 200 }],
+        },
+        {
+          type: "movement",
+          label: "Accessory",
+          moveName: "Bulgarian Split Squat (DB)",
+          rows: [
+            { scheme: "3 × 8–12", note: "per leg" },
+            { scheme: "Cue", note: "rear foot on the bench" },
+          ],
+        },
+      ]),
+      nav,
+    );
+
+    const accessory = boxFor(root, "Accessory");
+    expect(accessory.classList.contains("main")).toBe(true);
+    expect(accessory.querySelector(".liftname")?.textContent).toBe("Bulgarian Split Squat (DB)");
+    expect(accessory.querySelector(".box-list")).toBeNull();
+
+    const rows = Array.from(accessory.querySelectorAll("table.sets tr")).map((tr) =>
+      Array.from(tr.querySelectorAll("td")).map((td) => td.textContent),
+    );
+    expect(rows).toEqual([
+      ["3 × 8–12", "per leg"],
+      ["Cue", "rear foot on the bench"],
+    ]);
+  });
+
   it("renders a Skill box as a lead line above its bulleted dose", () => {
     const root = renderDayScreen(
       getMockDay([

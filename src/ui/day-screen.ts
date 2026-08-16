@@ -1,4 +1,4 @@
-import type { ResolvedDay, ResolvedSection } from "../core/loads";
+import type { MainRow, ResolvedDay, ResolvedSection } from "../core/loads";
 import { formatWeekLabel } from "../core/format";
 import { parseMovementBody, type MovementGroup } from "../core/movement-list";
 import { el } from "./dom";
@@ -15,12 +15,12 @@ const makeArrow = (glyph: string, label: string, date: string | null): HTMLEleme
   return arrow;
 };
 
-const renderMain = (s: Extract<ResolvedSection, { type: "mainLift" }>): HTMLElement => {
+const renderLiftBox = (label: string, name: string, rows: MainRow[]): HTMLElement => {
   const box = el("div", "box main");
-  box.appendChild(el("div", "box-label", s.label));
-  box.appendChild(el("div", "liftname", s.liftName));
+  box.appendChild(el("div", "box-label", label));
+  box.appendChild(el("div", "liftname", name));
   const table = el("table", "sets");
-  for (const r of s.rows) {
+  for (const r of rows) {
     const tr = el("tr");
     if ("load" in r) {
       const pctLabel = `${+(r.pct * 100).toFixed(1)}%`;
@@ -61,7 +61,8 @@ const renderMovementBody = (text: string): HTMLElement[] => {
 };
 
 const renderSection = (s: ResolvedSection): HTMLElement => {
-  if (s.type === "mainLift") return renderMain(s);
+  if (s.type === "mainLift") return renderLiftBox(s.label, s.liftName, s.rows);
+  if (s.type === "movement") return renderLiftBox(s.label, s.moveName, s.rows);
   const isMovement = MOVEMENT_LABELS.has(s.label);
   const box = el("div", `box ${s.type}${isMovement ? " movement" : ""}`);
   box.appendChild(el("div", "box-label", s.label));

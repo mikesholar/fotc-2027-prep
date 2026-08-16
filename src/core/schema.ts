@@ -18,7 +18,11 @@ const MainLiftSection = z.object({
   type: z.literal("mainLift"), label: z.string(),
   liftName: z.string(), liftKey: LiftKeySchema, sets: z.array(SetSchema),
 });
-export const SectionSchema = z.union([PrepSection, MainLiftSection, TextSection]);
+const MovementSection = z.object({
+  type: z.literal("movement"), label: z.string(),
+  moveName: z.string(), rows: z.array(NoteSet),
+});
+export const SectionSchema = z.union([PrepSection, MainLiftSection, MovementSection, TextSection]);
 export type Section = z.infer<typeof SectionSchema>;
 
 export const DaySchema = z.object({

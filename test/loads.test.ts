@@ -28,6 +28,11 @@ describe("resolveDay", () => {
           { scheme: "1×2", pct: 0.8, expectedLoad: 220 },
           { scheme: "1×1", note: "heavy for the day" },
         ] },
+      { type: "movement", label: "Accessory", moveName: "Romanian Deadlift",
+        rows: [
+          { scheme: "3 × 8–10", note: "" },
+          { scheme: "Cue", note: "push the hips back" },
+        ] },
     ],
   };
 
@@ -37,6 +42,18 @@ describe("resolveDay", () => {
     expect(main && main.type === "mainLift" && main.rows).toEqual([
       { scheme: "1×2", pct: 0.8, load: 220 },
       { scheme: "1×1", note: "heavy for the day" },
+    ]);
+  });
+
+  it("passes a load-free movement section straight through", () => {
+    const resolved = resolveDay(day, maxes);
+    const movement = resolved.sections.find((s) => s.type === "movement");
+    expect(movement && movement.type === "movement" && movement.moveName).toBe(
+      "Romanian Deadlift",
+    );
+    expect(movement && movement.type === "movement" && movement.rows).toEqual([
+      { scheme: "3 × 8–10", note: "" },
+      { scheme: "Cue", note: "push the hips back" },
     ]);
   });
 });

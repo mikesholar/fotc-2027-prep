@@ -102,6 +102,7 @@ class Accessory(NamedTuple):
     name: str
     sets: int
     reps: str
+    unit: str
     cue: str
 
 
@@ -169,10 +170,10 @@ SESSIONS = {
                  "Brace before you unrack, sit between the hips"),
         ),
         accessories=(
-            Accessory("Bulgarian Split Squat (DB)", 3, "8–12 per leg", "rear foot on the bench, brutal, don't skip"),
-            Accessory("Romanian Deadlift", 3, "8–10", "push the hips back, stretch the hamstring, flat back"),
-            Accessory("DB Walking Lunge", 3, "10–12 per leg", "reverse lunge if space is tight"),
-            Accessory("Standing Calf Raise", 4, "10–15", "toes on a plate, pause at the top"),
+            Accessory("Bulgarian Split Squat (DB)", 3, "8–12", "per leg", "rear foot on the bench, brutal, don't skip"),
+            Accessory("Romanian Deadlift", 3, "8–10", "", "push the hips back, stretch the hamstring, flat back"),
+            Accessory("DB Walking Lunge", 3, "10–12", "per leg", "reverse lunge if space is tight"),
+            Accessory("Standing Calf Raise", 4, "10–15", "", "toes on a plate, pause at the top"),
         ),
         skill=TOES_TO_BAR,
         skill_before_lifts=False,
@@ -189,10 +190,10 @@ SESSIONS = {
                  "Strict, standing, no leg drive"),
         ),
         accessories=(
-            Accessory("Incline DB Press", 3, "8–12", "bench at about 30°"),
-            Accessory("DB Lateral Raise", 4, "12–20", "light and slow, side delts live on volume"),
-            Accessory("DB Flye or Deficit Push-up", 3, "10–15", "deep stretch at the bottom"),
-            Accessory("Overhead Triceps Extension (DB/EZ)", 3, "10–15", "overhead loads the long head"),
+            Accessory("Incline DB Press", 3, "8–12", "", "bench at about 30°"),
+            Accessory("DB Lateral Raise", 4, "12–20", "", "light and slow, side delts live on volume"),
+            Accessory("DB Flye or Deficit Push-up", 3, "10–15", "", "deep stretch at the bottom"),
+            Accessory("Overhead Triceps Extension (DB/EZ)", 3, "10–15", "", "overhead loads the long head"),
         ),
         skill=None,
         skill_before_lifts=False,
@@ -214,11 +215,11 @@ SESSIONS = {
                  "Torso around 45°, row to the lower ribs"),
         ),
         accessories=(
-            Accessory("Chest-Supported DB Row", 3, "10–12", "face-down on an incline bench, takes the low back out"),
-            Accessory("DB Pullover", 3, "10–15", "the best free-weight lat stretch you have"),
-            Accessory("DB Rear Delt Flye or Band Face Pull", 4, "15–20", ""),
-            Accessory("Barbell or DB Curl", 3, "8–12", ""),
-            Accessory("Incline DB Curl", 3, "10–15", "arms hanging back, biceps stretched"),
+            Accessory("Chest-Supported DB Row", 3, "10–12", "", "face-down on an incline bench, takes the low back out"),
+            Accessory("DB Pullover", 3, "10–15", "", "the best free-weight lat stretch you have"),
+            Accessory("DB Rear Delt Flye or Band Face Pull", 4, "15–20", "", ""),
+            Accessory("Barbell or DB Curl", 3, "8–12", "", ""),
+            Accessory("Incline DB Curl", 3, "10–15", "", "arms hanging back, biceps stretched"),
         ),
         skill=PULL_UP,
         skill_before_lifts=True,
@@ -235,9 +236,9 @@ SESSIONS = {
                  "Elbows high — quad work that spares the low back after pulls"),
         ),
         accessories=(
-            Accessory("Barbell Hip Thrust", 3, "8–12", "shoulders on the bench, pad the bar"),
-            Accessory("Nordic Curl or Single-Leg RDL", 3, "8–12", "your hamstring-curl replacement, lower slow"),
-            Accessory("Seated Calf Raise (DB on knees)", 4, "12–20", "different fibers than standing"),
+            Accessory("Barbell Hip Thrust", 3, "8–12", "", "shoulders on the bench, pad the bar"),
+            Accessory("Nordic Curl or Single-Leg RDL", 3, "8–12", "", "your hamstring-curl replacement, lower slow"),
+            Accessory("Seated Calf Raise (DB on knees)", 4, "12–20", "", "different fibers than standing"),
         ),
         skill=TOES_TO_BAR_TIRED_GRIP,
         skill_before_lifts=False,
@@ -251,11 +252,11 @@ SESSIONS = {
                  "Upper chest is usually the lagging area — own it"),
         ),
         accessories=(
-            Accessory("Seated DB Shoulder Press", 3, "8–12", ""),
-            Accessory("Meadows Row or Chest-Supported Row", 4, "8–12", "landmine setup if you have a corner"),
-            Accessory("DB Lateral Raise", 4, "15–20", "last set, drop the weight and keep going to failure"),
-            Accessory("Curl + Triceps Extension superset", 4, "10–15 each", "minimal rest between the two"),
-            Accessory("Barbell Shrug", 3, "10–15", ""),
+            Accessory("Seated DB Shoulder Press", 3, "8–12", "", ""),
+            Accessory("Meadows Row or Chest-Supported Row", 4, "8–12", "", "landmine setup if you have a corner"),
+            Accessory("DB Lateral Raise", 4, "15–20", "", "last set, drop the weight and keep going to failure"),
+            Accessory("Curl + Triceps Extension superset", 4, "10–15", "each movement", "minimal rest between the two"),
+            Accessory("Barbell Shrug", 3, "10–15", "", ""),
         ),
         skill=PULL_UP_SECOND_DOSE,
         skill_before_lifts=True,
@@ -384,15 +385,20 @@ def main_lift_section(lift, week, maxes):
     }
 
 
-def accessory_section(accessories, week):
-    lines = []
-    for a in accessories:
-        sets = deload_sets(a.sets) if is_deload(week) else a.sets
-        line = f"{a.name} — {sets} × {a.reps}"
-        if a.cue:
-            line += f" — {a.cue}"
-        lines.append(line)
-    return {"type": "text", "label": "Accessory", "text": "\n".join(lines)}
+def accessory_section(accessory, week):
+    """One box per movement, laid out like a main lift: name, then a set table."""
+    sets = deload_sets(accessory.sets) if is_deload(week) else accessory.sets
+    rows = [{"scheme": f"{sets} × {accessory.reps}", "note": accessory.unit}]
+    if is_deload(week):
+        rows.append({"scheme": "Load", "note": "~60% of your usual working weight"})
+    if accessory.cue:
+        rows.append({"scheme": "Cue", "note": accessory.cue})
+    return {
+        "type": "movement",
+        "label": "Accessory",
+        "moveName": accessory.name,
+        "rows": rows,
+    }
 
 
 def skill_section(skill, week):
@@ -417,8 +423,7 @@ def sections_for(dow, week, maxes):
     sections.extend(main_lift_section(lift, week, maxes) for lift in session.lifts)
     if session.skill and not session.skill_before_lifts:
         sections.append(skill_section(session.skill, week))
-    if session.accessories:
-        sections.append(accessory_section(session.accessories, week))
+    sections.extend(accessory_section(a, week) for a in session.accessories)
     if dow in OFF_DAY_NOTES:
         sections.append({"type": "text", "label": "Notes", "text": OFF_DAY_NOTES[dow]})
     if dow == "MON":

@@ -201,26 +201,62 @@ def test_training_days_open_with_prep_then_a_main_lift_and_accessories():
         assert "Accessory" in labels
 
 
-def test_accessory_items_use_newlines_so_the_bullet_parser_keeps_them_whole():
+def accessories(day):
+    return [s for s in day["sections"] if s["label"] == "Accessory"]
+
+
+def test_each_accessory_is_its_own_section_shaped_like_a_lift():
+    weeks = by_week(load_plan())
+    per_session = {d["sessionTitle"]: len(accessories(d)) for d in weeks[1]}
+    assert per_session["Lower A — Squat"] == 4
+    assert per_session["Upper A — Push"] == 4
+    assert per_session["Upper B — Pull"] == 5
+    assert per_session["Lower B — Hinge"] == 3
+    assert per_session["Upper C — Delts & Arms"] == 5
+    assert per_session["Off — rest"] == 0
+
     for day in load_plan()["days"]:
-        for section in day["sections"]:
-            if section["label"] == "Accessory":
-                lines = [l for l in section["text"].split("\n") if l.strip()]
-                assert len(lines) >= 3
-                assert all(" · " not in line for line in lines)
+        for section in accessories(day):
+            assert section["type"] == "movement"
+            assert section["moveName"]
+            assert "text" not in section
+
+
+def test_every_accessory_opens_with_a_sets_by_reps_row():
+    for day in load_plan()["days"]:
+        for section in accessories(day):
+            first = section["rows"][0]
+            sets, reps = first["scheme"].split(" × ")
+            assert int(sets) >= 1
+            assert reps
+            for row in section["rows"]:
+                assert set(row) == {"scheme", "note"}
+
+
+def test_accessory_cues_ride_in_a_labelled_row_rather_than_the_movement_name():
+    bulgarian = None
+    for day in load_plan()["days"]:
+        for section in accessories(day):
+            if section["moveName"] == "Bulgarian Split Squat (DB)":
+                bulgarian = section
+                break
+        if bulgarian:
+            break
+    assert bulgarian is not None
+    assert bulgarian["rows"][0] == {"scheme": "3 × 8–12", "note": "per leg"}
+    assert bulgarian["rows"][-1]["scheme"] == "Cue"
+    assert "rear foot on the bench" in bulgarian["rows"][-1]["note"]
 
 
 def test_deload_weeks_cut_accessory_volume_too():
     weeks = by_week(load_plan())
 
     def accessory_sets(week):
-        total = 0
-        for day in weeks[week]:
-            for section in day["sections"]:
-                if section["label"] == "Accessory":
-                    for line in section["text"].split("\n"):
-                        if "×" in line:
-                            total += int(line.split("—")[1].split("×")[0].strip())
-        return total
+        return sum(
+            int(s["rows"][0]["scheme"].split(" × ")[0])
+            for d in weeks[week]
+            for s in accessories(d)
+        )
 
     assert accessory_sets(5) < accessory_sets(4)
+    assert accessory_sets(10) < accessory_sets(9)

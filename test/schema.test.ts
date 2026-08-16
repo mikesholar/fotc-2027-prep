@@ -13,6 +13,24 @@ describe("plan schema", () => {
     expect(() => parsePlan({ days: [] })).toThrow();
   });
 
+  it("accepts a movement section: a named movement with a prescription table, no max", () => {
+    const plan = parsePlan({
+      lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
+      defaultMaxes: { backSquat: 275 },
+      days: [{
+        date: "2026-08-17", dow: "MON", dateLabel: "Mon Aug 17", block: "Meso 1",
+        week: 1, weekDates: "Aug 17–Aug 23", weekFocus: "Baseline",
+        sessionTitle: "Lower A — Squat",
+        sections: [{
+          type: "movement", label: "Accessory", moveName: "DB Walking Lunge",
+          rows: [{ scheme: "3 × 10–12", note: "per leg" }],
+        }],
+      }],
+    });
+    const section = plan.days[0].sections[0];
+    expect(section.type === "movement" && section.moveName).toBe("DB Walking Lunge");
+  });
+
   it("accepts an optional skills/qualifier/solidCount block", () => {
     const plan = parsePlan({
       lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],

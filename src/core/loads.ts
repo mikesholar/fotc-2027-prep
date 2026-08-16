@@ -10,10 +10,14 @@ export type MainRow =
 export type ResolvedMainLift = {
   type: "mainLift"; label: string; liftName: string; rows: MainRow[];
 };
+export type ResolvedMovement = {
+  type: "movement"; label: string; moveName: string; rows: MainRow[];
+};
 export type ResolvedSection =
   | { type: "prep"; label: string; text: string }
   | { type: "text"; label: string; text: string }
-  | ResolvedMainLift;
+  | ResolvedMainLift
+  | ResolvedMovement;
 export type ResolvedDay = Omit<Day, "sections"> & { sections: ResolvedSection[] };
 
 const resolveSection = (section: Section, maxes: Maxes): ResolvedSection => {

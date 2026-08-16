@@ -88,9 +88,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -157,9 +212,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -227,9 +337,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -296,9 +468,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -344,9 +556,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -409,9 +683,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -478,9 +807,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -548,9 +932,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -617,9 +1063,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -665,9 +1151,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -730,9 +1278,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -799,9 +1402,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -869,9 +1527,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -938,9 +1658,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -986,9 +1746,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -1051,9 +1873,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -1120,9 +1997,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -1190,9 +2122,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -1259,9 +2253,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -1307,9 +2341,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -1372,9 +2468,80 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 2 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 2 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 2 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 2 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "2 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "2 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -1441,9 +2608,80 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 2 × 8–12 — bench at about 30°\nDB Lateral Raise — 2 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 2 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 2 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "2 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -1511,9 +2749,91 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 2 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 2 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 2 × 15–20\nBarbell or DB Curl — 2 × 8–12\nIncline DB Curl — 2 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "2 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "2 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -1580,9 +2900,61 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 2 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 2 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 2 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "2 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -1628,9 +3000,91 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 2 × 8–12\nMeadows Row or Chest-Supported Row — 2 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 2 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 2 × 10–15 each — minimal rest between the two\nBarbell Shrug — 2 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "2 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
         }
       ]
     },
@@ -1693,9 +3147,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -1762,9 +3271,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -1832,9 +3396,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -1901,9 +3527,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -1949,9 +3615,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -2014,9 +3742,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -2083,9 +3866,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -2153,9 +3991,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -2222,9 +4122,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -2270,9 +4210,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -2335,9 +4337,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -2404,9 +4461,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -2474,9 +4586,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -2543,9 +4717,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -2591,9 +4805,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -2656,9 +4932,64 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "3 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -2725,9 +5056,64 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -2795,9 +5181,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "3 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -2864,9 +5312,49 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "4 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -2912,9 +5400,71 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "3 × 8–12",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "4 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "4 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "4 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "3 × 10–15",
+              "note": ""
+            }
+          ]
         }
       ]
     },
@@ -2977,9 +5527,80 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Bulgarian Split Squat (DB) — 2 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 2 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 2 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 2 × 10–15 — toes on a plate, pause at the top"
+          "moveName": "Bulgarian Split Squat (DB)",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "rear foot on the bench, brutal, don't skip"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Romanian Deadlift",
+          "rows": [
+            {
+              "scheme": "2 × 8–10",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "push the hips back, stretch the hamstring, flat back"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Walking Lunge",
+          "rows": [
+            {
+              "scheme": "2 × 10–12",
+              "note": "per leg"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "reverse lunge if space is tight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Standing Calf Raise",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "toes on a plate, pause at the top"
+            }
+          ]
         },
         {
           "type": "text",
@@ -3046,9 +5667,80 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Incline DB Press — 2 × 8–12 — bench at about 30°\nDB Lateral Raise — 2 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 2 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 2 × 10–15 — overhead loads the long head"
+          "moveName": "Incline DB Press",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "bench at about 30°"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "2 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "light and slow, side delts live on volume"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Flye or Deficit Push-up",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "deep stretch at the bottom"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Overhead Triceps Extension (DB/EZ)",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "overhead loads the long head"
+            }
+          ]
         }
       ]
     },
@@ -3116,9 +5808,91 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Chest-Supported DB Row — 2 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 2 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 2 × 15–20\nBarbell or DB Curl — 2 × 8–12\nIncline DB Curl — 2 × 10–15 — arms hanging back, biceps stretched"
+          "moveName": "Chest-Supported DB Row",
+          "rows": [
+            {
+              "scheme": "2 × 10–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "face-down on an incline bench, takes the low back out"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Pullover",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "the best free-weight lat stretch you have"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Rear Delt Flye or Band Face Pull",
+          "rows": [
+            {
+              "scheme": "2 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell or DB Curl",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Incline DB Curl",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "arms hanging back, biceps stretched"
+            }
+          ]
         }
       ]
     },
@@ -3185,9 +5959,61 @@
           "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Barbell Hip Thrust — 2 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 2 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 2 × 12–20 — different fibers than standing"
+          "moveName": "Barbell Hip Thrust",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "shoulders on the bench, pad the bar"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Nordic Curl or Single-Leg RDL",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "your hamstring-curl replacement, lower slow"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Seated Calf Raise (DB on knees)",
+          "rows": [
+            {
+              "scheme": "2 × 12–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "different fibers than standing"
+            }
+          ]
         }
       ]
     },
@@ -3233,9 +6059,91 @@
           ]
         },
         {
-          "type": "text",
+          "type": "movement",
           "label": "Accessory",
-          "text": "Seated DB Shoulder Press — 2 × 8–12\nMeadows Row or Chest-Supported Row — 2 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 2 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 2 × 10–15 each — minimal rest between the two\nBarbell Shrug — 2 × 10–15"
+          "moveName": "Seated DB Shoulder Press",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Meadows Row or Chest-Supported Row",
+          "rows": [
+            {
+              "scheme": "2 × 8–12",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "landmine setup if you have a corner"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "DB Lateral Raise",
+          "rows": [
+            {
+              "scheme": "2 × 15–20",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "last set, drop the weight and keep going to failure"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Curl + Triceps Extension superset",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": "each movement"
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            },
+            {
+              "scheme": "Cue",
+              "note": "minimal rest between the two"
+            }
+          ]
+        },
+        {
+          "type": "movement",
+          "label": "Accessory",
+          "moveName": "Barbell Shrug",
+          "rows": [
+            {
+              "scheme": "2 × 10–15",
+              "note": ""
+            },
+            {
+              "scheme": "Load",
+              "note": "~60% of your usual working weight"
+            }
+          ]
         }
       ]
     },

@@ -17,6 +17,21 @@ const MOVEMENT_LABELS = new Set(["Prep", "Skill", "Accessory"]);
 
 The parsing logic itself lives in `src/core/movement-list.ts` (`parseMovementBody`) and is label-agnostic — it splits on ` · ` and newlines and is covered by `test/movement-list.test.ts`.
 
+#### Decision: `mainLift` vs `movement` sections — same look, different job
+
+**Context**: The hypertrophy plan renders each accessory as its own box laid out like a main lift (movement name + a table of prescribed sets), rather than one bulleted "Accessory" list.
+
+**Issue**: `mainLift` requires a `liftKey`, because its whole job is `pct × max` load math. Accessories are dumbbell and bodyweight work with no 1RM to resolve against. Making `liftKey` optional would have pushed an unreachable "percentage set with no lift key" branch into `resolveDay`.
+
+**Solution**: A second section type, `movement`, carries `moveName` plus `rows: {scheme, note}[]` and no load math — `resolveDay` passes it straight through. Both types render through the shared `renderLiftBox()` in `day-screen.ts`, so they look identical.
+
+```
+mainLift  -> has a liftKey, sets may carry pct/expectedLoad, resolveDay computes loads
+movement  -> no liftKey, rows are always {scheme, note}, resolveDay is a pass-through
+```
+
+Pick `mainLift` when there's a weight to compute, `movement` when you just want the prescription table. Only Mike's plan emits `movement` sections; Blair's and Erik's accessories are still free-text `text` sections from the workbook, which is why `MOVEMENT_LABELS` still needs `"Accessory"` in it.
+
 #### Gotcha: `LIFT_KEYS` cannot grow without invalidating stored maxes
 
 **Context**: The hypertrophy plan programs Barbell Row and Incline Barbell Press, neither of which has a 1RM in `LIFT_KEYS`.

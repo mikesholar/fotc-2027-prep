@@ -44,7 +44,7 @@ body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background:
 table.sets { width: 100%; border-collapse: collapse; }
 table.sets td { padding: 7px 4px; border-bottom: 1px solid #232a34; font-size: 14px; color: #d4d9e0; }
 table.sets tr:last-child td { border-bottom: none; }
-table.sets .scheme { font-weight: 700; color: #fff; }
+table.sets .scheme { font-weight: 700; color: #fff; white-space: nowrap; }
 table.sets .pct { color: #8b93a1; font-size: 12px; }
 table.sets .load { text-align: right; font-weight: 800; color: #7aee8f; font-size: 16px; }
 table.sets .note { color: #e3a008; font-size: 12px; }
