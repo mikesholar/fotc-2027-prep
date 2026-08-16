@@ -83,10 +83,31 @@ describe("day screen movement sections", () => {
     expect(box.querySelector(".box-text")?.textContent).toBe("Week 1 mindset: RPE honesty > heroics.");
   });
 
-  it("marks Prep and Accessory boxes with a movement class but not narrative boxes", () => {
+  it("renders a Skill box as a lead line above its bulleted dose", () => {
+    const root = renderDayScreen(
+      getMockDay([
+        {
+          type: "text",
+          label: "Skill",
+          text: "Pull-up — your current rung on the Skills screen: 4 sets · full hang every rep · 2–3 min rest",
+        },
+      ]),
+      nav,
+    );
+
+    const box = boxFor(root, "Skill");
+    expect(box.querySelector(".box-lead")?.textContent).toBe(
+      "Pull-up — your current rung on the Skills screen:",
+    );
+    const items = Array.from(box.querySelectorAll(".box-list li")).map((li) => li.textContent);
+    expect(items).toEqual(["4 sets", "full hang every rep", "2–3 min rest"]);
+  });
+
+  it("marks Prep, Skill and Accessory boxes with a movement class but not narrative boxes", () => {
     const root = renderDayScreen(
       getMockDay([
         { type: "prep", label: "Prep", text: "3 rounds: a · b" },
+        { type: "text", label: "Skill", text: "Toes-to-bar: 4 sets · slow" },
         { type: "text", label: "Accessory", text: "x\ny" },
         { type: "text", label: "Notes", text: "just prose" },
       ]),
@@ -94,6 +115,7 @@ describe("day screen movement sections", () => {
     );
 
     expect(boxFor(root, "Prep").classList.contains("movement")).toBe(true);
+    expect(boxFor(root, "Skill").classList.contains("movement")).toBe(true);
     expect(boxFor(root, "Accessory").classList.contains("movement")).toBe(true);
     expect(boxFor(root, "Notes").classList.contains("movement")).toBe(false);
   });

@@ -2,6 +2,9 @@ import type { Plan } from "../core/schema";
 import { type SkillsProgress, doneCount } from "../core/skills-store";
 import { el } from "./dom";
 
+const QUALIFIER_NOTE =
+  "Close these before the Qualifier — Week 11. Clear a rung's gate, then tick it.";
+
 const chipFor = (done: number, total: number): { cls: string; text: string } => {
   if (done === 0) return { cls: "chip no", text: "Not yet" };
   if (done >= total) return { cls: "chip got", text: "Got it ✓" };
@@ -16,8 +19,7 @@ export const renderSkillsScreen = (
 ): HTMLElement => {
   const root = el("div", "screen skills-screen");
   root.appendChild(el("div", "scr-title", "Skills"));
-  root.appendChild(el("div", "scr-sub",
-    "Close these before the Qualifier — Week 11. Clear a rung's gate, then tick it."));
+  root.appendChild(el("div", "scr-sub", plan.skillsNote ?? QUALIFIER_NOTE));
 
   const skills = plan.skills ?? [];
   for (const skill of skills) {

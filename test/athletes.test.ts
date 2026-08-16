@@ -23,8 +23,8 @@ describe("blair's composed plan", () => {
     expect(getAthlete("mike").skillsKey).toBe("fotc.skills");
     expect(getAthlete("blair").title).not.toBe(getAthlete("mike").title);
   });
-  it("reuses mike's days but with blair's maxes", () => {
-    expect(getAthlete("blair").plan.days.length).toBe(getAthlete("mike").plan.days.length);
+  it("reuses the FOTC days but with blair's maxes", () => {
+    expect(getAthlete("blair").plan.days[0].sessionTitle).toBe("Jump rope cadence");
     expect(getAthlete("blair").plan.defaultMaxes.backSquat).toBe(205);
   });
   it("has no estimate flag on any lift", () => {
@@ -54,8 +54,8 @@ describe("erik's composed plan", () => {
     expect(getAthlete("erik").title).toBe("FOTC 2027 · Erik");
     expect(getAthlete("erik").title).not.toBe(getAthlete("blair").title);
   });
-  it("reuses mike's days but with erik's provided maxes", () => {
-    expect(getAthlete("erik").plan.days.length).toBe(getAthlete("mike").plan.days.length);
+  it("reuses the FOTC days but with erik's provided maxes", () => {
+    expect(getAthlete("erik").plan.days[0].sessionTitle).toBe("Jump rope cadence");
     expect(getAthlete("erik").plan.defaultMaxes.backSquat).toBe(350);
     expect(getAthlete("erik").plan.defaultMaxes.deadlift).toBe(385);
   });
@@ -69,12 +69,40 @@ describe("erik's composed plan", () => {
   });
 });
 
-describe("mike's plan is unchanged by the registry", () => {
-  it("keeps his default maxes and carries no skills or qualifier block", () => {
+describe("mike's hypertrophy plan", () => {
+  it("keeps his maxes but runs the ten-week hypertrophy calendar", () => {
     const mike = getAthlete("mike");
     expect(mike.plan.defaultMaxes.backSquat).toBe(275);
-    expect(mike.plan.skills).toBeUndefined();
+    expect(mike.plan.days.length).toBe(70);
+    expect(mike.plan.days[0].date).toBe("2026-08-17");
+    expect(mike.title).toBe("5-Day Hypertrophy");
+  });
+
+  it("carries the two skill ladders and its own note, with no qualifier block", () => {
+    const mike = getAthlete("mike");
+    expect(mike.plan.skills?.map((s) => s.movement)).toEqual(["Pull-up", "Toes-to-bar"]);
+    expect(mike.plan.skillsNote).toBeTruthy();
     expect(mike.plan.qualifierBlock).toBeUndefined();
-    expect(mike.title).toBe("FOTC 2027 Prep");
+    expect(mike.plan.solidCount).toBeUndefined();
+  });
+
+  it("drops the estimate badge, since the plan has no week 20 to retest in", () => {
+    expect(getAthlete("mike").plan.lifts.every((l) => l.isEstimate === false)).toBe(true);
+  });
+
+  it("resolves the week-1 back squat to 200 lb off his 275 max", () => {
+    const mike = getAthlete("mike");
+    const day = mike.plan.days.find((d) => d.date === "2026-08-17")!;
+    const resolved = resolveDay(day, mike.plan.defaultMaxes as Maxes);
+    const main = resolved.sections.find((s) => s.type === "mainLift");
+    expect(main && main.type === "mainLift" ? main.rows[0] : null).toMatchObject({ load: 200 });
+  });
+});
+
+describe("blair and erik stay on the FOTC plan", () => {
+  it("keeps their 178-day calendar rather than following mike onto hypertrophy", () => {
+    expect(getAthlete("blair").plan.days.length).toBe(178);
+    expect(getAthlete("erik").plan.days.length).toBe(178);
+    expect(getAthlete("blair").plan.days[0].date).toBe("2026-06-09");
   });
 });

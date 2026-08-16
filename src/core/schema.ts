@@ -49,6 +49,7 @@ export const PlanSchema = z.object({
   defaultMaxes: z.record(LiftKeySchema, z.number()),
   days: z.array(DaySchema),
   skills: z.array(SkillSchema).optional(),
+  skillsNote: z.string().optional(),
   solidCount: z.number().optional(),
   qualifierBlock: z.string().optional(),
 });

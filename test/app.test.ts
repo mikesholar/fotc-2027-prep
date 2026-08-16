@@ -1,10 +1,10 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { startApp } from "../src/ui/app";
-import planJson from "../src/data/plan.json";
+import hypertrophyJson from "../src/data/hypertrophy.json";
 import { parsePlan, type Maxes } from "../src/core/schema";
 import { loadMaxes } from "../src/core/maxes-store";
 
-const plan = parsePlan(planJson);
+const plan = parsePlan(hypertrophyJson);
 const defaults = plan.defaultMaxes as Maxes;
 
 const mountApp = (): HTMLDivElement => {
@@ -37,10 +37,10 @@ describe("app bootstrap", () => {
     expect(mount.querySelectorAll("input").length).toBe(7);
   });
 
-  it("renders the schedule with week headers", () => {
+  it("renders the schedule with one header per week", () => {
     window.location.hash = "#/schedule";
     const mount = mountApp();
-    expect(mount.querySelectorAll(".wk-head").length).toBeGreaterThan(10);
+    expect(mount.querySelectorAll(".wk-head").length).toBe(10);
   });
 });
 
@@ -132,13 +132,13 @@ describe("loads reflect the edited max", () => {
     const backSquatInput = mount.querySelectorAll<HTMLInputElement>(".maxrow input")[0];
     setInput(backSquatInput, "300");
 
-    window.location.hash = "#/day/2026-07-20";
+    window.location.hash = "#/day/2026-08-17";
     const dayMount = mountApp();
 
     const loads = Array.from(dayMount.querySelectorAll(".sets .load")).map(
       (td) => td.textContent,
     );
-    const expected = Math.round((0.8 * 300) / 5) * 5;
+    const expected = Math.round((0.73 * 300) / 5) * 5;
     expect(loads).toContain(`${expected} lb`);
   });
 });
@@ -247,27 +247,50 @@ describe("erik's page", () => {
   });
 });
 
-describe("mike's page has no skills affordance", () => {
+describe("mike's hypertrophy page", () => {
   beforeEach(() => {
     localStorage.clear();
     document.body.innerHTML = '<div id="app"></div>';
     window.history.replaceState(null, "", "/");
   });
 
-  it("shows no Skills link and redirects #/skills to a day", () => {
-    window.location.hash = "#/day/2026-09-28";
+  it("offers a Skills link on a day and renders the pull-up and toes-to-bar cards", () => {
+    window.location.hash = "#/day/2026-08-17";
     const mount = mountApp();
     const link = Array.from(mount.querySelectorAll("a.nav-link")).find((a) => a.textContent === "Skills →");
-    expect(link).toBeUndefined();
+    expect(link).toBeTruthy();
 
     window.location.hash = "#/skills";
-    mountApp();
-    expect(window.location.hash).toMatch(/^#\/day\/\d{4}-\d{2}-\d{2}$/);
+    const skillsMount = mountApp();
+    const names = Array.from(skillsMount.querySelectorAll(".skill-name")).map((n) => n.textContent);
+    expect(names).toEqual(["Pull-up", "Toes-to-bar"]);
+    expect(skillsMount.querySelector(".scr-sub")?.textContent).not.toContain("Qualifier");
+  });
+
+  it("stores his ticked rungs under the unsuffixed skills key", () => {
+    window.location.hash = "#/skills";
+    const mount = mountApp();
+    mount.querySelector<HTMLElement>(".step")!.click();
+    expect(localStorage.getItem("fotc.skills")).toContain("Pull-up");
+    expect(localStorage.getItem("fotc.skills.blair")).toBeNull();
   });
 
   it("shows no qualifier marker on his schedule", () => {
     window.location.hash = "#/schedule";
     const mount = mountApp();
     expect(mount.querySelector(".qtarget")).toBeNull();
+  });
+
+  it("renders the week-1 back squat work set as a bulleted skill day", () => {
+    window.location.hash = "#/day/2026-08-17";
+    const mount = mountApp();
+    expect(mount.querySelector(".sess-title")?.textContent).toBe("Lower A — Squat");
+    const loads = Array.from(mount.querySelectorAll(".sets .load")).map((td) => td.textContent);
+    expect(loads).toContain("200 lb");
+    const skillBox = Array.from(mount.querySelectorAll<HTMLElement>(".box")).find(
+      (b) => b.querySelector(".box-label")?.textContent === "Skill",
+    )!;
+    expect(skillBox.querySelector(".box-lead")?.textContent).toContain("Toes-to-bar");
+    expect(skillBox.querySelectorAll(".box-list li").length).toBeGreaterThan(1);
   });
 });

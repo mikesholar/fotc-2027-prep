@@ -1,4 +1,5 @@
 import planJson from "./plan.json";
+import hypertrophyJson from "./hypertrophy.json";
 import blairData from "./blair.json";
 import erikData from "./erik.json";
 import { parsePlan, type Plan } from "../core/schema";
@@ -14,7 +15,7 @@ export type Athlete = {
   plan: Plan;
 };
 
-const mikePlan = parsePlan(planJson);
+const mikePlan = parsePlan(hypertrophyJson);
 
 const blairPlan = parsePlan({
   lifts: planJson.lifts.map((lift) => ({ ...lift, isEstimate: false })),
@@ -35,7 +36,7 @@ const erikPlan = parsePlan({
 });
 
 const ATHLETES: Record<AthleteId, Athlete> = {
-  mike: { id: "mike", name: "Mike", title: "FOTC 2027 Prep", storageKey: "fotc.maxes", skillsKey: "fotc.skills", plan: mikePlan },
+  mike: { id: "mike", name: "Mike", title: "5-Day Hypertrophy", storageKey: "fotc.maxes", skillsKey: "fotc.skills", plan: mikePlan },
   blair: { id: "blair", name: "Blair", title: "FOTC 2027 · Blair", storageKey: "fotc.maxes.blair", skillsKey: "fotc.skills.blair", plan: blairPlan },
   erik: { id: "erik", name: "Erik", title: "FOTC 2027 · Erik", storageKey: "fotc.maxes.erik", skillsKey: "fotc.skills.erik", plan: erikPlan },
 };

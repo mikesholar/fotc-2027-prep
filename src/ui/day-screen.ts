@@ -4,7 +4,7 @@ import { parseMovementBody, type MovementGroup } from "../core/movement-list";
 import { el } from "./dom";
 import { navigate } from "./router";
 
-const MOVEMENT_LABELS = new Set(["Prep", "Accessory"]);
+const MOVEMENT_LABELS = new Set(["Prep", "Skill", "Accessory"]);
 
 const makeArrow = (glyph: string, label: string, date: string | null): HTMLElement => {
   const arrow = el("div", date ? "arrow" : "arrow disabled", glyph);

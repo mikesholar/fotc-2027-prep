@@ -53,6 +53,23 @@ describe("skills screen", () => {
     expect(onToggle).toHaveBeenCalledWith("Pull-ups", 0);
   });
 
+  it("falls back to the qualifier deadline when a plan carries no skills note", () => {
+    const root = renderSkillsScreen(plan, "2026-09-28", {}, noop);
+    expect(root.querySelector(".scr-sub")?.textContent).toContain("Qualifier");
+  });
+
+  it("prefers the plan's own skills note over the qualifier deadline", () => {
+    const root = renderSkillsScreen(
+      { ...plan, skillsNote: "Two ladders to close over these 10 weeks." },
+      "2026-09-28",
+      {},
+      noop,
+    );
+    const sub = root.querySelector(".scr-sub")?.textContent;
+    expect(sub).toBe("Two ladders to close over these 10 weeks.");
+    expect(sub).not.toContain("Qualifier");
+  });
+
   it("links back to the day it was opened from, not the schedule", () => {
     const root = renderSkillsScreen(plan, "2026-09-28", {}, noop);
     const back = root.querySelector<HTMLAnchorElement>("a.nav-link")!;

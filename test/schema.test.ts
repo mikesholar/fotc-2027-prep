@@ -34,6 +34,22 @@ describe("plan schema", () => {
     expect(plan.solidCount).toBe(9);
   });
 
+  it("accepts a plan that carries its own skills note instead of a qualifier block", () => {
+    const plan = parsePlan({
+      lifts: [{ key: "backSquat", name: "Back Squat", isEstimate: false }],
+      defaultMaxes: { backSquat: 275 },
+      days: [],
+      skills: [{
+        movement: "Toes-to-bar",
+        status: "No",
+        progression: [{ move: "Hanging knee raises", rx: "4 × 10", gate: "4 × 10 strict" }],
+      }],
+      skillsNote: "Two ladders to close over these 10 weeks.",
+    });
+    expect(plan.skillsNote).toBe("Two ladders to close over these 10 weeks.");
+    expect(plan.qualifierBlock).toBeUndefined();
+  });
+
   it("rejects a skill with an unknown status", () => {
     expect(() =>
       parsePlan({
