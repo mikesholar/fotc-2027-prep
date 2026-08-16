@@ -1,0 +1,3337 @@
+{
+  "lifts": [
+    {
+      "key": "backSquat",
+      "name": "Back Squat",
+      "isEstimate": false
+    },
+    {
+      "key": "frontSquat",
+      "name": "Front Squat",
+      "isEstimate": false
+    },
+    {
+      "key": "bench",
+      "name": "Bench Press",
+      "isEstimate": false
+    },
+    {
+      "key": "strictPress",
+      "name": "Strict Press",
+      "isEstimate": false
+    },
+    {
+      "key": "deadlift",
+      "name": "Deadlift",
+      "isEstimate": false
+    },
+    {
+      "key": "cleanJerk",
+      "name": "Clean & Jerk",
+      "isEstimate": false
+    },
+    {
+      "key": "snatch",
+      "name": "Snatch",
+      "isEstimate": false
+    }
+  ],
+  "defaultMaxes": {
+    "backSquat": 275,
+    "frontSquat": 225,
+    "bench": 195,
+    "strictPress": 135,
+    "deadlift": 315,
+    "cleanJerk": 205,
+    "snatch": 145
+  },
+  "days": [
+    {
+      "date": "2026-08-17",
+      "dow": "MON",
+      "dateLabel": "Mon Aug 17",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.73,
+              "expectedLoad": 200
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Week 1 sets the trend line for the whole mesocycle. Pick weights you could still hit the top of the range with in four weeks, not weights that impress you today.\nWrite down weight and reps for every set. If the numbers stop climbing over a month, the problem is food or sleep, not the program."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "dow": "TUE",
+      "dateLabel": "Tue Aug 18",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.73,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×6",
+              "pct": 0.72,
+              "expectedLoad": 95
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "dow": "WED",
+      "dateLabel": "Wed Aug 19",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "dow": "THU",
+      "dateLabel": "Thu Aug 20",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.45,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "dow": "FRI",
+      "dateLabel": "Fri Aug 21",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.78,
+              "expectedLoad": 245
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×6",
+              "pct": 0.68,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "dow": "SAT",
+      "dateLabel": "Sat Aug 22",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.56,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "dow": "SUN",
+      "dateLabel": "Sun Aug 23",
+      "block": "Meso 1",
+      "week": 1,
+      "weekDates": "Aug 17–Aug 23",
+      "weekFocus": "Baseline — pick weights you can live with for four weeks. Bottom of every rep range, 2 in reserve.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "dow": "MON",
+      "dateLabel": "Mon Aug 24",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.73,
+              "expectedLoad": 200
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Same weights as last week, one more rep per set. If an exercise felt easy, add a set to it — pick two or three, not everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "dow": "TUE",
+      "dateLabel": "Tue Aug 25",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.73,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×7",
+              "pct": 0.72,
+              "expectedLoad": 95
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "dow": "WED",
+      "dateLabel": "Wed Aug 26",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "dow": "THU",
+      "dateLabel": "Thu Aug 27",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.45,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "dow": "FRI",
+      "dateLabel": "Fri Aug 28",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.78,
+              "expectedLoad": 245
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×7",
+              "pct": 0.68,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "dow": "SAT",
+      "dateLabel": "Sat Aug 29",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.56,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "dow": "SUN",
+      "dateLabel": "Sun Aug 30",
+      "block": "Meso 1",
+      "week": 2,
+      "weekDates": "Aug 24–Aug 30",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "dow": "MON",
+      "dateLabel": "Mon Aug 31",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.73,
+              "expectedLoad": 200
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "You should be within a rep or two of the top of each range. Add load only where you already own the top of the range on every set."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "dow": "TUE",
+      "dateLabel": "Tue Sep 1",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.73,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×9",
+              "pct": 0.72,
+              "expectedLoad": 95
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "dow": "WED",
+      "dateLabel": "Wed Sep 2",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "dow": "THU",
+      "dateLabel": "Thu Sep 3",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×9",
+              "pct": 0.45,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "dow": "FRI",
+      "dateLabel": "Fri Sep 4",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.78,
+              "expectedLoad": 245
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×9",
+              "pct": 0.68,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "dow": "SAT",
+      "dateLabel": "Sat Sep 5",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×9",
+              "pct": 0.56,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "dow": "SUN",
+      "dateLabel": "Sun Sep 6",
+      "block": "Meso 1",
+      "week": 3,
+      "weekDates": "Aug 31–Sep 6",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "dow": "MON",
+      "dateLabel": "Mon Sep 7",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×8",
+              "pct": 0.73,
+              "expectedLoad": 200
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Peak week. Take the last set of each exercise to 0–1 reps in reserve. Everything before that last set still stops short."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "dow": "TUE",
+      "dateLabel": "Tue Sep 8",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×8",
+              "pct": 0.73,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×10",
+              "pct": 0.72,
+              "expectedLoad": 95
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "dow": "WED",
+      "dateLabel": "Wed Sep 9",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "dow": "THU",
+      "dateLabel": "Thu Sep 10",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×10",
+              "pct": 0.45,
+              "expectedLoad": 140
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "dow": "FRI",
+      "dateLabel": "Fri Sep 11",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.78,
+              "expectedLoad": 245
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×10",
+              "pct": 0.68,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "dow": "SAT",
+      "dateLabel": "Sat Sep 12",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×10",
+              "pct": 0.56,
+              "expectedLoad": 110
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 4 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "dow": "SUN",
+      "dateLabel": "Sun Sep 13",
+      "block": "Meso 1",
+      "week": 4,
+      "weekDates": "Sep 7–Sep 13",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "dow": "MON",
+      "dateLabel": "Mon Sep 14",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×5",
+              "pct": 0.438,
+              "expectedLoad": 120
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 2 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 2 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 2 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 2 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Deload. Half the sets, roughly 60% of the weight, nothing near failure. The point is to show up in week 1 of the next block fresher and stronger."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "dow": "TUE",
+      "dateLabel": "Tue Sep 15",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×5",
+              "pct": 0.438,
+              "expectedLoad": 85
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.432,
+              "expectedLoad": 60
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 2 × 8–12 — bench at about 30°\nDB Lateral Raise — 2 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 2 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 2 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "dow": "WED",
+      "dateLabel": "Wed Sep 16",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 2 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "dow": "THU",
+      "dateLabel": "Thu Sep 17",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 2 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.27,
+              "expectedLoad": 85
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 2 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 2 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 2 × 15–20\nBarbell or DB Curl — 2 × 8–12\nIncline DB Curl — 2 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "dow": "FRI",
+      "dateLabel": "Fri Sep 18",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "2×3",
+              "pct": 0.468,
+              "expectedLoad": 145
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.408,
+              "expectedLoad": 90
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 2 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 2 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 2 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "dow": "SAT",
+      "dateLabel": "Sat Sep 19",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.336,
+              "expectedLoad": 65
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 2 × 8–12\nMeadows Row or Chest-Supported Row — 2 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 2 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 2 × 10–15 each — minimal rest between the two\nBarbell Shrug — 2 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "dow": "SUN",
+      "dateLabel": "Sun Sep 20",
+      "block": "Meso 1",
+      "week": 5,
+      "weekDates": "Sep 14–Sep 20",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "dow": "MON",
+      "dateLabel": "Mon Sep 21",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.765,
+              "expectedLoad": 210
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Week 1 sets the trend line for the whole mesocycle. Pick weights you could still hit the top of the range with in four weeks, not weights that impress you today.\nWrite down weight and reps for every set. If the numbers stop climbing over a month, the problem is food or sleep, not the program."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "dow": "TUE",
+      "dateLabel": "Tue Sep 22",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.755,
+              "expectedLoad": 145
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×6",
+              "pct": 0.745,
+              "expectedLoad": 100
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "dow": "WED",
+      "dateLabel": "Wed Sep 23",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "dow": "THU",
+      "dateLabel": "Thu Sep 24",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.475,
+              "expectedLoad": 150
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "dow": "FRI",
+      "dateLabel": "Fri Sep 25",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×3",
+              "pct": 0.815,
+              "expectedLoad": 255
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×6",
+              "pct": 0.715,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "dow": "SAT",
+      "dateLabel": "Sat Sep 26",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.585,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "dow": "SUN",
+      "dateLabel": "Sun Sep 27",
+      "block": "Meso 2",
+      "week": 6,
+      "weekDates": "Sep 21–Sep 27",
+      "weekFocus": "New baseline — everything a notch heavier than week 1. Back to 2 in reserve.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "dow": "MON",
+      "dateLabel": "Mon Sep 28",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.765,
+              "expectedLoad": 210
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Same weights as last week, one more rep per set. If an exercise felt easy, add a set to it — pick two or three, not everything."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "dow": "TUE",
+      "dateLabel": "Tue Sep 29",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.755,
+              "expectedLoad": 145
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×7",
+              "pct": 0.745,
+              "expectedLoad": 100
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "dow": "WED",
+      "dateLabel": "Wed Sep 30",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "dow": "THU",
+      "dateLabel": "Thu Oct 1",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.475,
+              "expectedLoad": 150
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "dow": "FRI",
+      "dateLabel": "Fri Oct 2",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×4",
+              "pct": 0.815,
+              "expectedLoad": 255
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×7",
+              "pct": 0.715,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "dow": "SAT",
+      "dateLabel": "Sat Oct 3",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.585,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 2 reps short of failure · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "dow": "SUN",
+      "dateLabel": "Sun Oct 4",
+      "block": "Meso 2",
+      "week": 7,
+      "weekDates": "Sep 28–Oct 4",
+      "weekFocus": "Same weights, one more rep per set. Add a set to two or three lagging exercises.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "dow": "MON",
+      "dateLabel": "Mon Oct 5",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.765,
+              "expectedLoad": 210
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "You should be within a rep or two of the top of each range. Add load only where you already own the top of the range on every set."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "dow": "TUE",
+      "dateLabel": "Tue Oct 6",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×7",
+              "pct": 0.755,
+              "expectedLoad": 145
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×9",
+              "pct": 0.745,
+              "expectedLoad": 100
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "dow": "WED",
+      "dateLabel": "Wed Oct 7",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "dow": "THU",
+      "dateLabel": "Thu Oct 8",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×9",
+              "pct": 0.475,
+              "expectedLoad": 150
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "dow": "FRI",
+      "dateLabel": "Fri Oct 9",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×5",
+              "pct": 0.815,
+              "expectedLoad": 255
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×9",
+              "pct": 0.715,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "dow": "SAT",
+      "dateLabel": "Sat Oct 10",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×9",
+              "pct": 0.585,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Stop 1–2 reps short — the weight should feel familiar now · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "dow": "SUN",
+      "dateLabel": "Sun Oct 11",
+      "block": "Meso 2",
+      "week": 8,
+      "weekDates": "Oct 5–Oct 11",
+      "weekFocus": "Reps still climbing. Push closer to failure — 1–2 in reserve.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "dow": "MON",
+      "dateLabel": "Mon Oct 12",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "4×8",
+              "pct": 0.765,
+              "expectedLoad": 210
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 4 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 3 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 3 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 3 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 4 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Peak week. Take the last set of each exercise to 0–1 reps in reserve. Everything before that last set still stops short."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "dow": "TUE",
+      "dateLabel": "Tue Oct 13",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×8",
+              "pct": 0.755,
+              "expectedLoad": 145
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "3×10",
+              "pct": 0.745,
+              "expectedLoad": 100
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 3 × 8–12 — bench at about 30°\nDB Lateral Raise — 4 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 3 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 3 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "dow": "WED",
+      "dateLabel": "Wed Oct 14",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 3 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "dow": "THU",
+      "dateLabel": "Thu Oct 15",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 4 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×10",
+              "pct": 0.475,
+              "expectedLoad": 150
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 3 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 3 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 4 × 15–20\nBarbell or DB Curl — 3 × 8–12\nIncline DB Curl — 3 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "dow": "FRI",
+      "dateLabel": "Fri Oct 16",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "4×6",
+              "pct": 0.815,
+              "expectedLoad": 255
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "3×10",
+              "pct": 0.715,
+              "expectedLoad": 160
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 3 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 3 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 3 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 4 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "dow": "SAT",
+      "dateLabel": "Sat Oct 17",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "4×10",
+              "pct": 0.585,
+              "expectedLoad": 115
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — hold this weight through week 9 and add reps instead"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Peak week — last set 0–1 reps short · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 3 × 8–12\nMeadows Row or Chest-Supported Row — 4 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 4 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 4 × 10–15 each — minimal rest between the two\nBarbell Shrug — 3 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "dow": "SUN",
+      "dateLabel": "Sun Oct 18",
+      "block": "Meso 2",
+      "week": 9,
+      "weekDates": "Oct 12–Oct 18",
+      "weekFocus": "Peak week — top of every rep range, 0–1 in reserve on the last set.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "dow": "MON",
+      "dateLabel": "Mon Oct 19",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Lower A — Squat",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 goblet squats · 10 leg swings per side · 20 walking lunge steps · 10 bodyweight good mornings"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Back Squat",
+          "liftKey": "backSquat",
+          "sets": [
+            {
+              "scheme": "2×5",
+              "pct": 0.459,
+              "expectedLoad": 125
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your back squat 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Brace before you unrack, sit between the hips"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · stop each set 1–2 reps before the shape breaks · 90s rest — this is practice, not a finisher · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Bulgarian Split Squat (DB) — 2 × 8–12 per leg — rear foot on the bench, brutal, don't skip\nRomanian Deadlift — 2 × 8–10 — push the hips back, stretch the hamstring, flat back\nDB Walking Lunge — 2 × 10–12 per leg — reverse lunge if space is tight\nStanding Calf Raise — 2 × 10–15 — toes on a plate, pause at the top"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Deload. Half the sets, roughly 60% of the weight, nothing near failure. The point is to show up in week 1 of the next block fresher and stronger."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "dow": "TUE",
+      "dateLabel": "Tue Oct 20",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper A — Push",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 10 arm circles each way · 8 push-ups"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Bench Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×5",
+              "pct": 0.453,
+              "expectedLoad": 90
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Feet planted, bar to the lower chest"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Overhead Press",
+          "liftKey": "strictPress",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.447,
+              "expectedLoad": 60
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your strict press 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Strict, standing, no leg drive"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Incline DB Press — 2 × 8–12 — bench at about 30°\nDB Lateral Raise — 2 × 12–20 — light and slow, side delts live on volume\nDB Flye or Deficit Push-up — 2 × 10–15 — deep stretch at the bottom\nOverhead Triceps Extension (DB/EZ) — 2 × 10–15 — overhead loads the long head"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "dow": "WED",
+      "dateLabel": "Wed Oct 21",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Off — walk & mobility",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Optional grip work — 5 min, feeds both ladders on the Skills screen: 2 sets · 30–45s active dead hang · 20s hollow hold between hangs"
+        },
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "20–30 min easy walk. 10 min on hips and shoulders — couch stretch, thoracic rotations, lat stretch on a rack.\nNo lifting. The Thursday pull session is the one that suffers if you burn today."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "dow": "THU",
+      "dateLabel": "Thu Oct 22",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper B — Pull",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap pull-ups · 30s active dead hang · 10 cat-cows"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — your current rung on the Skills screen: 2 sets · fresh, before the pulling work · full hang at the bottom of every rep · 2–3 min rest — stop the set while it still looks good"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Barbell Row",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.285,
+              "expectedLoad": 90
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Torso around 45°, row to the lower ribs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Chest-Supported DB Row — 2 × 10–12 — face-down on an incline bench, takes the low back out\nDB Pullover — 2 × 10–15 — the best free-weight lat stretch you have\nDB Rear Delt Flye or Band Face Pull — 2 × 15–20\nBarbell or DB Curl — 2 × 8–12\nIncline DB Curl — 2 × 10–15 — arms hanging back, biceps stretched"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "dow": "FRI",
+      "dateLabel": "Fri Oct 23",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Lower B — Hinge",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "3 rounds: 10 dowel hip hinges · 12 glute bridges · 10 bodyweight squats · 12 calf raises"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Deadlift",
+          "liftKey": "deadlift",
+          "sets": [
+            {
+              "scheme": "2×3",
+              "pct": 0.489,
+              "expectedLoad": 155
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your deadlift 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Conventional or trap bar. End the set the moment the back rounds"
+            }
+          ]
+        },
+        {
+          "type": "mainLift",
+          "label": "Secondary Lift",
+          "liftName": "Front Squat",
+          "liftKey": "frontSquat",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.429,
+              "expectedLoad": 95
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your front squat 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Elbows high — quad work that spares the low back after pulls"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Toes-to-bar — your current rung on the Skills screen: 2 sets · grip is already tired from pulling — quality over reps · drop a rung tonight if the shape goes · finish with 3 × 20s hollow hold"
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Barbell Hip Thrust — 2 × 8–12 — shoulders on the bench, pad the bar\nNordic Curl or Single-Leg RDL — 2 × 8–12 — your hamstring-curl replacement, lower slow\nSeated Calf Raise (DB on knees) — 2 × 12–20 — different fibers than standing"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "dow": "SAT",
+      "dateLabel": "Sat Oct 24",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Upper C — Delts & Arms",
+      "sections": [
+        {
+          "type": "prep",
+          "label": "Prep",
+          "text": "2 rounds: 15 band pull-aparts · 10 scap push-ups · 12 external rotations per side"
+        },
+        {
+          "type": "text",
+          "label": "Skill",
+          "text": "Pull-up — second dose this week, same Skills rung: 2 sets · half the volume of Thursday · quality only — stop well short"
+        },
+        {
+          "type": "mainLift",
+          "label": "Main Lift",
+          "liftName": "Incline Barbell Press",
+          "liftKey": "bench",
+          "sets": [
+            {
+              "scheme": "2×6",
+              "pct": 0.351,
+              "expectedLoad": 70
+            },
+            {
+              "scheme": "Load",
+              "note": "% is of your bench 1RM — 60% of your working weight, half the sets"
+            },
+            {
+              "scheme": "Effort",
+              "note": "Nowhere near failure. This week is for recovering, not proving anything · Upper chest is usually the lagging area — own it"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Accessory",
+          "text": "Seated DB Shoulder Press — 2 × 8–12\nMeadows Row or Chest-Supported Row — 2 × 8–12 — landmine setup if you have a corner\nDB Lateral Raise — 2 × 15–20 — last set, drop the weight and keep going to failure\nCurl + Triceps Extension superset — 2 × 10–15 each — minimal rest between the two\nBarbell Shrug — 2 × 10–15"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "dow": "SUN",
+      "dateLabel": "Sun Oct 25",
+      "block": "Meso 2",
+      "week": 10,
+      "weekDates": "Oct 19–Oct 25",
+      "weekFocus": "Deload — half the sets, ~60% of the weight, nowhere near failure.",
+      "sessionTitle": "Off — rest",
+      "sections": [
+        {
+          "type": "text",
+          "label": "Notes",
+          "text": "Weekly check — training is about 40% of this:\nBodyweight up 0.5–0.75 lb this week? If the scale hasn't moved in two weeks, add 200 calories.\nProtein at ~0.8–1.0 g per lb of bodyweight, every day, across 4+ meals.\nSleeping 7–9 hours. Short sleep measurably blunts muscle gain — nothing supplements around it.\nCreatine monohydrate, 5 g, any time of day.\nEvery set logged. Numbers climbing over the month?"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "movement": "Pull-up",
+      "status": "Some",
+      "progression": [
+        {
+          "move": "Scapular pull-ups",
+          "rx": "3 × 8–10 · 2s hold at the top, arms straight",
+          "gate": "3 × 10 clean, plus a 45s active hang"
+        },
+        {
+          "move": "Eccentric pull-ups",
+          "rx": "4 × 4 · jump to the top, lower for 5s",
+          "gate": "4 × 4 with a controlled 5s descent, no drop at the end"
+        },
+        {
+          "move": "Strict singles on the minute",
+          "rx": "8 × 1 EMOM · full hang each rep",
+          "gate": "8 quality singles in 8 minutes"
+        },
+        {
+          "move": "Strict sets of five",
+          "rx": "4 × 5 · 2–3 min rest",
+          "gate": "4 × 5 strict, chin clearly over the bar, no kip"
+        },
+        {
+          "move": "Strict sets of eight to ten",
+          "rx": "4 × 8 · add a rep a week",
+          "gate": "One set of 10 strict"
+        },
+        {
+          "move": "Weighted pull-ups",
+          "rx": "4 × 5 · belt or dumbbell between the feet",
+          "gate": "5 reps at +25 lb"
+        }
+      ],
+      "cue": "Two doses a week — Thursday fresh, Saturday light. Full hang at the bottom of every rep; a half rep trains a half range. Stop the set while it still looks good."
+    },
+    {
+      "movement": "Toes-to-bar",
+      "status": "No",
+      "progression": [
+        {
+          "move": "Active hang + hollow hold",
+          "rx": "3 × 30s hang · 3 × 30s hollow on the floor",
+          "gate": "45s active hang and a 30s locked hollow"
+        },
+        {
+          "move": "Hanging knee raises",
+          "rx": "4 × 10 · strict, zero swing",
+          "gate": "4 × 10 with the knees above the hip crease, dead still"
+        },
+        {
+          "move": "Knees to elbows",
+          "rx": "4 × 6 · drive the knees past the hips",
+          "gate": "4 × 6 strict, knees touching"
+        },
+        {
+          "move": "Straight-leg raise to 90°",
+          "rx": "4 × 8 · legs locked, lower slow",
+          "gate": "8 controlled reps with the legs straight"
+        },
+        {
+          "move": "Strict toes-to-bar",
+          "rx": "build to 4 × 3 · toes to the bar between the hands",
+          "gate": "5 strict unbroken"
+        },
+        {
+          "move": "Kipping toes-to-bar",
+          "rx": "3 × 8–10 · hollow ↔ arch rhythm",
+          "gate": "10 unbroken in rhythm"
+        }
+      ],
+      "cue": "Strict first — the kip is a way to do more of a thing you already own, not a shortcut to owning it. Twice a week, Monday and Friday, at the end of the lower days."
+    }
+  ],
+  "skillsNote": "Two ladders to close over these 10 weeks. Clear a rung's gate, then tick it. The day view tells you when to work them — this screen tells you what to work on."
+}
