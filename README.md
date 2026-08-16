@@ -1,8 +1,14 @@
 # FOTC 2027 Prep
 
-A phone-first, offline workout app for the FOTC 2027 26-week prep plan. Enter your
-1-rep maxes once and every percentage-based load across all 26 weeks resolves into a real
-weight — so you can follow the day's work in the gym without opening the spreadsheet.
+A phone-first, offline workout app. Enter your 1-rep maxes once and every percentage-based
+load resolves into a real weight — so you can follow the day's work in the gym without
+opening the spreadsheet.
+
+It serves two plans:
+
+- **Mike** (the default page) runs a **5-day free-weights hypertrophy program** —
+  10 weeks, two mesocycles, plus pull-up and toes-to-bar skill ladders.
+- **Blair and Erik** (`?athlete=…`) run the **FOTC 2027 26-week prep plan**.
 
 - **View-only.** Follow the plan; nothing to fill in mid-set.
 - **Local only.** Your maxes live in the browser's `localStorage`. No account, no server, no database.
@@ -13,10 +19,12 @@ weight — so you can follow the day's work in the gym without opening the sprea
 ## Screens
 
 - **Day** (`#/day/<date>`) — the day-picker bar moves through the plan; opens to the current
-  day on launch. Each part of the session is a labeled box (Prep, Main Lift, Accessory,
-  conditioning/notes). The main lift shows a compact table of `sets · % · weight`.
+  day on launch. Each part of the session is a labeled box (Prep, Main Lift, Skill,
+  Accessory, conditioning/notes). The main lift shows a compact table of `sets · % · weight`.
 - **Maxes** (`#/maxes`) — seven lift inputs. Editing recalculates every load instantly.
 - **Schedule** (`#/schedule`) — every week grouped like the workbook; tap a day to open it.
+- **Skills** (`#/skills`) — progression ladders with tickable rungs, for athletes whose
+  plan defines them.
 
 ## Develop
 
@@ -33,7 +41,27 @@ DOM view layer (`src/ui/`). No UI framework.
 
 ## The plan data
 
-The plan is generated once from the source workbook into `src/data/plan.json` (committed):
+Both plans are generated once into committed JSON under `src/data/`.
+
+### The hypertrophy plan (Mike's default page)
+
+```bash
+npm run extract:hypertrophy    # scripts/build-hypertrophy.py -> src/data/hypertrophy.json
+```
+
+Generated from `5-day-hypertrophy-program.md`: 10 weeks from Mon 2026-08-17, two
+mesocycles of 4 build weeks plus a deload, rest days included so the day picker walks a
+real week.
+
+The source program prescribes rep ranges and reps-in-reserve rather than percentages,
+so the generator models double progression literally — **one percentage per lift held
+flat across the four build weeks while the rep target climbs** (`4×5 → 4×6 → 4×7 → 4×8`),
+a deload at 60% of that weight and half the sets, and a heavier restart next mesocycle.
+Barbell Row and Incline Barbell Press have no 1RM of their own, so they're derived from
+the deadlift and bench maxes with the basis printed in a note row (see `CLAUDE.md` for
+why the lift enum can't just grow).
+
+### The FOTC plan (Blair's and Erik's pages)
 
 ```bash
 npm run extract    # runs scripts/extract-plan.py (needs Python 3 + openpyxl)
@@ -58,16 +86,18 @@ sheet's numbers exactly. Re-run `npm run extract` (and the tests) whenever the w
 
 The same page serves more than one athlete, selected by URL:
 
-- **Mike** (default): the site URL as-is.
-- **Blair:** append `?athlete=blair` — her own maxes (stored separately under
-  `fotc.maxes.blair`), Mike's identical sessions resolved to her numbers, and a **Skills**
-  screen for her gap movements ahead of the Qualifier.
-- **Erik:** append `?athlete=erik` — his own maxes (stored under `fotc.maxes.erik`), Mike's
-  identical sessions resolved to his numbers, and a **Skills** screen. Erik competes Novice
+- **Mike** (default): the site URL as-is — the 5-day hypertrophy program, with **pull-up**
+  and **toes-to-bar** ladders on the **Skills** screen and a recurring `Skill` block in the
+  day view (toes-to-bar Mon/Fri, pull-ups Thu/Sat, optional hangs Wed).
+- **Blair:** append `?athlete=blair` — the FOTC sessions resolved to her own maxes (stored
+  separately under `fotc.maxes.blair`), and a **Skills** screen for her gap movements ahead
+  of the Qualifier.
+- **Erik:** append `?athlete=erik` — the FOTC sessions resolved to his maxes (stored under
+  `fotc.maxes.erik`), and a **Skills** screen. Erik competes Novice
   and clears the strength standards, so his skill work centers on his **conditioning engine**
   plus the two Novice skills he only half-owns: **wall walks** and **double-unders**.
 
-Each athlete's data is generated from their `<name>.xlsx` into `src/data/<name>.json`
+Blair's and Erik's data is generated from their `<name>.xlsx` into `src/data/<name>.json`
 (committed):
 
 ```bash
@@ -75,13 +105,15 @@ npm run extract:blair
 npm run extract:erik
 ```
 
-Their pages reuse Mike's daily sessions verbatim; only the maxes, the Skills screen, and the
-Qualifier marker differ. To add another athlete later, generate their data file and add an
-entry to `src/data/athletes.ts`.
+Both pages compose off `plan.json`'s FOTC sessions verbatim; only the maxes, the Skills
+screen, and the Qualifier marker differ. To add another athlete later, generate their data
+file, pick which plan they compose from, and add an entry to `src/data/athletes.ts`.
 
 ## Notes
 
-- Clean & Jerk and Snatch maxes are estimates in the example data — retest and update them
-  (the plan tests them in Week 20).
-- Data stored under the `fotc.maxes` key in `localStorage`; "Reset to example maxes" clears it
-  back to the workbook's example numbers.
+- The hypertrophy plan doesn't program the Olympic lifts, so Clean & Jerk and Snatch stay
+  on the Maxes screen only as a place to keep your numbers. Blair's and Erik's FOTC plan
+  tests them in Week 20.
+- Each athlete's maxes live under their own `localStorage` key (`fotc.maxes`,
+  `fotc.maxes.blair`, `fotc.maxes.erik`); "Reset to example maxes" clears back to that
+  plan's defaults. Ticked skill rungs live under the matching `fotc.skills*` key.
