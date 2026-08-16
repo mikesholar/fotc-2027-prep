@@ -48,6 +48,7 @@ table.sets .scheme { font-weight: 700; color: #fff; white-space: nowrap; }
 table.sets .pct { color: #8b93a1; font-size: 12px; }
 table.sets .load { text-align: right; font-weight: 800; color: #7aee8f; font-size: 16px; }
 table.sets .note { color: #e3a008; font-size: 12px; }
+table.sets .note.muted { color: #8b93a1; }
 
 /* ---- Screen titles (maxes / schedule) ---- */
 .scr-title { font-size: 22px; font-weight: 800; color: #fff; margin: 2px 0 2px; }

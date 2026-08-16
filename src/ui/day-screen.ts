@@ -5,6 +5,7 @@ import { el } from "./dom";
 import { navigate } from "./router";
 
 const MOVEMENT_LABELS = new Set(["Prep", "Skill", "Accessory"]);
+const MUTED_ROW_LABELS = new Set(["Cue"]);
 
 const makeArrow = (glyph: string, label: string, date: string | null): HTMLElement => {
   const arrow = el("div", date ? "arrow" : "arrow disabled", glyph);
@@ -35,7 +36,7 @@ const renderLiftBox = (label: string, name: string, rows: MainRow[]): HTMLElemen
       tr.appendChild(el("td", "load", `${r.load} lb`));
     } else {
       tr.appendChild(el("td", "scheme", r.scheme));
-      const td = el("td", "note", r.note);
+      const td = el("td", MUTED_ROW_LABELS.has(r.scheme) ? "note muted" : "note", r.note);
       (td as HTMLTableCellElement).colSpan = 2;
       tr.appendChild(td);
     }

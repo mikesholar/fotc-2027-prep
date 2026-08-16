@@ -119,6 +119,30 @@ describe("day screen movement sections", () => {
     ]);
   });
 
+  it("mutes a cue row but leaves prescriptive notes highlighted", () => {
+    const root = renderDayScreen(
+      getMockDay([
+        {
+          type: "movement",
+          label: "Accessory",
+          moveName: "Standing Calf Raise",
+          rows: [
+            { scheme: "4 × 10–15", note: "" },
+            { scheme: "Load", note: "~60% of your usual working weight" },
+            { scheme: "Cue", note: "toes on a plate, pause at the top" },
+          ],
+        },
+      ]),
+      nav,
+    );
+
+    const notes = Array.from(boxFor(root, "Accessory").querySelectorAll("td.note"));
+    const muted = notes.filter((td) => td.classList.contains("muted"));
+    expect(muted.map((td) => td.textContent)).toEqual([
+      "toes on a plate, pause at the top",
+    ]);
+  });
+
   it("renders a Skill box as a lead line above its bulleted dose", () => {
     const root = renderDayScreen(
       getMockDay([

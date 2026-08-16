@@ -17,6 +17,13 @@ const MOVEMENT_LABELS = new Set(["Prep", "Skill", "Accessory"]);
 
 The parsing logic itself lives in `src/core/movement-list.ts` (`parseMovementBody`) and is label-agnostic — it splits on ` · ` and newlines and is covered by `test/movement-list.test.ts`.
 
+There is a second, smaller label-scoped rule in the same file: `MUTED_ROW_LABELS` greys out note rows inside a lift/movement table whose `scheme` cell is a label like `"Cue"`, so explanatory text recedes while prescriptive rows (`Load`, `Effort`) keep the amber highlight. Same caveat — rename the row label in the data and the styling silently reverts to amber.
+
+```ts
+// src/ui/day-screen.ts
+const MUTED_ROW_LABELS = new Set(["Cue"]);
+```
+
 #### Decision: `mainLift` vs `movement` sections — same look, different job
 
 **Context**: The hypertrophy plan renders each accessory as its own box laid out like a main lift (movement name + a table of prescribed sets), rather than one bulleted "Accessory" list.
